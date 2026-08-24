@@ -1,0 +1,376 @@
+\documentclass[11pt, headsepline]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{parskip}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=Mahogany,urlcolor=blue]{hyperref}
+\usepackage{booktabs, cellspace, hhline, multirow, nicematrix}
+\usepackage{float}
+\usepackage{enumitem}
+
+\usepackage[usenames, dvipsnames]{xcolor}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\ihead{(Why) do young people in the U.S. support redistribution?}
+\ohead{\pagemark}
+\chead{}
+\cfoot{}
+
+\def\labelitemi{--}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE Sample questionnaire}
+\end{center}
+
+This questionnaire focuses on the economic self-interest questions (the consumption side of the utility function):
+\begin{itemize}
+    \item How important is the direct effect of a redistributive tax on one's income?
+    \item Might young people, who are more uncertain about their income, want to insure themselves with redistribution?
+    \item Do young people misjudge how much income they'll need/want when they're older?
+    \item Do young people want to maximize their current rather than future earnings?
+    \item Having less experience, do young people perceive the pain of taxation differently than older people?
+    \item Do young people have different beliefs about mobility and the incentive effects of redistribution?
+    \item Are the young more/less materialistic or career-focused?
+\end{itemize}
+
+\section{Redistributive preferences}
+
+\begin{enumerate}
+    \item Imagine that the government is considering reducing federal income taxes on low earners and increasing federal income taxes on high earners. There will be no change in government spending, because the increased tax payments by the high earners offset the reduced tax payments by the low earners. The image below represents the proposed change. Would you support this change?
+
+    \textit{Reject strongly; Reject somewhat; Indifferent; Support somewhat; Support strongly}
+
+    \begin{figure}[H]
+        \includegraphics[width=16cm]{images/proposed bracket vert.png}
+        \centering
+    \end{figure}
+
+    \item Imagine the government is considering reducing federal income taxes on low earners and increasing federal income taxes on high earners. There will be no change in government spending, because the increased tax payments by the high earners offset the reduced tax payments by the low earners.
+
+    The proposed policy reduces taxes on income below \$70,000 by 3\% and increases taxes on income above \$70,000 by 3\%. For example, if you earn \$90,000, your first \$70,000 will be taxed 3\% less, and your next \$20,000 will be taxed 3\% more. Would you support this policy?
+
+    \textit{Reject strongly; Reject somewhat; Indifferent; Support somewhat; Support strongly}
+
+    \item In your opinion, what would be the fair split of the federal income tax burden?
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{images/income tax sliders.png}
+    \end{figure}
+
+    \item \red{Possible: question about charity donation to gauge general generosity}
+
+    \item \red{Possible: question about redistribution that is not related to taxes}
+\end{enumerate}
+
+\subsection{Economic effects of redistribution}
+
+\begin{enumerate}[resume]
+    \item What is the main reason you support or oppose this policy?
+
+    \textit{It would directly save/lose me money; It would be good/bad for the economy; It would be fair/unfair; It would help/hurt people in need; Other: [free response]}
+    
+    \item Would this policy reduce or increase the growth of the U.S. economy?
+
+    \textit{Reduce significantly; Reduce moderately; No effect; Increase moderately; Increase significantly; Not sure}
+
+    \item Would this policy reduce or increase entrepreneurship?
+
+    \textit{Reduce significantly; Reduce moderately; No effect; Increase moderately; Increase significantly; Not sure}
+
+    \item Would this policy cause low income people to work less or more?
+
+    \textit{Much less; Less; No change; More; Much more; Not sure}
+\end{enumerate}
+
+\section{Income mobility}
+
+\subsection{Incentive effects}
+
+\begin{enumerate}[resume]
+    \item Competition is good. It stimulates people to work hard and develop new ideas.
+
+    \textit{Disagree strongly; Disagree somewhat; Neutral; Agree somewhat; Agree strongly; Not sure}
+
+    % \item If the government gave you \$60,000 a year, would you work less or more?
+
+    % \textit{Much less; A bit less; No change; A bit more; Much more; Not sure}
+
+    \item The introduction of welfare programs causes people to work less.
+
+    \textit{Disagree strongly; Disagree somewhat; Neutral; Agree somewhat; Agree strongly; Not sure}
+
+    \item A large wealth gap is needed to incentivize entrepreneurs to start businesses and innovate.
+
+    \textit{Disagree strongly; Disagree somewhat; Neutral; Agree somewhat; Agree strongly; Not sure}
+
+    % \item Are poorer people generally lazier?
+\end{enumerate}
+
+\subsection{Current state of mobility}
+
+\begin{enumerate}[resume]
+    \item Most people in the United States who want to get ahead can make it if they are willing to work hard.
+
+    \textit{Disagree strongly; Disagree somewhat; Neutral; Agree somewhat; Agree strongly; Not sure}
+
+    \item Imagine the U.S. population is represented by 100 families. What do you think the likelihood is, right now, that someone from the poorest 20 families ends up in the richest 20 families when they're older?
+
+    % \textit{[slider or free response]}
+    \texit{Low; Fairly low; Moderate; Fairly high; High}
+
+    \item What is the likelihood that someone from the poorest 20 families ends up in as part of the 40 richest families when they're older?
+
+    \texit{Low; Fairly low; Moderate; Fairly high; High}
+
+    \item Is it harder or easier to move up in income now than when your parents were growing up? 
+
+    \textit{Much harder; Harder; No change; Easier; Much easier; Not sure}
+\end{enumerate}
+
+\subsection{Fairness}
+
+\begin{enumerate}[resume]
+    \item Under a fair economic system, people with higher abilities should earn higher salaries.
+
+    \textit{Disagree strongly; Disagree somewhat; Neutral; Agree somewhat; Agree strongly; Not sure}
+
+    \item Our economic system should prioritize and reward hard work.
+
+    \textit{Disagree strongly; Disagree somewhat; Neutral; Agree somewhat; Agree strongly; Not sure}  
+\end{enumerate}
+
+\subsection{Family mobility}
+
+\begin{enumerate}[resume]
+    \item If you compare your job (or your last job if you currently don’t have a job) with the job your father had while you were growing up, would you say that the level of status of your job is:
+
+    \textit{Much higher than my father’s; Higher than my father’s; About equal to my father’s; Lower than my father’s; Much lower than my father’s; My father did not have a job while I was growing up OR I come from a single-parent family}
+
+    \item If you compare your job (or your last job if you currently don’t have a job) with the job your mother had while you were growing up, would you say that the level of status of your job is:
+
+    \textit{Much higher than my mother’s; Higher than my mother’s; About equal to my mother’s; Lower than my mother’s; Much lower than my mother’s; My mother did not have a job while I was growing up OR I come from a single-parent family}
+
+    \item When you were growing up, compared with American families back then, would you say your family income was:
+
+    \textit{Far below average; Below average; Average; Above average; Far above average}
+
+    \item Right now, compared with American families, would you say your own household income is:
+
+    \textit{Far below average; Below average; Average; Above average; Far above average}
+\end{enumerate}
+
+% \section{Consumption/income preferences}
+% \subsection{Theory: uncertain future income leading to min-max}
+% \subsection{Theory: high discount rate and maximizing current income}
+% \subsection{Theory: the young don't know how much income they'll need/want in the future}
+
+\section{Income uncertainty}
+
+\begin{enumerate}[resume]
+    \item What do you expect your pre-tax annual income to be 5 years from now? (Answer as if there is no inflation: a dollar today is worth the same as a dollar 5 years from now.)
+
+    \textit{[free response]}
+
+    \item What is the likelihood that you earn within \$10,000 of that amount? Please give a percentage between 1 and 100. For example, if you answered \$60,000 in the previous question and you are 70\% certain that your income in five years will be above \$60,000 - \$10,000 = \$50,000, enter ``70''.
+
+    \textit{[free response]}
+
+    \item How certain are you that you will earn within \$10,000 of that amount?
+
+    \textit{Not certain; Somewhat certain; Very certain; Completely certain}
+
+    \item What do you expect your pre-tax annual income to be at the peak of your career?
+
+    \textit{[free response]}
+
+    \item What is the likelihood that you make within \$10,000 of that amount?
+
+    \textit{[free response]}
+
+    \item What is the lowest you might make at the peak of your career (pre-tax annual income)?
+
+    \textit{[free response]}
+
+    \item What is the highest you might make at the peak of your career (pre-tax annual income)?
+    
+    \textit{[free response]}
+\end{enumerate}
+
+\section{Preference for current income}
+
+\begin{enumerate}[resume]
+    \item How much money would you give up this year to receive a one-time payment of \$10,000 next year?
+
+    \textit{[slider]}
+
+    \item How much money would you give up this year to receive a one-time payment of \$10,000 in 5 years?
+
+    \textit{[slider]}
+
+    \item How much money would you give up this year to receive a one-time payment of \$10,000 in 10 years?
+
+    \textit{[slider]}
+\end{enumerate}
+
+\section{Perceived future income needs}
+
+\begin{enumerate}[resume]
+    \item How much annual income would you need to live comfortably now?
+
+    \textit{[free response]}
+
+    \item How much income will/did you need to live comfortably in your 30s? Please respond in terms of current U.S. dollars. Put another way, what is the annual salary that you would need to earn today if you were currently in your mid-30s?
+
+    \textit{[free response]}
+
+    \item How much annual income will/did you need to live comfortably in your 40s?
+
+    \textit{[free response]}
+
+    \item How much annual income will/did you need to live comfortably in your 20s?
+
+    \textit{[free response]}
+\end{enumerate}
+
+\section{Materialism}
+
+\begin{enumerate}[resume]
+    \item Is career or work-life balance more important to you now?
+
+    \textit{Work-life balance completely; Work-life balance somewhat; Equal; Career somewhat; Career completely}
+
+    \item How much does your career shape your self-image?
+    
+    \textit{Not at all; Not much; A bit; A fair amount; A lot}
+
+    \item Would getting an extra \$10,000 a year change your quality of life?
+
+    \textit{Not at all; Not much; A bit; A fair amount; A lot}
+
+    % \item Would making more money change your quality of life?
+
+    % \textit{Not at all; Not much; A bit; A fair amount; A lot}
+
+    \item Is it impressive to make a lot of money?
+
+    \textit{Not at all impressive; Not really impressive; Somewhat impressive; Pretty impressive; Extremely impressive}
+
+    \item Do your friends and family care about how much money you make?
+
+    \textit{Not at all; Not much; A bit; A fair amount; A lot}
+
+    \item \label{item:time_slider} \red{A question with sliders for time spent work vs. sleep vs. family/friends vs. being active vs. hobbies/entertainment would be interesting. What is their current allocation? How much more money would they need to work more?}
+\end{enumerate}
+
+\section{Background}
+
+\begin{enumerate}[resume]
+    \item \textbf{[Disclosure message]}
+    In this survey, we want to learn your thoughts on xx.
+    
+    It should take approximately xx minutes to complete. After completing, you will receive \$xx through xx.
+
+    We are looking for responses from people who are 18 years or older currently living in the United States. Would you like to continue?
+    
+    \textit{Yes, I would like to take part in this study, and confirm that I AM A U.S. RESIDENT and I am 18 or older; No, I would not like to participate}
+
+    \item What is your gender?
+
+    \textit{Male; Female}
+
+    \item What is your age?
+
+    \item What was your total personal income, before taxes, last year (2023)?
+    % (wages, capital returns, etc.)
+    
+    \textit{[free response]}
+
+    \item What was your total household income, before taxes, last year (2023)? % define household income
+
+    \textit{[free response]}
+
+    \item What was your total household income, before taxes, last year (2023)?
+
+    \textit{\$0 - \$9,999; \$10,000 - \$14,999; \$15,000 - \$19,999; \$20,000 - \$29,999; \$30,000 - \$39,999; \$40,000 - \$49,999; \$50,000 - \$69,999; \$70,000 - \$89,999; \$90,000 - \$109,999; \$110,000 - \$149,999; \$150,000 - \$199,999; \$200,000 +}
+
+    \item Please indicate your marital status
+
+    \textit{Single; Married; Other}
+
+    \item How many children do you have?
+
+    \textit{I do not have children; 1; 2; 3; 4; 5 or more}
+
+    \item How would you describe your ethnicity/race?
+
+    \textit{European American/White; African American/Black; Hispanic/Latino; Asian/Asian American; Other}
+
+    \item Were you born in the United States?
+
+    \textit{Yes; No}
+
+    \item Were both of your parents born in the United States?
+
+    \textit{Yes; No}
+
+    \item In which state do you live?
+
+    \item In which ZIP code do you live?
+
+    \item Which category best describes your highest level of education?
+
+    \textit{Eighth grade or less; Some high school; High school degree / GED; Some college; 2-year college degree; 4-year college degree; Master’s degree; Doctoral degree; Professional degree (JD, MD, MBA)}
+
+    \item Which category best describes your father's highest level of education?
+
+    \textit{Eighth grade or less; Some high school; High school degree / GED; Some college; 2-year college degree; 4-year college degree; Master’s degree; Doctoral degree; Professional degree (JD, MD, MBA)}
+
+    \item Which category best describes your mother's highest level of education?
+
+    \textit{Eighth grade or less; Some high school; High school degree / GED; Some college; 2-year college degree; 4-year college degree; Master’s degree; Doctoral degree; Professional degree (JD, MD, MBA)}
+
+    \item What is your current employment status?
+
+    \textit{Full-time employee; Part-time employee; Self-employed or small business owner; Unemployed and looking for work; Student; Not in labor force (for example: retired, or full-time parent)}
+
+    \item On economic policy matters, where do you see yourself on the liberal/conservative spectrum?
+
+    \textit{Very liberal; Liberal; Moderate; Conservative; Very conservative}
+
+    \item \red{Possible: question testing whether they are paying attention}
+
+    \textit{}
+\end{enumerate}
+
+% \newpage
+
+\section*{X. Values}
+
+\subsection*{X.1 Individualism}
+
+\subsection*{X.2 Communalism vs. universalism}
+
+\subsection*{X.3 Ingroup vs. outgroup}
+
+\subsection*{X.4 Openness to experience}
+
+\section*{Y. Leisure}
+
+\subsection*{Y.1 Pain of hard work}
+
+\subsection*{Y.2 Activities outside work}
+
+\begin{enumerate}
+    \item Slider for how much time they currently spend on work/sleep/friends/recreation and how much they would be willing to sacrifice to do more work--see question \ref{item:time_slider}.
+\end{enumerate}
+
+\subsection*{Y.3 Work-life balance}
+
+
+
+\end{document}

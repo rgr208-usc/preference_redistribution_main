@@ -1,0 +1,314 @@
+\documentclass[a4paper,11pt,oneside,headsepline]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{wasysym}% provides \ocircle and \Box
+\usepackage{enumitem}% easy control of topsep and leftmargin for lists
+\usepackage{color}% used for background color
+\usepackage{forloop}% used for \Qrating and \Qlines
+\usepackage{ifthen}% used for \Qitem and \QItem
+\usepackage{typearea}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}% blue coloring for text
+\areaset{17cm}{26cm}
+\setlength{\topmargin}{-1cm}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\ihead{(Why) do young people in the U.S. support redistribution?}
+\ohead{\pagemark}
+\chead{}
+\cfoot{}
+
+\usepackage{titlesec}
+\titleformat{\section}{\rmfamily\Large\bfseries}{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Qq}[1]{#1}
+
+\newcommand{\QO}{$\Box$}% or: $\ocircle$
+
+\newcounter{qr}
+\newcommand{\Qrating}[1]{\QO\forloop{qr}{1}{\value{qr} < #1}{---\QO}}
+
+\newcommand{\Qline}[1]{\noindent\rule{#1}{0.6pt}}
+
+\newcounter{ql}
+\newcommand{\Qlines}[1]{\forloop{ql}{0}{\value{ql}<#1}{\vskip0em\Qline{\linewidth}}}
+
+\newenvironment{Qlist}{%
+\renewcommand{\labelitemi}{\QO}
+\begin{itemize}[leftmargin=1.5em,topsep=-.5em]
+}{%
+\end{itemize}
+}
+
+\newlength{\qt}
+\newcommand{\Qtab}[2]{
+\setlength{\qt}{\linewidth}
+\addtolength{\qt}{-#1}
+\hfill\parbox[t]{\qt}{\raggedright #2}
+}
+
+\newcounter{itemnummer}
+\newcommand{\Qitem}[2][]{% #1 optional, #2 notwendig
+\ifthenelse{\equal{#1}{}}{\stepcounter{itemnummer}}{}
+\ifthenelse{\equal{#1}{a}}{\stepcounter{itemnummer}}{}
+\begin{enumerate}[topsep=2pt,leftmargin=2.8em]
+\item[\arabic{itemnummer}#1.] #2
+\end{enumerate}
+}
+
+\definecolor{bgodd}{rgb}{0.8,0.8,0.8}
+\definecolor{bgeven}{rgb}{0.9,0.9,0.9}
+\newcounter{itemoddeven}
+\newlength{\gb}
+\newcommand{\QItem}[2][]{% #1 optional, #2 notwendig
+\setlength{\gb}{\linewidth}
+\addtolength{\gb}{-5.25pt}
+\ifthenelse{\equal{\value{itemoddeven}}{0}}{%
+\noindent\colorbox{bgeven}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\stepcounter{itemoddeven}%
+}{%
+\noindent\colorbox{bgodd}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\setcounter{itemoddeven}{0}%
+}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \huge Sample questionnaire
+    % \Large Core question: Why do young people in the U.S. support redistribution?
+\end{center}\vskip1em
+
+    % [Text explaining survey to respondents]
+
+Goal: explore and rule out competing hypotheses for why young people in the U.S. are more likely to support redistribution. \blue{The blue text describes how each question helps prove/rule out the hypothesis in its section.}
+
+How to organize hypotheses
+
+\begin{itemize}
+    \item (a) Standard Preference and Difference in Risk
+    \item (b)  Cross -Generational Difference in Preferences -- Leasures, Values
+    \item (c) Difference in Beliefs
+    \begin{itemize}
+        \item Formative Years
+        \item Generation
+        \item Note: understand beliefs vs preference
+    \end{itemize}
+    \item (d) Behavioral Biases:
+    \begin{itemize}
+        \item  (a) Disposition effect 
+        \item (b) myopic
+    \end{itemize}
+\item \end{itemize}
+
+\begin{itemize}
+    \item \textbf{Preference = f(consumption (+), labor(-), Values(+) 
+    \item Difference in Belieds}
+\end{itemize}
+\begin{itemize}
+    \item \textbf{Preference under uncertain income }
+\end{itemize}
+\begin{itemize}
+    \item \textbf{undersranding: reversal in preference or in its value compoment}
+\end{itemize}
+\begin{itemize}
+    \item \textbf{H1}\textbf{: Value of Insurance against Large Income/Status uncertainty}.  Young people are less certain about their future income/class, so they favor redistribution because of risk-aversion\textbf{ (Rawls being an extrem form min-max).} and \textbf{no savings.} 
+    \item \textbf{H2}: \textbf{Preference to Leasure} Young people have different goals. They would rather live a balanced lifestyle than work long hours to get a prestigious job. This type of lifestyle--one where you can live well without working too hard and spend more time on activities outside your job--might be supported by redistribution. 
+    \item \textbf{H3 Value Shift}Young people have different values. They might be more open to new experiences/concepts, which is associated with liberal voting. They may care more/less for others' wellbeing, or the wellbeing of others within their ``group.'' They may care more/less about freedom. They are less materialistic, so they don't care about how much they earn or how much the economy will grow. etc.
+    \item \textbf{H4 Behavioral Bias  (i) Belief  formative experience}: Influenced by personal experience, the experience of their family, stories from previous generations, recent history in the U.S., or the media, young people have different economic beliefs. They have different conceptions of the ``incentive cost'' of redistribution. They believe that luck is a greater factor than hard work or that entrepreneurs will start new businesses even when their rewards are lower.
+    \item \textbf{H5 Behaviorial Bias (ii) lack of experience on redistribution cost but still experience of its benefits}: Young people haven't experienced taxes yet, so they aren't able to accurately gauge how much it will hurt to be taxed (especially after working hard to earn their money and move up in their careers). Therefore, they are more likely to support taxation of high incomes. Similarly, young people may not have had bad experiences with the government yet, so they support more liberal policies. These are both forms of irrationality. \textbf{subjective well-being derive ex-post well being positive or negative }
+    \item \textbf{H6 Belief difference - close to H3}: Young people support redistribution because they have a more favorable view of the lower class. As young people age, they get to know people who are lazy and squander their money on irresponsible purchases, which makes them less likely to support redistribution. This is related to ``incentive costs'', but it's not just the belief that welfare makes people lazy--it's the belief that these people don't deserve more money/resources, a sort of negative utility attached to their rewards.  \textbf{are people individually responsible for their povery-->Ester Dulot - Poor Economics --->}
+    \item \textbf{Other hypotheses:} 
+    \begin{itemize}
+        \item Young people are short-sighted and tend to earn less as they start their careers. So, selfishly, they'd prefer to be taxed less right now.
+        \item Male-female divergence because of perceptions about gender inequality, etc.
+        \item Young people grow up in a more prosperous world, so they have a different conception of what the ``bare minimum'' is. Someone growing up before the invention of electricity might think that it is a convenience, while someone growing up with electricity and internet connection may think these things are rights.
+        \item Young people are more responsive to new experiences because they have less other experiences to balance them against. Similar to the idea that it's an "impressionable age."
+        \item Young people have a different budget constraint. They don't have the same obligations: mortgage, saving for children's education, etc. Older people have to support this higher consumption level.
+        \item Young people are more ``idealistic'' and hopeful about how well progressive policies will work out. 
+    \end{itemize}
+\end{itemize}
+
+\section*{Core questions}
+
+    \blue{Core policy question}
+    \Qitem{ \Qq{Imagine that the government is considering raising the tax rate on incomes above \$500,000 by 10\% (from 35-37\% to 45-47\%) and decreasing the tax rate on incomes under \$75,000 by 10\% (from 12-22\% to 2-12\%). Would you support this policy?}
+    % Assume that the government's budget would be unchanged.
+        
+        \Qtab{3cm}{I would oppose strongly \Qrating{5} I would support strongly} 
+    }
+    \blue{``Control'' redistribution question}
+    \Qitem{ \Qq{Enter question here}
+    }
+    \blue{Demographics}
+    \Qitem{ \Qq{What is your age?}
+    }
+
+    
+
+\section*{Hypothesis 1 (income uncertainty)}
+\textbf{There is a experiment literature on testing for risk-aversion, loss avoidance, based on some lotteries}
+\textbf{Uncertainty about Income Brackets} to \textbf{preference for redistribution}
+\textbf{difference in risk-averion or difference in uncertainty}
+    \Qitem{ \Qq{How much do you expect to earn this year in U.S. dollars, before taxes?}
+    }
+    \Qitem{ \Qq{What do you expect your annual income to be 5 years from now?}
+    }
+    \blue{Question measuring uncertainty. I'm sure researchers have found good ways to measure uncertainty that we can look at. }
+    \Qitem{ \Qq{What is the likelihood that you will earn within \$10,000 of this amount?}
+    }
+    \Qitem{ \Qq{What do you expect your annual (\blue{household}) income to be at the peak of your career?}
+    }
+    \blue{Another way to measure uncertainty. }
+    \Qitem{ \Qq{What is the lowest you might make?}
+    }
+    \Qitem{ \Qq{What is the highest you might make?}
+    }
+    \Qitem{ \Qq{What social class do you expect to be in 20 years from now?}
+    }
+    \blue{Another way to measure uncertainty. }
+    \Qitem{ \Qq{How likely is this?}
+    }
+    \blue{Given a young age, those who already have a job may be more certain of their career/income prospects. We'd need to control for this, but could also use it as part of our experimental design.}
+    \Qitem{ \Qq{Are you currently employed?}
+    }
+    \Qitem{ \Qq{How many years of school do you expect to take from now on?}
+    }
+
+\section*{Hypothesis 2 (different values)}
+\textbf{Here we can draw on Landier-Thesmar intervention}
+
+    \blue{Haidt values:}
+    \Qitem{ \Qq{Caring for people who have suffered is an important virtue.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+
+    \Qitem{ \Qq{The world would be a better place if everybody made the same amount of money.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+
+    \Qitem{ \Qq{I believe the strength of a sports team comes from the loyalty of its members to each other.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+
+    \Qitem{ \Qq{I think obedience to parents is an important virtue.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+    \blue{Openness to new experiences:}
+
+\section*{Hypothesis 3 (different goals)}
+\textbf{there is should a way to test for preference for labor}
+    \blue{How much do they value money? (could be seen as both a value and a goal)}
+    \Qitem{ \Qq{Is it impressive to have a lot of money?}
+    }
+    \Qitem{ \Qq{Do people in the U.S. find those who have a lot of money impressive?}
+    }
+    \blue{You could shift the dollar amounts involved and the income level cutoffs for the policy question to test for how much they really care about money. But it's imperfect. It's just a survey question, not an actual vote.}
+    \Qitem{ \Qq{How important is making money to you?}
+    }
+    \Qitem{ \Qq{Do you want to get out of your current social class/income level?}
+    }
+    \Qitem{ \Qq{How much more content would you be if you made more money?}
+    }
+    \Qitem{ \Qq{Economic growth will make us happier.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} 
+    }
+    \Qitem{ \Qq{How important is [blank] to you?} 
+    }
+    \Qitem{ \Qq{How many hours a week are you willing to work to...?} 
+    }
+    \blue{For the older people:}
+    \Qitem{ \Qq{When you were younger, how important was [blank] to you?} 
+    }
+    
+
+\section*{Hypothesis 4 (economic beliefs)}
+\textbf{here we can use the vignette approach - are poor people responsible for being poor and see how people form different ages respond to vignette}
+
+    \blue{Getting at a person's ``imperfect learning'' through their lived experience.}
+    \Qitem{ \Qq{Did your parents ``move up'' in their income level \blue{ or social class} over their lifetime? \blue{Did they improve their economic position? How much?}}
+    }
+    \Qitem{ \Qq{What is your parent or guardians' current combined annual income?}
+    }
+    \Qitem{ \Qq{What social class were your parents when they were children?}
+    }
+    \blue{Economic belief questions (about our current system and/or general economic concepts such as competition and innovation. Will need to phrase the ``value of hard work'' questions carefully.}
+    \Qitem{ \Qq{The profit motive generates products of high quality.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+    \blue{It will be interesting to contrast how much they think other people can move up and how much they think they themselves can move up (the expected future income question).}
+    \Qitem{ \Qq{Most people who want to get ahead can make it if they are willing to work hard.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} 
+    }
+
+    \Qitem{ \Qq{Under a fair economic system, people with higher abilities would earn higher salaries.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} 
+    }
+    \Qitem{ \Qq{Competition is good. It stimulates people to work hard and develop new ideas.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+    \Qitem{ \Qq{Wealth can grow so there's enough for everyone.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} 
+    }
+    \blue{In relation to the ``core policy question'':}
+    \Qitem{ \Qq{Would this policy reduce or increase the growth of the U.S. economy?}
+        \begin{Qlist}
+        \item The economy would grow much slower.
+        \item The economy would grow moderately slower.
+        \item There would be little effect.
+        \item The economy would grow moderately faster.
+        \item The economy would grow much faster.
+        \end{Qlist}
+    }
+    \Qitem{ \Qq{Would this policy reduce or increase entrepreneurship?}
+    
+        \Qtab{3cm}{Reduce dramatically \Qrating{5} Increase dramatically} 
+    }
+    \blue{How do people answer differently on the ``control question''? We would expect the tax question to be motivated by efficiency considerations, but the control question may or may not have to do with efficiency (we could either tell the participants to distribute the rewards after the task, in which case it's more about fairness, or set an incentive scheme before the task, in which case it's about efficiency/motivation).}
+    
+
+\section*{Hypothesis 5 (inexperience with government/taxation)}
+
+    \blue{Measuring general government sentiment}
+    \Qitem{ \Qq{It's often beneficial when the government steps in to solve problems.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} 
+    }
+    \blue{How to measure young peoples' inability to perceive how much taxes hurt? In the ``control question'', we would expect the young-old gap to narrow if lived experience with taxes is a huge factor. We could also play around with the wording/logistics of the policy.}
+        
+
+\section*{Hypothesis 6 (lack of prejudice)}
+
+    \blue{There may be some way to test for negative views without directly mentioning ``poor people.'' Otherwise, there may be a social desirability bias.}
+    \Qitem{ \Qq{Do poor people deserve less money?}
+    }
+    \Qitem{ \Qq{Are poorer people generally lazier?}
+    }
+    \blue{We could introduce a ``control question'' that has nothing to do with taxes and social class, but does have to do with redistribution. Maybe something about dividing rewards in a hypothetical group project. If older people favor redistribution more when it has to do with income/taxes, then it may be a sign that they're more prejudiced (or it could point to some of the other hypotheses).}
+
+    \blue{It may be very possible to move up in society, but maybe there are some people that don't.}
+    \Qitem{ \Qq{What percentage of people currently on welfare are not trying to get out of their current situation?}
+    }
+    \Qitem{ \Qq{Is it morally wrong to live off welfare?}
+    }
+
+\section*{Other questions}
+
+\textbf{How do we test for the role of experience maybe the same game played by people from different generations }
+    \blue{Would be interesting to see what they cite as their reason vs. what the experimental design says their true reason is.}
+    \Qitem{ \Qq{What is the main reason you support/oppose this tax policy?}
+        \begin{Qlist}
+            \item It would save/lose me money.
+            \item It would be good/bad for the economy.
+            \item It is fair/unfair.
+            \item It helps people in need.
+        \end{Qlist}
+        }
+
+
+\end{document}

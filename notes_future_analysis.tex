@@ -1,0 +1,182 @@
+\documentclass{article}
+\usepackage{graphicx} 
+
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{5pt}
+
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{centernot}
+\usepackage{nicefrac}
+\usepackage{bm}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[round]{natbib} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumerate}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{subcaption}
+
+\setlist[itemize]{label=\textendash}
+
+\newenvironment{answer}{\par\vspace{0.8em}\textbf{A:}}{\par}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\fa}{\text{ for all }} 
+\newcommand{\ex}{\text{ there exists }}
+\newcommand{\st}{\text{ such that }}
+\newcommand{\for}{\text{ for }}
+\newcommand{\andt}{\text{ and }}
+\newcommand{\ort}{\text{ or }}
+\newcommand{\ift}{\text{ if }}
+\newcommand{\where}{\text{ where }}
+\newcommand{\but}{\text{ but }}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\rat}{\mathbb{Q}}
+\newcommand{\com}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\corr}{\rightrightarrows}
+\newcommand{\ul}{\underline}
+\newcommand{\bft}{\textbf}
+\newcommand{\itt}{\textit}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\operatorname{P}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Unif}{\operatorname{Unif}}
+\newcommand{\Bias}{\operatorname{Bias}}
+\newcommand{\N}{\operatorname{N}}
+\newcommand{\MSE}{\operatorname{MSE}}
+\newcommand{\iffs}{\Leftrightarrow}
+\newcommand{\prefeq}{\trianglerighteq}
+\newcommand{\pref}{\triangleright}
+\newcommand{\indiff}{\mathrel{\triangleright\triangleleft}}
+
+\title{Future analysis}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Change in generational gaps}
+
+% \section*{Future analysis}
+
+\blue{(running list of tests that could be done)}
+\subsection*{Higher-priority}
+
+\begin{itemize}
+    \item Choose the best (longest-running) longitudinal questions to illustrate the age gradient. Graphs for both (i) cohort over time and (ii) cross-sections over time. Do a clean/simple APC analysis.
+    \item Confirm whether beliefs about mobility, zero-sum game, incentive effects of taxation, etc. move over the life-cycle in longitudinal data. We already have suggestive evidence from the cross-sectional gradients in different years, but plots tracking each cohort as they age could be useful.  
+    \item Confirm first-order importance of zero-sum and incentive belief mechanisms in Stantcheva, Alesina, etc. online survey data. 
+    \item Decompose the age gradient. We know that the age coefficient disappears after including our explanatory variables, and that predicting redistributive preferences using our explanatory variables replicates most of the age gradient. But how much of the gradient is explained by the insurance motive? How much by zero-sum or mobility beliefs changing over the life cycle?
+    \item Re-read literature for core findings so far about beliefs and age. To position Prolific survey and the broader project.
+\end{itemize}
+
+\subsection*{Probably useful}
+\begin{itemize}
+    \item Robustness of core findings. Alternative regressions.
+    \begin{itemize}
+        \item Rule out simultaneity/omitted variable bias. Some form of pessimism (about one's own position, about the system) could be an confounding variable. The questions about alternative policies could be useful.
+    \end{itemize}
+    \item Explore the belief-updating mechanism. If zero-sum beliefs and mobility beliefs move over the life cycle, why?
+    \begin{itemize}
+        \item Test whether beliefs move following transitional periods. Entering/exiting school, career stabilization, homeownership, moving, children.
+        \item Self-reported belief updating questions. Which direction they moved and why. 
+        \item Lived experiences with the system. hardworkmoveup is an example.  
+    \end{itemize}
+    \item Examine whether the age gradient is more pronounced or has changed more for specific groups. Could bucket by education, gender, psychological traits, birth location.
+    \item Explore interactions. Can we get higher R-squared? Do mobility or other variables add to explanatory power if we interact them with zero-sum or incentives? 
+    \item Compare the role of different types of risk. We differentiated short-term (job loss, financial safety net), long-term (career uncertainty, income variance), and existential\slash economy-wide (automation, housing, climate). But there could be other ways to define and compare types of risk.
+    \item Can we say anything about the well-off young? While being confident in their career prospects, many exhibit critical beliefs towards free markets and support greater redistribution.
+    \item (Matt's idea) Look at the upper tail. We have findings about the lower-tail of future earnings, but do beliefs about extreme positive outcomes impact redistributive preferences in an interesting way?
+\end{itemize}
+\subsection*{Less-urgent}
+\begin{itemize}
+    \item Test competition hypothesis. Do the young who believe that the game is mobile but zero-sum favor redistribution? Conditioning on preference for leisure or low materialism, is this connection stronger? \blue{It looks like materialism (satisfied with basics, salary not important) does not affect the relationship between beliefs and policy preferences for old people, but among the young, the materialistic group has a \textit{stronger} (negative) relationship between beliefs in mobility and preferences for redistribution.}
+    \item Revisit the existential uncertainty (e.g., climaterisk) and myopia hypotheses, which are often significant in the larger ologit regressions.
+    \item In terms of framing, are people choosing redistribution as the optimal strategy in a given game (minmax), or to set up the game they want themselves and others to play?
+    % \item How to leverage the middle/poor variation in the tax proposal?
+    % \item Could a larger sample size get us more-significant results? The larger-N Stantcheva papers seem to suggest so.
+\end{itemize}
+
+\subsection*{Robustness to check}
+
+check the unsure variable coding -1
+On the method itself:
+
+Proportional-odds assumption is the real weak point of ologit — it assumes each predictor's effect is constant across all cutpoints. With 5–7 categories that's a strong assumption. Worth testing (brant, or gologit2, autofit). If it fails, gologit2 / partial-proportional-odds is the natural upgrade.
+Interpretation: for an ordinal outcome, raw odds ratios are only as meaningful as the PO assumption. margins (predicted probabilities / average marginal effects) is usually clearer and what most readers want.
+Robustness: economists very often report OLS/LPM on the ordinal outcome alongside — coefficients are directly interpretable and results are usually similar in sign/significance. Ordered probit is essentially interchangeable with ologit; no reason to switch. Also consider vce(robust).
+So: keep ordered logit for progressivity, proposal, and the (recoded) zerosum* outcomes — it's the right family — but treat shouldconcern as logit, fix the −1 code, test proportional odds, and add an OLS column + margins for interpretation.
+
+
+
+\subsection*{Prolific 2nd wave}
+
+\blue{(running list of questions that could be useful in a second wave)}
+\begin{itemize}
+    \item Precise measurement of \textbf{generosity}. Important as a control for redistributive preferences. Separate it from universalism. Scale question with income if numeric values. 
+    \item Decomposition of \textbf{zero-sum wealth/competition}. Fixed-pie: competition does/doesn't grow the economy. Scarce positions/resources: the economy may grow, but moving up takes another person's spot. Meritocracy/deservingness: those who gain worked harder or provided more value or took more risk.
+    \begin{itemize}
+        \item Distinguish between zero-sum (how the income distribution changes in response to someone's personal effort or gains) and deservingness (whether those who benefit from an income draw or program are seen as responsible for their situation).
+    \end{itemize}
+    \item An alternative \textbf{zero-sum race/disadvantaged} question (more about minorities or poorer groups or forced equity) because of DEI stigma and attachment to gender, sexual identity, etc.
+    \item More-comprehensive questions about \textbf{racism}: beliefs about x group vs y group, experiences of discrimination. Very important in Chinoy et al. 2026.
+    \item Decomposition of \textbf{mobility beliefs}. Absolute vs. relative mobility.  Personal mobility: I or people like me can/can't move up. Structural mobility: origins do/don't constrain outcomes. Meritocratic mobility: moving up is/isn't based on talent or providing value.
+    \item Deeper questions about whether/\textbf{why one's beliefs changed} over time. Asking about zero-sum, incentive, and mobility beliefs, not just redistributive preferences. Based on our final proposed mechanisms.
+    \item Deeper/more-precise questions about \textbf{financial expectations} and income/wealth variance. Want to be absolutely sure about this one since some other papers and longitudinal surveys find financial situation significant when measured certain ways.
+    \item Separate \textbf{myopia} (personality trait) from need for money now (financial situation).
+    \item Priming or an \textbf{information treatment}. Could try to generate income uncertainty, or shift beliefs about the economic game/zero-sum.
+    \item Ask about \textbf{policy variations}. To single out preference for ex-ante insurance vs ex-post redistribution. 
+    \item Demographics/values we are missing that are sometimes significant in longitudinal surveys: \textbf{Religiosity} (importance in life, attendance), \textbf{social class} (self-reported, important in GSS Gelbach decomposition), opinions on \textbf{immigration}, trust/\textbf{confidence in government}, generalized \textbf{social trust}, political/\textbf{civic involvement}, health \textbf{insurance coverage}.
+    \item \textbf{Remove policy from question stem} as much as possible, especially for gapmotivates and taxdemotivates.
+    \item \textbf{Open-ended}/free-response questions? Easier to extract insights from LLMs.
+    \item \textbf{Effectiveness of government response:} capability/capacity, integrity, state capture by rich. 
+    \item \textbf{Why someone becomes wealthy}:  (i) effort, investment, risk-taking, innovation (ii) structural advantages, rich family (iii) luck. \textbf{Structural advantages} questions seem highly significant in other surveys, especially if concrete examples are mentioned. Run a battery of advantages: education, race, wealth, connections, etc.
+    \item \textbf{What income should track}: (i) effort, time, responsibility, seniority (ii) skills, intelligence, credentials, investment (iii) performance.
+    \item Separate individual-level \textbf{incentive effects} / tax elasticity of effort vs. aggregate incentive effects of taxation and positive-sumness of inequality. The distinction seems to matter in Stantcheva 2021.
+    \item Ask about \textbf{self-reported social class}, not just income bracket.
+    \item Ask about \textbf{tax incidence}: who, in the end, benefits from redistributive taxes or higher taxes?
+    \item A \textbf{post-materialism} question. Important in WVS. Can be used to test whether climaterisk is capturing a latent worldview/ideology (prioritizing goals other than economic growth) or simply a marker of one's coalition/group. 
+    \item Beliefs about  \textbf{why people are poor}, not just why/how they get rich. Are people poor because they are lazy or unlucky?
+    \item Ask about \textbf{homeownership} more directly. 
+    \item Ask more about \textbf{realized} financial struggles, not just expectations. The former tend to predict policy preferences more.
+    \item Antagonism/\textbf{conflict between rich and poor}. Highly important predictor in GSS. 
+\end{itemize}
+
+\section*{Data notes}
+
+\subsection*{Currently-available sources}
+
+\begin{itemize}
+    \item Other online sureys: Chinoy et al. 2026, Stantecheva 2021, Alesina et al. 2018, etc.
+    \item Longitudinal: ANES, GSS, WVS, UAS
+    \item Pilot on USC students
+    \item Microdata: California propositions
+\end{itemize}
+
+\subsection*{Our advantages}
+
+\begin{itemize}
+    \item We observe values/beliefs/uncertainty/circumstances of and individual all in one survey, while others focus on a specific mechanism, meaning we're well positioned to compare relative importance of mechanisms (even if we reject some of our novel ones). 
+    \item We have questions about alternative policies, allowing us to disentangle motives for supporting redistribution (e.g., ex-ante insurance versus ex-post redistribution).
+    \item We have many questions which are rare/nonexistent in other surveys: income expectations/uncertainty, zerosumdei, self-reported change in beliefs, time discounting, our policy proposal, existential ai/climate/housing/health risk.
+    \item We have a large sample in the 18-29 range. Most surveys have low sample size in the 18-23 range. 
+    \item Our survey is recent, capturing what beliefs look like in 2026.
+    \item Other survey papers tend to under-emphasize or not include incentive-effects questions. More common in papers with lab experiments.
+    \item Importance of zero-sum beliefs is relatively new and other papers do not break these views into their components like we do. Nor do they explore why they may shift between cohorts or over the life cycle. 
+\end{itemize}
+
+
+
+\end{document}

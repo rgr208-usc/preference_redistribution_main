@@ -1,0 +1,43 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Proposal (ologit regression)-- Odds Ratios}
+\begin{tabular}{l*{3}{c}}
+\toprule
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{All}&\multicolumn{1}{c}{Young}&\multicolumn{1}{c}{Old}\\
+\midrule
+proposal    &                     &                     &                     \\
+zerosumrich &       1.219\sym{***}&       1.209\sym{***}&       1.209\sym{***}\\
+            &     (0.042)         &     (0.061)         &     (0.059)         \\
+\addlinespace
+zerosumceo  &       1.289\sym{***}&       1.291\sym{***}&       1.301\sym{***}\\
+            &     (0.050)         &     (0.069)         &     (0.073)         \\
+\addlinespace
+zerosumdei  &       0.852\sym{***}&       0.885\sym{***}&       0.828\sym{***}\\
+            &     (0.024)         &     (0.037)         &     (0.033)         \\
+\addlinespace
+taxdemotivates&       0.607\sym{***}&       0.603\sym{***}&       0.600\sym{***}\\
+            &     (0.023)         &     (0.032)         &     (0.032)         \\
+\addlinespace
+stranger100 &       1.030\sym{**} &       1.049\sym{**} &       1.017         \\
+            &     (0.014)         &     (0.021)         &     (0.019)         \\
+\addlinespace
+riskclimate &       1.107\sym{**} &       1.123\sym{*}  &       1.059         \\
+            &     (0.052)         &     (0.072)         &     (0.075)         \\
+\addlinespace
+eduwillpay  &       1.077\sym{**} &       1.082         &       1.046         \\
+            &     (0.040)         &     (0.056)         &     (0.057)         \\
+\addlinespace
+density     &       1.124\sym{**} &       1.033         &       1.212\sym{**} \\
+            &     (0.065)         &     (0.085)         &     (0.100)         \\
+\addlinespace
+male        &       1.310\sym{***}&       1.374\sym{***}&       1.231\sym{*}  \\
+            &     (0.102)         &     (0.154)         &     (0.135)         \\
+\midrule
+Observations&        2250         &        1118         &        1132         \\
+Pseudo R²  &      0.0779         &      0.0727         &      0.0828         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Exponentiated coefficients; Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

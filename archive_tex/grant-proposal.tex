@@ -1,0 +1,84 @@
+\documentclass[11pt, headsepline]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{parskip}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=Mahogany,urlcolor=blue]{hyperref}
+\usepackage{booktabs, cellspace, hhline, multirow, nicematrix}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{natbib}
+
+\usepackage[usenames, dvipsnames]{xcolor}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\def\labelitemi{--}
+
+\title{(Why) Do Young People Support Redistribution?}
+\author{Niclas Carlson (NY Fed), Matthew E. Kahn (USC) and Romain Rancière (USC)}
+
+\begin{document}
+
+\maketitle
+
+% \section*{\centering \LARGE (Why) Do Young People Support Redistribution?}
+% \section*{\centering \normalfont Niclas Carlson (NY Fed)  Matt Kahn (USC) Romain Ranciere (USC)}
+
+
+This survey-based project aims to measure and understand preferences for redistribution, with a special focus on young people's preferences. It brings together two USC faculty members and a former undergraduate student working at the NY FRB.
+
+Popular culture tells us that, within each generation, people favor redistribution more when they are young than old, a claim backed up by longitudinal surveys such as the World Values Survey (WVS), General Social Survey (GSS), and American National Election Studies (ANES). These same surveys find that, in the U.S., newer generations are more supportive of redistribution that preceding generations when they were the same age. Figure 1 combines information from the three surveys to document the extent of a generational gap, measured over the last 20 years. Figure 1a. from the WWS documents that more recent birth cohorts are more inclined to believe that success stems from luck and connections rather than from individual effort. Figure 1b. from the ANES shows that each successive generation is on average more supporting of public rather than private health insurance. Figure 1c. and 1d. from the GSS indicate that today’s young are expecting the government to play a larger role in reducing income inequality, and in guaranteeing jobs and a standard of living. These graphs highlight that the Millennial generation (those born between 1981 and 1998) on average support redistribution more than previous generations when they were the same age. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{images/longitudinal trends.png}
+    \caption{Survey Evidence on Preferences for Redistribution }
+    \label{fig:enter-label}
+\end{figure}
+
+As a first pass to understand this trend, we surveyed 141 undergraduates at USC majoring in economics. The survey focused on questions relating to capitalism rather than strictly on redistribution. Why might a student reject or accept capitalism? What do they see as its pros and cons? What are their core concerns about the prevailing economic system? We found a balanced distribution of opinions, which led us to question how much economic self-interest matters in forming these opinions. One might expect that private school students in an economics program, with high-paying careers in their future, would see capitalism in a favorable light; the system has treated them well up until now, and keeping it in place might benefit them in the future. We find that a significant share of students, while being confident in their career prospects, exhibit critical beliefs towards free markets, and support greater redistribution and an increasing role of the state in the economy.
+
+In this project, we narrow our question and make it more easily testable: How much and why do young people in the U.S. support redistribution of income?  We will answer this question by running an online survey of 2,000 respondents recruited through the platform Prolific, with a questionnaire developed in Qualtrics. 1,000 of the respondents will be a balanced panel of U.S. citizens above the age of 18 (the benchmark survey). The other 1,000 will be a balanced panel of U.S. citizens between the ages of 18 and 25 (the young person-focused survey). 
+
+Some commonly proposed dichotomies, such as as the distinction between self-serving (due to socio-economic status)  vs. genuine preferences for redistribution \citep{landier2008investigating}, or a zero-sum game vs. non zero-sum game mentality, might be too stark to characterize the dispersion of preferences for redistribution.  Young people face significant uncertainty about their future income path, have limited experience with taxation, and have a unique set of incentives related to work and saving.
+
+The strategy of the survey is to test a number of hypotheses about young people's preferences for redistribution. One set of hypotheses is \textit{forward-looking self-interest}, including (i) \textit{insurance motives}: do young people, who are more uncertain about their future income, want to insure themselves with redistribution?, and (ii) \textit{life cycle consumption smoothing motives}: are young people expecting redistribution to help them smooth consumption, including housing consumption, beyond what imperfect capital markets can achieve? This relates to the current policy debate on helping young people enter the housing property ladder. The survey will also explore whether young people have different beliefs about the \textit{incentive effects} of redistributive taxation on incentives to work and to save, and finally, whether they have different preferences for \textit{materialistic} vs. non-materialistic goals.
+
+The dual survey structure will enable us to measure systematic deviation of younger Americans' preferences from the general population and to explain those differences by testing the hypotheses described above. 
+
+We also hope to gain additional insight on whether the redistributive preferences of young people in the current generation are significantly different from those of previous generations at the same age by combining this survey results with previous existing surveys described in Figure 1. We are also currently working on adding a module at the end of the survey on self-reported evolution of beliefs.
+
+The preliminary state of the questionnaire  is presented below. It starts by asking respondents for opinions (on preferred policies, how the world works, or personal decisions in hypothetical scenarios), then asks for factual and demographic information.
+
+\section*{Cost estimate}
+
+The questionnaire will be built in Qualtrics, an online survey platform, and distributed through Prolific, a platform which recruits online survey participants. While Qualtrics is free through the University of Southern California, we will have to pay the Prolific participants and a platform fee. For 2,000 participants, nationally representative of the U.S., paying \$18/hour for a 15 minute survey, the cost breakdown is as follows:
+\begin{center}
+\begin{tabular}{l r} 
+    Participant payments & \$9,000 \\
+    Platform fees & \$3,000 \\
+    \hline Total & \$12,000
+\end{tabular}
+\end{center}
+While 1,000 of the participants will only be between ages 18 and 25, adding this prescreen in Prolific comes at no extra cost.
+
+\section*{Related literature}
+
+Theoretical papers by Piketty aiming to explain the existence of different inequality regimes (different levels of redistribution) emphasize the importance of lived experience moving up or down the income ladder \citep{piketty1995social} and a society's beliefs about the characteristics of those with high-paying jobs \citep{piketty1998self}. %Theoretical work by \cite{stark2014reconciling} ... 
+\cite{giuliano2024aggregate} find empirically that lived experience matters: those who grew up in a recession tend to become more conservative. \cite{landier2008investigating} observe that citizens slowly learn from their home country's experiences with failed or successful economic systems. They also find that those with higher financial wealth tend to support private profits, although wealth explains little of the dispersion in opinions. These papers touch on earlier theories by French socioligists Pierre Bourdieu and Raymond Boudon \citep{piketty2000theories}. Bourdieu believed that individuals from lower-class backgrounds are discouraged by the “dominant discourse,” and therefore don’t make mobility-enhancing investments---similar to the idea of ``statistical discrimination.'' Boudon, on the other hand, believed that lower class families transmit less ambition and taste for economic success.
+
+A growing literature has investigated the role of personal values. \cite{enke2020moral} finds that, controlling for party and ideology, U.S. voters with communal (or universalist) values tend to vote for communal (or universalist) politicians. Much of this literature is supported by online surveys. \cite{landier2022neoliberal} surveyed participants in the U.S., France, and Germany to find that when there is a tradeoff between an economically efficient solution and a pro-social objective, those with individualist values tend to favor the economically efficient solution. \cite{davidai2019politics} dispel the idea that ``zero-sum thinkers'' lean one way by finding that liberals think of economic inequality as a zero-sum game, while conservatives think of social inequality as a zero-sum game. \cite{stantcheva2021understanding} finds that showing informational videos on efficiency effects of taxes (relating to self-interest concerns) does not change preferences, but videos on redistributive effects of taxes (relating to fairness concerns) do change preferences. Similar information treatments find modest policy stance changes after participants are educated on the level US income inequality, the link between top income tax rates and economic growth \citep{kuziemko2015elastic}, and the extent of income mobility in the U.S. today \citep{alesina2018intergenerational}.
+
+% \cite{alesina2018intergenerational} find that liberals in the U.S. are more pessimistic about income mobility, conservatives greatly overestimate income mobility, and that when educated about the lack of mobility in the U.S. today, liberals and moderates increase their support for education and healthcare, but not welfare and progressive taxes. 
+
+In-group favoritism seems to play a large role; when the minority group is more prominent, or believed to be poorer and thus use the social safety net more, support for redistribution by the majority group falls significantly \citep{fischbacher2023identity, alesina2023immigration}. 
+
+Historically, the World Political Cleavages and Inequality Database \citep{gethin2022political} finds a worldwide gender reversal in political preferences: women in many developed countries, including the U.S., have become much more liberal in recent decades, while men have not. We aim to understand recent trends, but also to settle long-standing questions about why people become more conservative as they age.
+
+Our survey design is inspired heavily by \cite{stantcheva2023run}, which sets forth best practices for online surveys. While the literature has recently focused on the importance of values, finding little evidence to support the self-interest hypothesis in the population as a whole, our project focuses on young peoples' political beliefs and understanding why our beliefs change as we age. We see the project as a first step towards understanding the youth's political beliefs, focusing on economic self-interest; future projects can analyze the role of values and other preferences.
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}

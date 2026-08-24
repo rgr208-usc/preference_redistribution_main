@@ -1,0 +1,43 @@
+\documentclass[landscape]{article}
+\usepackage[a4paper,landscape,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{pgffor}
+\usepackage{caption} % Better caption formatting
+
+\begin{document}
+
+\foreach \var in {
+    santcheva2005.png,
+    gov_outcome_sebar.png,
+    gov_opportunity_sebar.png,
+    ethnic_0s_2statement_sebar.png,
+    trade_0s_2statement_sebar.png,
+    citizen_0s_2statement_sebar.png,
+    wealth_0s_2statement_sebar.png,
+    wvs_0s_sebar.png,
+    uni_health_sebar.png,
+    universalism_org_close_sebar.png,
+    universalism_org_far_sebar.png,
+    universalism_us_far_sebar.png,
+    universalism_us_close_sebar.png,
+    santcheva2001.png,
+    progressive_tax_important.png,
+    tax_high_to_support_low.png,
+    tax_to_support_jobless.png,
+    tax_to_support_poor.png,
+    high_tax_work_less.png,
+    high_tax_less_entrep.png,
+    inequality_serious_issue.png,
+    gov_should_reduc_ineq.png
+}{
+
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.9\textwidth]{\var}
+        \caption*{\texttt{\var}} % no "Figure x" label, monospaced filename
+    \end{figure}
+    \clearpage
+}
+
+\end{document}
+

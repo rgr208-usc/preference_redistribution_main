@@ -1,0 +1,758 @@
+\documentclass[11pt, headsepline]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{parskip}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=Mahogany,urlcolor=blue]{hyperref}
+\usepackage{booktabs, cellspace, hhline, multirow, nicematrix}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{natbib}
+
+\usepackage[usenames, dvipsnames]{xcolor}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\def\labelitemi{--}
+
+\begin{document}
+
+\section*{\centering \LARGE \normalfont Codebook}
+
+\textbf{prolificid}: Prolific respondent identifier.
+
+[string]
+
+\textbf{timestart}: Date and time that survey was opened.
+
+[string]
+
+\textbf{duration}: Time spent on survey (in seconds).
+
+[number]
+
+\textbf{responded}: Date and time that survey was opened.
+
+[string]
+
+\textbf{flag}: Respondent failed signature and/or reCAPTCHA authenticity checks.
+
+[indicator]
+
+\textbf{likelybot}: Respondent is likely a bot (did not respond to a follow-up message after failing an authenticity check.)
+
+[indicator]
+
+\textbf{badsig}: Respondent failed signature box authenticity check.
+
+[indicator]
+
+\textbf{recaptcha}: Qualtrics reCAPTCHA score. <0.5 is flagged in a typical study.
+
+[indicator]
+
+\textbf{returned}: Participant voluntarily returned their responses in Prolific after finishing the survey.
+
+[indicator]
+
+\textbf{age}: What is your age?
+
+[number]
+
+\textbf{shouldconcern}: Should the government concern itself with reducing income differences between rich and poor people?
+
+1 = The government should concern itself with this. \\
+0 = The government should not concern itself with this. \\
+
+\textbf{progressivity}: Should the federal income tax be more progressive than it is now (redistributing more income from the rich to the poor)?
+
+5 = Much more progressive (lower earners should pay a lot less than they do now and higher earners should pay a lot much more than they do now) \\
+4 = Somewhat more progressive \\
+3 = No change \\
+2 = Somewhat less progressive \\
+1 = Much less progressive (everyone should be taxed at about the same rate)
+
+\textbf{early} and \textbf{late} record whether the progressivity question was displayed at the beginning or end of the survey.
+
+\textbf{viewchange}: How have your views about redistribution of income (from the rich to the poor) changed over time?
+
+5 = I now support redistribution much more than in the past \\
+4 = I now support redistribution slightly more than in the past \\
+3 = No change \\
+2 = I now support redistribution slightly less than in the past \\
+1 = I now support redistribution much less than in the past \\
+0 = Other: [text box] 
+
+\textbf{viewbetter\_tax, viewbetter\_econ, viewbetter\_fair, viewbetter\_oth}: Why did your views on redistribution improve?
+
+Indicators for ``Taxes affect me less now,'' ``I think the policy is better for the economy now,'' and ``I think the policy is more fair now'', respectively. ``Other'' is in text.
+
+\textbf{viewworse\_tax, viewworse\_econ, viewworse\_fair, viewworse\_oth}: Why did your views on redistribution worsen?
+
+Indicators for ``Taxes affect me more now,'' ``I think the policy is worse for the economy now,'' and ``I think the policy is less fair now'', respectively. ``Other'' is in text.
+
+% \textbf{viewbetter\_tax}: Why did your views on redistribution improve?
+
+% 1 = Taxes affect me less now \\
+% 0 = Option not selected
+
+% \textbf{viewbetter\_econ}
+
+% 1 = I think the policy is better for the economy now \\
+% 0 = Option not selected
+
+% \textbf{viewbetter\_fair}
+
+% 1 = I think the policy is more fair now \\
+% 0 = Option not selected
+
+% \textbf{viewbetter\_oth}
+
+% [text]
+
+% \textbf{viewworse\_tax}: Why did your views on redistribution worsen?
+
+% 1 = Taxes affect me more now \\
+% 0 = Option not selected
+
+
+% \textbf{viewworse\_econ}:
+
+% 1 = I think the policy is worse for the economy now \\
+% 0 = Option not selected
+
+% \textbf{viewworse\_fair}:
+
+% 1 = I think the policy is less fair now \\
+% 0 = Option not selected
+
+% \textbf{viewworse\_oth}:
+
+% [text]
+
+\textbf{proposal}: Imagine the government is considering reducing federal income taxes for lower earners and raising federal income taxes for higher earners. There will be no change in total government spending, because the increased tax payments by the higher earners offset the reduced tax payments by the lower earners.
+
+The proposed policy is pictured in gray in the figure below. The percentages shown are effective personal income tax rates, which represent what the average person pays after deductions, exemptions and credits. The policy only involves federal income taxes, so the percentages shown in the figure do not include taxes for medicare and social security, or state/local taxes.
+
+[One of 3 proposals is randomly displayed, tracked by the indicators \textbf{poor}, \textbf{middle}, and \textbf{both}: one benefiting the poorest, one benefiting the middle class, or one benefiting both the poor and middle class.]
+
+Would you support or reject the proposed change?
+
+7 = Support strongly \\
+6 = Support moderately \\
+5 = Support slightly \\
+4 = Indifferent \\
+3 = Reject slightly \\
+2 = Reject moderately \\
+1 = Reject strongly
+
+\textbf{taxdemotivates}: If taxes on high incomes are increased and taxes on low incomes are decreased, people will not work as hard in their jobs.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Neutral \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{gapmotivates}: A large income gap is needed to motivate entrepreneurs to start businesses and innovate.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Neutral \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{fundedu}: To support lower-income and middle-income Americans, the government should focus on improving education quality and access.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Indifferent \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{protecttrade}: To support lower-income and middle-income Americans, the government should focus on protecting domestic jobs from international competition, for example, through tariffs.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Indifferent \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{cuttaxes}: To support lower-income and middle-income Americans, the government should focus on cutting taxes by reducing government services.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Indifferent \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{univhealth}: To support lower-income and middle-income Americans, the government should introduce publicly funded universal health insurance for all Americans (with the possibility to still purchase extra private insurance).
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Indifferent \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{wealthtax}: To support lower-income and middle-income Americans, the government should introduce a federal wealth tax on high-wealth individuals.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Indifferent \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{zerosumrich}: People usually get rich at the expense of others rather than by creating value for others.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Neutral \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{zerosumceo}: In recent decades, large gains in CEO and executive salaries have been at the expense of the salaries of average workers.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Neutral \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{zerosumwomen}: In recent decades, women’s wage gains have been at the expense of men’s wages.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Neutral \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{zerosumdei}: Diversity, equity, and inclusion (DEI) initiatives create opportunities for some at the expense of others.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Neutral \\
+2 = Disagree somewhat \\
+1 = Disagree strongly \\
+-1 = Unsure
+
+\textbf{moveup20}: Consider a child coming from the poorest 20\% of families in the U.S. today. They are very determined and work hard in school, and later in life, they will work hard at their career. What do you believe is the chance that they make it into the richest 20\% of families/individuals when they are older?
+
+5 = Almost guaranteed (80-100\%) \\
+4 = Likely (60-80\%) \\
+3 = Even chance (40-60\%) \\
+2 = Unlikely (20-40\%) \\
+1 = Almost no chance (0-20\%) \\
+-1 = Unsure
+
+\textbf{moveup50}: What do you believe is the chance that they make it into the richest 50\% of families/individuals when they are older?
+
+5 = Almost guaranteed (80-100\%) \\
+4 = Likely (60-80\%) \\
+3 = Even chance (40-60\%) \\
+2 = Unlikely (20-40\%) \\
+1 = Almost no chance (0-20\%) \\
+-1 = Unsure
+
+\textbf{moveupnow}: Is it harder or easier to move up in the U.S. now than when your parents were growing up (in terms of income/wealth)?
+
+5 = Much easier now \\
+4 = Somewhat easier now \\
+3 = No change \\
+2 = Somewhat harder now \\
+1 = Much harder now \\
+-1 = Unsure
+
+\textbf{workhaspaid}: Thinking about your past achievements, do you believe that your hard work in life has paid off or not?
+
+3 = It has paid off a lot \\
+2 = It has paid off somewhat \\
+1 = It has not paid off much \\
+-1 = Unsure
+
+\textbf{workwillpay}:
+
+3 = It will pay off a lot \\
+2 = It will pay off somewhat \\
+1 = It will not pay off much \\
+-1 = Unsure 
+
+\textbf{eduwillpay}: Do you believe your education will pay off in terms of economic opportunity?
+
+3 = It will pay off a lot \\
+2 = It will pay off somewhat \\
+1 = It will not pay off much \\
+-1 = Unsure 
+
+\textbf{compmoth}: When your mother (or first caretaker) was growing up, how did her (or their) family income compare to other American families?
+
+5 = Far above average \\ 
+4 = Above average \\ 
+3 = Average \\
+2 = Below average \\
+1 = Far below average \\
+-1 = Unsure / Not applicable
+
+\textbf{compfath}: When your father (or second caretaker) was growing up, how did his (or their) family income compare to other American families?
+
+5 = Far above average \\ 
+4 = Above average \\ 
+3 = Average \\
+2 = Below average \\
+1 = Far below average \\
+-1 = Unsure / Not applicable
+
+\textbf{compfam}: When you were growing up, how did your family income compare to other American families?
+
+5 = Far above average \\ 
+4 = Above average \\ 
+3 = Average \\
+2 = Below average \\
+1 = Far below average \\
+-1 = Unsure
+
+\textbf{compper}: Right now, how does your personal income compare with other Americans your age?
+
+5 = Far above average \\ 
+4 = Above average \\ 
+3 = Average \\
+2 = Below average \\
+1 = Far below average \\
+-1 = Unsure
+
+\textbf{nohh}: Are you the only person in your household or the only person earning income in your household?
+
+1 = Yes \\
+0 = No, someone else also earns income
+
+\textbf{hhin10}: In 10 years, do you expect that more than one person in your household will be earning income?
+
+1 = Yes, more than one person \\
+0 = No, just myself
+
+\textbf{pinc}: What was your total personal income (before taxes) last year (2024)?
+
+[number]
+
+\textbf{pinc10est}: What do you expect your annual personal income (before taxes) to be 10 years from now?
+
+[number]
+
+\textbf{pinc10cert}: How certain are you that your personal income will be close to this number?
+
+3 = Very certain \\
+2 = Somewhat certain \\
+1 = Not very certain
+
+\textbf{pinc10high}: Thinking ahead 10 years, what is the highest your annual personal income (before taxes) might be under good—but still realistic—circumstances?
+
+[number]
+
+\textbf{pinc10low}: Thinking ahead 10 years, what is the lowest your annual personal income (before taxes) might be under bad—but still realistic—circumstances?
+
+[number]
+
+\textbf{hhinc}: What was your total household income (before taxes) last year (2024)?
+
+[number]
+
+\textbf{hhinc10exp}: What do you expect your annual household income (before taxes) to be 10 years from now?
+
+[number]
+
+\textbf{hhinc10cert}: How certain are you that your household income will be close to this number?
+
+3 = Very certain \\
+2 = Somewhat certain \\
+1 = Not very certain
+
+\textbf{hhinc10high}: Thinking ahead 10 years, what is the highest your annual household income (before taxes) might be under good—but still realistic—circumstances?
+
+[number]
+
+\textbf{hhinc10low}: Thinking ahead 10 years, what is the lowest your annual household income (before taxes) might be under bad—but still realistic—circumstances?
+
+[number]
+
+\textbf{hhincneed}: At least how much annual household income (before taxes) would you need to live comfortably now?
+
+[number]
+
+\textbf{child30s}: Is it more likely that you will or will not have children to support in your 30s?
+
+1 = Will have children \\
+0 = Will not have children
+
+\textbf{hhincneed30}: Assuming your answer to the previous question becomes true, how much annual household income (before taxes) will you need to live comfortably in your 30s?
+
+[number]
+
+\textbf{child40s}: Is it more likely that you will or will not have children to support in your 40s?
+
+1 = Will have children \\
+0 = Will not have children
+
+\textbf{hhincneed40}: Assuming your answer to the previous question becomes true, how much annual household income (before taxes) will you need to live comfortably in your 40s?
+
+[number]
+
+\textbf{stranger100}: Imagine you unexpectedly receive \$100 as a gift. You have the option to keep all of it for yourself or give some of it to a complete stranger who is struggling to afford basic necessities. The money cannot be given to anyone else or donated elsewhere.
+
+How much of the \$100 would you choose to give to the stranger?
+
+10 = \$91-\$100 \\
+9 = \$81-\$90 \\
+8 = \$71-\$80 \\
+7 = \$61-\$70 \\
+6 = \$51-\$60 \\
+5 = \$41-\$50 \\
+4 = \$31-\$40 \\
+3 = \$21-\$30 \\
+2 = \$11-\$20 \\
+1 = \$0-\$10 
+
+\textbf{friend100}: Imagine again that you unexpectedly receive \$100 as a gift. You have the option to keep all of it for yourself or give some of it to a friend or family member. The money cannot be given to anyone else or donated elsewhere.
+
+How much of the \$100 would you choose to give to a friend or family member?
+
+10 = \$91-\$100 \\
+9 = \$81-\$90 \\
+8 = \$71-\$80 \\
+7 = \$61-\$70 \\
+6 = \$51-\$60 \\
+5 = \$41-\$50 \\
+4 = \$31-\$40 \\
+3 = \$21-\$30 \\
+2 = \$11-\$20 \\
+1 = \$0-\$10
+
+\textbf{oneyr1100}: Would you prefer \$1,000 today or \$1,100 in 1 year?
+
+2 = \$1,100 in 1 year \\
+1 = Indifferent \\
+0 = \$1,000 today
+
+\textbf{oneyr1500}: Would you prefer \$1,000 today or \$1,500 in 1 year?
+
+2 = \$1,500 in 1 year \\
+1 = Indifferent \\
+0 = \$1,000 today
+
+\textbf{oneyr2000}: Would you prefer \$1,000 today or \$2,000 in 1 year?
+
+2 = \$2,000 in 1 year \\
+1 = Indifferent \\
+0 = \$1,000 today
+
+\textbf{fiveyr1100}: Would you prefer \$1,000 today or \$1,100 in 5 years?
+
+2 = \$1,100 in 5 years \\
+1 = Indifferent \\
+0 = \$1,000 today
+
+\textbf{fiveyr1500}: Would you prefer \$1,000 today or \$1,500 in 5 years?
+
+2 = \$1,500 in 5 years \\
+1 = Indifferent \\
+0 = \$1,000 today
+
+\textbf{fiveyr2000}:
+
+Would you prefer \$1,000 today or \$2,000 in 5 years?
+
+2 = \$2,000 in 5 years \\
+1 = Indifferent \\
+0 = \$1,000 today
+
+\textbf{currentdesires}: I often prioritize my current needs and desires, even if it means delaying my long-term goals.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Indifferent \\
+2 = Disagree somewhat \\
+1 = Disagree strongly
+
+\textbf{ranksalary}, \textbf{rankflexible}, \textbf{rankgrowth}, \textbf{rankmeaning}, \textbf{rankenviron}: What do you value most in a job? Please rank top to bottom from most to least important by clicking or tapping on the choice tabs and dragging them up or down.
+
+Ranking 1-5 for ``Salary and benefits,'' ``Reasonable workload and/or flexible hours,'' ``Career growth and development,'' ``Meaningful and/or challenging work,'' and ``Positive work environment and relationships,'' respectively.
+
+*note that 1 is the highest ranking
+
+\textbf{satisfiedbasics}: I would be satisfied with a modest income that covers basic needs—food, housing, clothing, healthcare, transportation—with a small amount left over for occasional extras.
+
+5 = Agree strongly \\
+4 = Agree somewhat \\
+3 = Neutral \\
+2 = Disagree somewhat \\
+1 = Disagree strongly
+
+\textbf{startbiz}: Do you plan on starting a business at some point?
+
+5 = Definitely / I have already started a business \\
+4 = Probably \\ 
+3 = Maybe \\
+2 = Probably not \\
+1 = Definitely not
+
+\textbf{stableincome}: How stable is your current primary source of income?
+
+5 = Very stable \\
+4 = Somewhat stable \\
+3 = Neutral \\
+2 = Somewhat unstable \\
+1 = Very unstable
+
+\textbf{worriedjob}: To what degree are you worried about losing your job or not finding a job?
+
+4 = Very worried \\
+3 = Somewhat worried \\
+2 = Not very worried \\
+1 = Not worried at all
+
+\textbf{similarjob}: If you were to lose your job in the next 12 months, how likely is it that you would find a job with similar or higher pay within 3 months?
+
+5 = Almost certain (90-100\%) \\
+4 = Likely (60-90\%) \\
+3 = Even chance (40-60\%) \\
+2 = Unlikely (10-40\%) \\
+1 = Almost no chance (0-10\%)
+
+\textbf{safetynet}: If you lost your source of income, how long could you maintain your current lifestyle using your financial safety net (savings and assets)?
+
+4 = More than 6 months \\
+3 = 3-6 months \\
+2 = 1-3 months \\
+1 = Less than 1 month 
+
+\textbf{riskai}: What is the risk of losing your job to artificial intelligence (AI) in the next 10 years?
+
+5 = I have already lost a job to AI \\
+4 = The risk is high \\
+3 = The risk is substantial \\
+2 = The risk is low \\
+1 = No risk
+
+\textbf{riskclimate}: What is the risk that you have to relocate due to climate events in the next 10 years?
+
+5 = I have already relocated due to climate events \\
+4 = The risk is high \\
+3 = The risk is substantial \\
+2 = The risk is low \\
+1 = No risk
+
+\textbf{riskhealth}: What is the risk that you have to live without health insurance in the next 10 years?
+
+5 = I already live without health insurance \\
+4 = The risk is high \\
+3 = The risk is substantial \\
+2 = The risk is low \\
+1 = No risk
+
+\textbf{riskhome}: What is the risk that you are unable to ever own a home?
+
+5 = The risk is high \\
+4 = The risk is substantial \\
+3 = The risk is low \\
+2 = No risk \\
+1 = I have already owned or currently own a home
+
+\textbf{male}, \textbf{female}, \textbf{nonbinary}: What is your gender?
+
+Indicator variables for ``Male,'' ``Female,'' and ``Nonbinary,'' respectively.
+
+\textbf{married}, \textbf{cohab}, \textbf{single}: Please indicate your marital status.
+
+Indicator variables for ``Married,'' ``Cohabitating,'' and ``Single,'' respectively. If respondent selected ``Other,'' all will be 0.
+
+% \textbf{gender}: What is your gender?
+
+% 2 = Female \\
+% 1 = Male \\
+% 0 = Non-binary \\
+% -1 = Prefer not to say
+
+% \textbf{marital}: Please indicate your marital status.
+
+% 3 = Married \\
+% 2 = Cohabitating \\
+% 1 = Single \\
+% 0 = Other: [text box]
+
+\textbf{children}: How many children have you had?
+
+5 = 5 or more\\
+4 = 4 \\
+3 = 3 \\
+2 = 2 \\
+1 = 1 \\
+0 = 0 \\
+
+\textbf{childrenplan}: How many children in total do you plan on having over your lifetime?
+
+5 = 5 or more\\
+4 = 4 \\
+3 = 3 \\
+2 = 2 \\
+1 = 1 \\
+0 = 0 \\
+-1 = Unsure
+
+\textbf{race\_indian, race\_asian, race\_black, race\_latino, race\_mideast, race\_island, race\_white, race\_oth}: How would you describe your ethnicity and/or race?
+
+Indicator variables for ``American Indian or Alaska Native,'' ``Asian or Asian American,'' ``Black or African American,'' ``Hispanic or Latino,'' ``Middle Eastern or North African,'' ``Native Hawaiian or Pacific Islander,'' ``White or European American,'' and ``Other,'' respectively.
+
+% 7 = American Indian or Alaska Native \\
+% 6 = Asian or Asian American \\
+% 5 = Black or African American \\
+% 4 = Hispanic or Latino \\
+% 3 = Middle Eastern or North African \\
+% 2 = Native Hawaiian or Pacific Islander \\
+% 1 = White or European American \\
+% 0 = Other: [text box]
+
+\textbf{usborn}: Were you born in the United States?
+
+1 = Yes \\
+0 = No
+
+\textbf{usbornparents}: Were both of your parents born in the United States?
+
+1 = Yes \\
+0 = No
+
+\textbf{state}: In which state do you currently reside? (If you are in college or temporarily stationed with the military, please enter the location you spend the most time in.)
+
+[text]
+
+\textbf{zip}: What is your current 5-digit ZIP code? (If you are in college or temporarily stationed with the military, please enter the location you spend the most time in.)
+
+[number]
+
+\textbf{density}: Would you consider your current location urban, suburban, or rural?
+
+3 = Urban \\
+2 = Suburban \\
+1 = Rural
+
+\textbf{homestate}: Which state do you consider your home state (birthplace or place you grew up)?
+
+[text]
+
+\textbf{hometown}: What is the name of your home town or city (birthplace or place you grew up)?
+
+[text]
+
+\textbf{homedensity}: Would you consider your home town or city urban, suburban, or rural?
+
+3 = Urban \\
+2 = Suburban \\
+1 = Rural
+
+\textbf{student}: Are you a student right now?
+
+6 = Professional doctoral program (e.g., JD, MD) \\
+5 = Research doctoral program (e.g., PhD, DSc) \\
+4 = Master’s degree (e.g., MA, MS, MBA) \\ 
+3 = 4-year college \\ 
+2 = 2-year college \\
+1 = High school \\ 
+0 = Not a student
+
+\textbf{edu}: Which category best describes your highest level education?
+
+9 = Professional doctorate (e.g., JD, MD) \\
+8 = Research doctorate (e.g., PhD, DSc) \\ 
+7 = Master’s degree (e.g., MA, MS, MBA) \\
+6 = 4-year college degree \\ 
+5 = 2-year college degree \\ 
+4 = Some college \\ 
+3 = High school degree / GED \\ 
+2 = Some high school \\ 
+1 = Eighth grade or less
+
+\textbf{eduplan}:
+
+9 = Professional doctorate (e.g., JD, MD) \\
+8 = Research doctorate (e.g., PhD, DSc) \\ 
+7 = Master’s degree (e.g., MA, MS, MBA) \\
+6 = 4-year college degree \\ 
+5 = 2-year college degree \\ 
+4 = Some college \\ 
+3 = High school degree / GED \\ 
+2 = Some high school \\ 
+1 = Eighth grade or less
+
+\textbf{edumoth}:
+
+9 = Professional doctorate (e.g., JD, MD) \\
+8 = Research doctorate (e.g., PhD, DSc) \\ 
+7 = Master’s degree (e.g., MA, MS, MBA) \\
+6 = 4-year college degree \\ 
+5 = 2-year college degree \\ 
+4 = Some college \\ 
+3 = High school degree / GED \\ 
+2 = Some high school \\ 
+1 = Eighth grade or less
+
+\textbf{edufath}:
+
+9 = Professional doctorate (e.g., JD, MD) \\
+8 = Research doctorate (e.g., PhD, DSc) \\ 
+7 = Master’s degree (e.g., MA, MS, MBA) \\
+6 = 4-year college degree \\ 
+5 = 2-year college degree \\ 
+4 = Some college \\ 
+3 = High school degree / GED \\ 
+2 = Some high school \\ 
+1 = Eighth grade or less
+
+\textbf{jobfull}, \textbf{jobpart}, \textbf{jobself}, \textbf{jobstud}, \textbf{jobnilf}, \textbf{jobunemp}: What is your current employment status?
+
+Indicators for ``Full-time employee,'' ``Part-time employee,'' ``Self-employed or small business owner,'' ``Student,'' ``Not in the labor force (for example: retired, or full-time parent),'' and ``Unemployed and looking for work,'' respectively.
+
+% \textbf{employment}: What is your current employment status?
+
+% 5 = Full-time employee \\
+% 4 = Part-time employee \\
+% 3 = Self-employed or small business owner \\
+% 2 = Unemployed and looking for work \\
+% 1 = Student \\
+% 0 = Not in the labor force (for example: retired, or full-time parent)
+
+\textbf{liberalecon}: On economic policy matters, where do you see yourself on the liberal/conservative spectrum?
+
+2 = Liberal \\
+1 = Moderate \\
+0 = Conservative
+
+\textbf{liberalsocial}: On social policy matters, where do you see yourself on the liberal/conservative spectrum?
+
+2 = Liberal \\
+1 = Moderate \\
+0 = Conservative
+
+\textbf{vote2024\_harris}, \textbf{vote2024\_trump}, \textbf{vote2024\_oth}: Who did you vote for in the 2024 U.S. presidential election?
+
+Indicators for ``Kamala Harris,'' ``Donald Trump,'' and ``Other,'' respectively. If respondent did not vote, all indicators will be 0.  
+
+\textbf{vote2020\_biden}, \textbf{vote2020\_trump}, \textbf{vote2020\_oth}: Who did you vote for in the 2020 U.S. presidential election?
+
+Indicators for ``Joe Biden,'' ``Donald Trump,'' and ``Other,'' respectively. If respondent did not vote, all indicators will be 0. 
+
+\textbf{biasleft}, \textbf{biasright}: Do you feel that this survey was left- or right-wing biased or unbiased?
+
+Indicators for ``Left-wing biased,'' and ``Right-wing biased,'' respectively.
+
+\textbf{feedback}: Let us know if you have any feedback—we’re especially interested in whether any questions were confusing or if the survey length felt appropriate. Otherwise, we thank you for partici- pating in the project!
+
+[text]
+
+\end{document}

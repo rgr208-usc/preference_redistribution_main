@@ -1,0 +1,377 @@
+\documentclass[a4paper,11pt,oneside,headsepline]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{wasysym}% provides \ocircle and \Box
+\usepackage{enumitem}% easy control of topsep and leftmargin for lists
+\usepackage{color}% used for background color
+\usepackage{forloop}% used for \Qrating and \Qlines
+\usepackage{ifthen}% used for \Qitem and \QItem
+\usepackage{typearea}
+\areaset{17cm}{26cm}
+\setlength{\topmargin}{-1cm}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\ihead{Capitalism aversion in the United States}
+\ohead{\pagemark}
+\chead{}
+\cfoot{}
+
+\usepackage{titlesec}
+\titleformat{\section}{\rmfamily\Large\bfseries}{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Qq}[1]{#1}
+
+\newcommand{\QO}{$\Box$}% or: $\ocircle$
+
+\newcounter{qr}
+\newcommand{\Qrating}[1]{\QO\forloop{qr}{1}{\value{qr} < #1}{---\QO}}
+
+\newcommand{\Qline}[1]{\noindent\rule{#1}{0.6pt}}
+
+\newcounter{ql}
+\newcommand{\Qlines}[1]{\forloop{ql}{0}{\value{ql}<#1}{\vskip0em\Qline{\linewidth}}}
+
+\newenvironment{Qlist}{%
+\renewcommand{\labelitemi}{\QO}
+\begin{itemize}[leftmargin=1.5em,topsep=-.5em]
+}{%
+\end{itemize}
+}
+
+\newlength{\qt}
+\newcommand{\Qtab}[2]{
+\setlength{\qt}{\linewidth}
+\addtolength{\qt}{-#1}
+\hfill\parbox[t]{\qt}{\raggedright #2}
+}
+
+\newcounter{itemnummer}
+\newcommand{\Qitem}[2][]{% #1 optional, #2 notwendig
+\ifthenelse{\equal{#1}{}}{\stepcounter{itemnummer}}{}
+\ifthenelse{\equal{#1}{a}}{\stepcounter{itemnummer}}{}
+\begin{enumerate}[topsep=2pt,leftmargin=2.8em]
+\item[\arabic{itemnummer}#1.] #2
+\end{enumerate}
+}
+
+\definecolor{bgodd}{rgb}{0.8,0.8,0.8}
+\definecolor{bgeven}{rgb}{0.9,0.9,0.9}
+\newcounter{itemoddeven}
+\newlength{\gb}
+\newcommand{\QItem}[2][]{% #1 optional, #2 notwendig
+\setlength{\gb}{\linewidth}
+\addtolength{\gb}{-5.25pt}
+\ifthenelse{\equal{\value{itemoddeven}}{0}}{%
+\noindent\colorbox{bgeven}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\stepcounter{itemoddeven}%
+}{%
+\noindent\colorbox{bgodd}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\setcounter{itemoddeven}{0}%
+}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \huge Sample questionnaire
+\end{center}\vskip1em
+
+    % [Text explaining survey to respondents]
+
+\section*{Environment}
+
+    {\color{blue} Policy question}
+    \Qitem{ \Qq{Imagine a hypothetical policy where the United States could switch immediately to 100\% renewable clean energy, but it [ reduces U.S. GDP growth by [1\% / 2\% / 5\%] / your monthly energy costs would be [5\% / 10\% / 20\%] higher / the government would need to tax you [\$50 / \$100 / \$200] a year ] for the next 5 years. Would you support this policy?} 
+    % Other factors such as unemployment wouldn't be affected.
+
+        \Qtab{3cm}{I would oppose strongly \Qrating{5} I would support strongly} }
+    {\color{blue} Effect questions}
+    \Qitem{ \Qq{Approximately how much do you think the world's average temperature will increase in the next 10 years?} 
+        \begin{Qlist}
+        \item 0 degrees or decreasing
+        \item 1 degree
+        \item 2 degrees
+        \item 3 degrees or more
+        \item Unsure / lack of knowledge about the topic
+        \end{Qlist}
+        }
+    {\color{blue} Self-interest questions}
+    \Qitem{ \Qq{Are flooding or hurricanes common where you live?} 
+    
+        \Qtab{3cm}{They never happen \Qrating{5} They occur regularly} }
+    \Qitem{ \Qq{How important is nature to you?} 
+        \begin{Qlist}
+        \item I'm rarely outdoors and I don't feel the need to be.
+        \item I prefer the indoors, but I like being in nature sometimes.
+        \item I sometimes do things outside and I enjoy making it into nature when I can.
+        \item I love the outdoors, but I don't structure my life around it.
+        \item Outdoor activities are core hobbies and I enjoy living in/around nature.
+        \end{Qlist}
+        }
+
+\section*{Taxing the rich}
+
+    {\color{blue} Policy question}
+    \Qitem{ \Qq{Imagine that the government is considering raising the tax rate on incomes above \$500,000 by 10\% (from 35-37\% to 45-47\%) and decreasing the tax rate on incomes under \$75,000 by 10\% (from 12-22\% to 2-12\%). Would you support this policy?}
+    % Assume that the government's budget would be unchanged.
+    
+        \Qtab{3cm}{I would oppose strongly \Qrating{5} I would support strongly} }
+    {\color{blue} Effect questions}
+    \Qitem{ \Qq{Would this policy reduce or increase the growth of the U.S. economy?}
+        \begin{Qlist}
+        \item The economy would grow much slower.
+        \item The economy would grow moderately slower.
+        \item There would be little effect.
+        \item The economy would grow moderately faster.
+        \item The economy would grow much faster.
+        \end{Qlist}
+        }
+    \Qitem{ \Qq{Would this policy reduce or increase entrepreneurship?}
+    
+        \Qtab{3cm}{Reduce dramatically \Qrating{5} Increase dramatically} }
+    {\color{blue} Self-interest questions}
+    \Qitem{ \Qq{How much do you expect to earn this year in U.S. dollars, before taxes?}
+        \Qline{3cm}{} }
+    \Qitem{ \Qq{What do you expect your annual income to be 10 years from now, before taxes?}
+        \Qline{3cm}{} 
+        }
+    % \Qitem{ \Qq{\textbf{Alternative phrasing}: Imagine a hypothetical policy where the government makes you work for 2 more hours each day, but you receive free healthcare. }}
+    \Qitem{ \Qq{What is the main reason you support/oppose this tax policy?}
+        \begin{Qlist}
+            \item It would save/lose me money.
+            \item It would be good/bad for the economy.
+            \item It is fair/unfair.
+            \item It helps people in need.
+        \end{Qlist}
+        }
+    % \Qitem{ \Qq{What is the main reason people would disagree with you?}
+    %     \begin{Qlist}
+    %     \item The policy saves/loses them money.
+    %     \item They don't understand/disagree with me about the economic effects of the policy.
+    %     \item They disagree with me about whether the policy is fair/unfair.
+    %     \end{Qlist}
+    %     }
+    
+% \section*{Universal basic income}
+
+%     {\color{red} Policy question}
+%     \Qitem{ \Qq{Imagine that the government is considering doubling the tax rate on incomes above \$100,000 in order to fund a Universal Basic Income of \$1,000 per month for every American citizen.}
+
+%     \Qitem{ \Qq{Would [ you / other people ] be less motivated to have a job if this policy was in place?} 
+    
+%         \Qtab{3cm}{ Much less motivated \Qrating{5} Much more motivated } }
+
+\section*{Government services}
+
+    % \Qitem{ \Qq{} 
+    
+    %     \Qtab{3cm}{I would oppose strongly \Qrating{5} I would support strongly} }
+
+\section*{Income mobility}
+
+\section*{Regulation}
+
+    % {\color{blue} Policy question}
+    % \Qitem{ \Qq{There are two restaurants in your town. Restaurant 2 is found to be undercooking its meat. Should the government shut down restaurant 2? Should they regulate the food prep process of both restaurants, raising costs by x? Should they take over restaurant 2 and run it themselves?} }
+
+\section*{Monopolies}
+
+\section*{Globalization}
+
+\section*{Demographics}
+
+    \Qitem{ \Qq{\textbf{Screening: } Do you have U.S. citizenship?}
+        \Qline{2cm}{} }
+
+    \Qitem{ \Qq{What year were you born in?}
+        \Qline{2cm}{} }
+
+    \Qitem{ \Qq{What country were you born in?}
+        \Qline{2cm}{} }
+
+    \Qitem{ \Qq{What country do you currently live in?}
+        \Qline{2cm}{} }
+
+    \Qitem{ \Qq{What state do you currently live in?}
+        \Qline{2cm}{} }
+
+    \Qitem{ \Qq{What is your biological sex?} 
+        \begin{Qlist}
+        \item Male
+        \item Female
+        \item Other: 
+        \end{Qlist}
+        }
+
+    \Qitem{ \Qq{How do you identify?} 
+        \begin{Qlist}
+        \item Woman
+        \item Man
+        \item Non-binary
+        \item I prefer to self-describe
+        \end{Qlist}
+        }
+
+    \Qitem{ \Qq{Choose one or more ethnicity that you consider yourself to be.} 
+        \begin{Qlist}
+        \item White or European American
+        \item Black or African American
+        \item Native Hawaiian or Pacific Islander
+        \item American Indian or Alaska Native
+        \item Hispanic or Latino
+        \item Middle Eastern or North African
+        \item Asian or Asian American
+        \item Other
+        \end{Qlist}
+        }
+
+    \Qitem{ \Qq{What is your highest educational attainment?} 
+        \begin{Qlist}
+        \item Less than high school
+        \item High school graduate
+        \item Some college
+        \item 2-year degree
+        \item 4-year degree
+        \item Professional degree
+        \item Doctorate
+        \end{Qlist}
+        }
+
+    \Qitem{ \Qq{What is your (if single) or your household's (if married or with a partner) annual income?} 
+        \begin{Qlist}
+        \item less than \$20,000
+        \item \$20,000-\$39,999
+        \item \$40,000-\$59,999
+        \item \$60,000-\$79,999
+        \item \$80,000-\$99,999
+        \item \$100,000-\$149,999
+        \item \$150,000-\$199,999
+        \item \$200,000-\$249,999
+        \item \$250,000-\$299,999
+        \item \$300,000 or higher
+        \end{Qlist}
+        }
+
+    \Qitem{ \Qq{How would you describe your social class?} 
+        \begin{Qlist}
+        \item Lower class
+        \item Working class
+        \item Lower middle class
+        \item Upper middle class
+        \item Upper class
+        \end{Qlist}
+        }
+
+    \Qitem{ \Qq{How liberal (left wing) or conservative (right wing) are you on economic issues?} 
+
+    \Qtab{3cm}{Very liberal \Qrating{5} Very conservative} }
+
+    \Qitem{ \Qq{How liberal (left wing) or conservative (right wing) are you on social issues?} 
+
+        \Qtab{3cm}{Very liberal \Qrating{5} Very conservative} }
+
+    \Qitem{ \Qq{Did you vote in the 2020 U.S. election?} 
+        \begin{Qlist}
+        \item Yes, I voted for Joe Biden.
+        \item Yes, I voted for Donald Trump.
+        \item Yes, I voted for someone else.
+        \item No, I decided not to vote.
+        \item No, I was not eligible to vote.
+        \end{Qlist}
+        }
+
+% \section*{Miscellaneous}
+
+%     Effectiveness of government
+%     Desire for drastic change
+%     Who they've voted for in the past
+%     If they've changed their views
+
+\section*{Values}
+
+    \Qitem{ \Qq{Caring for people who have suffered is an important virtue.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+
+    \Qitem{ \Qq{The world would be a better place if everybody made the same amount of money.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+
+    \Qitem{ \Qq{I believe the strength of a sports team comes from the loyalty of its members to each other.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+
+    \Qitem{ \Qq{I think obedience to parents is an important virtue.} 
+
+        \Qtab{3cm}{Does not describe me at all \Qrating{5} Describes me extremely well} }
+
+
+\section*{General beliefs about free markets}
+
+    \Qitem{ \Qq{Competition is good. It stimulates people to work hard and develop new ideas.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{The way private property is used should primarily be decided by its owner.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{Wealth can grow so there's enough for everyone.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{It's often beneficial when the government steps in to solve problems.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{In a free market, the best idea wins.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{The profit motive generates products of high quality.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{Economic growth will make us happier.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{Most people who want to get ahead can make it if they are willing to work hard.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    \Qitem{ \Qq{Under a fair economic system, people with higher abilities would earn higher salaries.} 
+
+        \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    % \Qitem{ \Qq{The government is more adaptable than the private market.} 
+
+    %     \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    % \Qitem{ \Qq{The government is often needed to step in to fix problems that the free market can't solve.} 
+
+    %     \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+        
+    % \Qitem{ \Qq{The government tends to be effective at what they do.} 
+
+    %     \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    % \Qitem{ \Qq{The profit system teaches people the value of hard work and success.} 
+
+    %     \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    % \Qitem{ \Qq{Most entrepreneurs are successful in starting businesses because they have access to money from family and friends.} 
+
+    %     \Qtab{3cm}{Strongly disagree \Qrating{5} Strongly agree} }
+
+    % \Qitem{ \Qq{How do you rate the power of government in everyday life?} 
+
+    %     \Qtab{3cm}{Too little \Qrating{5} Too much} }
+
+\section*{Notes on survey structure}
+
+    We probably want to ask the policy questions first. Then, we can ask all of the follow-ups. 
+
+\end{document}

@@ -1,0 +1,265 @@
+\documentclass[12pt]{article}
+
+\usepackage{eurosym}
+\usepackage{amsfonts,amsmath,amssymb,graphicx,setspace,natbib,bbm,subcaption}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=Mahogany,urlcolor=blue]{hyperref}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{observation}{Observation}
+\newtheorem{condition}{Condition}
+\newtheorem{property}{Property}
+\newtheorem{claim}{Claim}
+\newtheorem{remark}{Remark}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newenvironment{question}[1][Question]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand\E{{\rm E}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\newcommand{\nic}[1]{\noindent\textcolor{darkgreen}{[Nic: #1]}}
+
+\allowdisplaybreaks
+\onehalfspacing
+
+\begin{document}
+
+\section*{Hypotheses}
+
+\begin{enumerate}
+    \item Income uncertainty: 
+    \begin{enumerate}
+        \item Present financial/job insecurity: 
+        
+        Young people face acute financial uncertainty, because, for example, they have less of a savings buffer.
+        \item Long-term career/income uncertainty: 
+        
+        Young people face uncertainty about their career trajectory, preferring to equalize incomes rather than take the gamble (maxmin).
+        
+        \item Long-term existential uncertainty: 
+
+        Young people nowadays face uncertainty about the future state of the world---concerns previous generations did not have to deal with.
+    \end{enumerate}
+    \item Consumption smoothing over life cycle: 
+
+    People make less money early in their careers and available methods to smooth consumption have drawbacks.
+    
+    \item High discount rate/myopic: 
+
+    Young people value current consumption highly, so they prefer to redistribute income because they (temporarily) are low on the income ladder.
+    
+    \item Materialism: 
+
+    Young people (either in all generations, or nowadays) care less about earning large quantities of money, preferring to redistribute so they can live a more balanced life.
+    
+    \item Beliefs about incentive effects:
+
+    Young people nowadays believe less in mobility, so they believe redistributing income will not distort incentives much.
+    \item Lived experience: People's beliefs change as they age and experience certain things firsthand.
+    \begin{enumerate}
+        % \item Older people learn certain economic concepts
+        \item Older people work hard to earn their money, or observe lazy people not working hard.
+        \item Older people realize they want/need more money than they thought they would, for housing, children, etc. 
+        \item People rise or fall on the income ladder as they age.
+        \item Older people have experienced the pain of taxation.
+    \end{enumerate}
+\end{enumerate}
+
+
+\section*{Mapping variables to hypotheses}
+
+\subsection*{Redistributive preferences}
+
+shouldconcern progressivity proposal
+
+\subsection*{Controls}
+
+\begin{itemize}
+    \item Alternative policies
+
+    fundedu protecttrade cuttaxes univhealth wealthtax
+
+    \item Zero-sum beliefs
+
+    zerosumrich zerosumceo zerosumwomen zerosumdei
+
+    \item Generosity and universalism
+
+    stranger100 friend100
+
+    \item Demographics
+
+    gender marital children childrenplan usborn usbornparents state zip density homestate hometown homedensity student edu edumoth edufath employment liberalecon liberalsocial harris2024 biden2020 
+    
+\end{itemize}
+
+\subsection*{Hypotheses}
+
+\begin{enumerate}
+
+\item Income uncertainty
+\begin{enumerate}
+    \item Present financial/job insecurity
+
+    stableincome worriedjob similarjob safetynet
+
+    \item Long-term career/income uncertainty
+
+    pinc10est pinc10cert pinc10low pinc10high hhinc10est hhinc10cert hhinc10low hhinc10high
+
+    \item Long-term existential uncertainty
+
+    riskai riskclimate riskhealth riskhome
+
+\end{enumerate}
+
+\item Consumption smoothing over life cycle
+
+??
+
+\item High discount rate/myopic
+
+oneyr1100 oneyr1500 oneyr2000 fiveyr1100 fiveyr1500 fiveyr2000 currentdesires
+
+\item Materialism/ambition
+
+satisfiedbasics startbiz ranksalary rankflexible rankgrowth rankmeaning rankenviron
+
+\item Beliefs about incentive effects
+
+taxdemotivates gapmotivates moveup20 moveup50 moveupnow workhaspaid workwillpay eduwillpay compmoth compfath compfam compper 
+
+\item Lived experience
+
+viewchange viewbetter viewworse hhincneed hhincneed30 hhincneed40
+    
+\end{enumerate}
+
+% \section*{Mapping questions}
+
+% \subsection*{Core preferences}
+
+% \begin{itemize}
+%     \item Imagine the government is considering reducing federal income taxes for lower earners and raising federal income taxes for higher earners. There will be no change in total government spending, because the increased tax payments by the higher earners offset the reduced tax payments by the lower earners. The policy is pictured below.
+%     \item Should the government concern itself with reducing income differences between rich and poor people?
+%     \item Should the federal income tax be more progressive than it is now (redistributing income from the rich to the poor)?
+% \end{itemize}
+
+% \subsection*{Controls}
+
+% \begin{itemize}
+%     \item To support lower-income and middle-income Americans, the government should focus on improving access to quality education.
+%     \item To support lower-income and middle-income Americans, the government should focus on protecting domestic jobs from international competition, for example, through tariffs.
+%     \item To support lower-income and middle-income Americans, the government should focus on expanding business through deregulation and tax cuts.
+%     \item To support lower-income and middle-income Americans, the government should introduce publicly funded universal health insurance for all Americans (with the possibility to still purchase extra private insurance).
+%     \item To support lower-income and middle-income Americans, the government should introduce a federal wealth tax on high-wealth individuals.
+%     \item People usually get rich by extracting money from others rather than creating value for others.
+%     \item In recent decades, gains in CEO salaries have been at the expense of the salaries of average workers.
+%     \item In recent decades, women’s wage gains have been at the expense of men’s wages.
+%     \item DEI initiatives create opportunities for some at the expense of others.
+%     \item In the spirit of the survey, we have an extra pool of \$10,000 that we plan on giving participants. One possibility is to give more money to those who spent more time completing the survey (time spent does not include this question.) How do you think we should distribute the money?
+    
+%     In which percentile do you believe you fall regarding the time spent on this survey?
+% \end{itemize}
+
+% \subsection*{Hypotheses}
+
+% \begin{enumerate}
+
+% \item Income uncertainty
+% \begin{enumerate}
+%     \item Present financial/job insecurity
+%     \begin{itemize}
+%         \item How stable is your current primary source of income?
+%         \item To what degree are you worried about losing your job or not finding a job?
+%         \item If you lost your source of income, how long could you maintain your current lifestyle using your financial safety net (savings and assets)?
+%     \end{itemize}
+
+%     \item Long-term career/income uncertainty
+%     \begin{itemize}
+%         \item What do you expect your annual personal income to be, before taxes, 5 years from now?
+        
+%         What is the highest your annual personal income might reasonably be, before taxes, 5 years from now?
+        
+%         What is the lowest your annual personal income might reasonably be, before taxes, 5 years from now?
+        
+%         [And the same questions for 10 years]
+%     \end{itemize}
+
+%     \item Long-term existential uncertainty
+%     \begin{itemize}
+%         \item What is the risk of losing your job to artificial intelligence (AI) in the next 10 years?
+%         \item What is the risk that you have to relocate due to climate events in the next 10 years?
+%         \item What is the risk that you have to live without health insurance in the next 10 years?
+%         \item What is the risk that you are unable to ever own a home?
+%     \end{itemize}
+
+% \end{enumerate}
+
+% \item Consumption smoothing over life cycle
+% \begin{itemize}
+%     \item 
+% \end{itemize}
+
+% \item High discount rate/myopic
+% \begin{itemize}
+%     \item Imagine there are 100 grapes in front of you. 1 of them is poisonous and you will die immediately if you eat it, but if you eat any of the other 99 grapes, you will earn \$100,000. How many grapes do you choose to eat?
+%     \item Would you prefer \$1,000 today or \$1,100 in 1 year?
+
+%     Would you prefer \$1,000 today or \$1,500 in 1 year?
+
+%     Would you prefer \$1,000 today or \$2,000 in 1 year?
+    
+%     [And the same questions for 5 years]
+%     \item How often do you prioritize your immediate wants/needs over achieving your long-term goals?
+%     \item What was your total personal income, before taxes, last year (2024)?
+% \end{itemize}
+
+% \item Materialism
+% \begin{itemize}
+%     \item What do you value most in a job? Please rank from most to least important by dragging the choices up or down.
+%     \item Imagine there are 100 grapes in front of you. 1 of them is poisonous and you will die immediately if you eat it, but if you eat any of the other 99 grapes, you will earn \$100,000. How many grapes do you choose to eat?
+% \end{itemize}
+
+% \item Beliefs about incentive effects
+% \begin{itemize}
+%     \item Welfare programs cause people to work less.
+%     \item A large wealth gap is needed to motivate entrepreneurs to start businesses and innovate.
+%     \item Most people in the United States nowadays have the chance to become economically successful.
+%     \item Is it harder or easier to move up in the U.S. (in terms of income/wealth) now than when your parents were growing up?
+%     \item Thinking about your past achievements, do you believe that your hard work in life has paid off or not?
+%     \item Thinking about your future achievements, do you believe that your hard work in life will pay off or not?
+%     \item Do you believe your education will pay off in terms of economic opportunity?
+%     \item When your mother (or first caretaker) was growing up, how did her (or their) family income compare to other American families?
+%     \item When your father (or second caretaker) was growing up, how did his (or their) family income compare to other American families?
+%     \item When you were growing up, how did your family income compare to other American families?
+%     \item Right now, how does your personal income compare with other Americans your age?
+% \end{itemize}
+
+% \item Lived experience
+% \begin{itemize}
+%     \item How have your views about redistribution of income (from the rich to the poor) changed over time?
+%     \item If you changed your opinion about redistribution of income, why did it change?
+%     \item At least how much annual household income would you need (before taxes) to live comfortably now?
+%     \item Is it more likely that you will or will not have children in your 30s?
+%     \item Assuming your answer to the previous question becomes true, how much annual personal income will you need (before taxes) to live comfortably in your 30s?
+
+%     [And the same questions for 40s]
+% \end{itemize}
+    
+% \end{enumerate}
+    
+
+
+\end{document}

@@ -1,0 +1,789 @@
+\documentclass[11pt, headsepline]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{parskip}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=Mahogany,urlcolor=blue]{hyperref}
+\usepackage{booktabs, cellspace, hhline, multirow, nicematrix}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{natbib}
+
+\usepackage[usenames, dvipsnames]{xcolor}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\def\labelitemi{--}
+
+\title{(Why) Do Young People Support Redistribution?}
+\author{Niclas Carlson (NY Fed), Matthew E. Kahn (USC) and Romain Rancière (USC)}
+
+\begin{document}
+
+\maketitle
+
+% \section*{\centering \LARGE (Why) Do Young People Support Redistribution?}
+% \section*{\centering \normalfont Niclas Carlson (NY Fed)  Matt Kahn (USC) Romain Ranciere (USC)}
+
+
+This survey-based project aims to measure and understand preferences for redistribution, with a special focus on young people's preferences. It brings together two USC faculty members and a former undergraduate student working at the NY FRB.
+
+Popular culture tells us that, within each generation, people favor redistribution more when they are young than old, a claim backed up by longitudinal surveys such as the World Values Survey (WVS), General Social Survey (GSS), and American National Election Studies (ANES). These same surveys find that, in the U.S., newer generations are more supportive of redistribution that preceding generations when they were the same age. Figure 1 combines information from the three surveys to document the extent of a generational gap, measured over the last 20 years. Figure 1a. from the WWS documents that more recent birth cohorts are more inclined to believe that success stems from luck and connections rather than from individual effort. Figure 1b. from the ANES shows that each successive generation is on average more supporting of public rather than private health insurance. Figure 1c. and 1d. from the GSS indicate that today’s young are expecting the government to play a larger role in reducing income inequality, and in guaranteeing jobs and a standard of living. These graphs highlight that the Millennial generation (those born between 1981 and 1998) on average support redistribution more than previous generations when they were the same age. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{images/longitudinal trends.png}
+    \caption{Survey Evidence on Preferences for Redistribution }
+    \label{fig:enter-label}
+\end{figure}
+
+As a first pass to understand this trend, we surveyed 141 undergraduates at USC majoring in economics. The survey focused on questions relating to capitalism rather than strictly on redistribution. Why might a student reject or accept capitalism? What do they see as its pros and cons? What are their core concerns about the prevailing economic system? We found a balanced distribution of opinions, which led us to question how much economic self-interest matters in forming these opinions. One might expect that private school students in an economics program, with high-paying careers in their future, would see capitalism in a favorable light; the system has treated them well up until now, and keeping it in place might benefit them in the future. We find that a significant share of students, while being confident in their career prospects, exhibit critical beliefs towards free markets, and support greater redistribution and an increasing role of the state in the economy.
+
+In this project, we narrow our question and make it more easily testable: How much and why do young people in the U.S. support redistribution of income?  We will answer this question by running an online survey of 2,000 respondents recruited through the platform Prolific, with a questionnaire developed in Qualtrics. 1,000 of the respondents will be a balanced panel of U.S. citizens above the age of 18 (the benchmark survey). The other 1,000 will be a balanced panel of U.S. citizens between the ages of 18 and 25 (the young person-focused survey). 
+
+Some commonly proposed dichotomies, such as as the distinction between self-serving (due to socio-economic status)  vs. genuine preferences for redistribution \citep{landier2008investigating}, or a zero-sum game vs. non zero-sum game mentality, might be too stark to characterize the dispersion of preferences for redistribution.  Young people face significant uncertainty about their future income path, have limited experience with taxation, and have a unique set of incentives related to work and saving.
+
+The strategy of the survey is to test a number of hypotheses about young people's preferences for redistribution. One set of hypotheses is \textit{forward-looking self-interest}, including (i) \textit{insurance motives}: do young people, who are more uncertain about their future income, want to insure themselves with redistribution?, and (ii) \textit{life cycle consumption smoothing motives}: are young people expecting redistribution to help them smooth consumption, including housing consumption, beyond what imperfect capital markets can achieve? This relates to the current policy debate on helping young people enter the housing property ladder. The survey will also explore whether young people have different beliefs about the \textit{incentive effects} of redistributive taxation on incentives to work and to save, and finally, whether they have different preferences for \textit{materialistic} vs. non-materialistic goals.
+
+The dual survey structure will enable us to measure systematic deviation of younger Americans' preferences from the general population and to explain those differences by testing the hypotheses described above. 
+
+We also hope to gain additional insight on whether the redistributive preferences of young people in the current generation are significantly different from those of previous generations at the same age by combining this survey results with previous existing surveys described in Figure 1. We are also currently working on adding a module at the end of the survey on self-reported evolution of beliefs.
+
+The preliminary state of the questionnaire  is presented below. It starts by asking respondents for opinions (on preferred policies, how the world works, or personal decisions in hypothetical scenarios), then asks for factual and demographic information.
+
+\section*{Cost estimate}
+
+The questionnaire will be built in Qualtrics, an online survey platform, and distributed through Prolific, a platform which recruits online survey participants. While Qualtrics is free through the University of Southern California, we will have to pay the Prolific participants and a platform fee. For 2,000 participants, nationally representative of the U.S., paying \$18/hour for a 15 minute survey, the cost breakdown is as follows:
+\begin{center}
+\begin{tabular}{l r} 
+    Participant payments & \$9,000 \\
+    Platform fees & \$3,000 \\
+    \hline Total & \$12,000
+\end{tabular}
+\end{center}
+While 1,000 of the participants will only be between ages 18 and 25, adding this prescreen in Prolific comes at no extra cost.
+
+\section*{Related literature}
+
+Theoretical papers by Piketty aiming to explain the existence of different inequality regimes (different levels of redistribution) emphasize the importance of lived experience moving up or down the income ladder \citep{piketty1995social} and a society's beliefs about the characteristics of those with high-paying jobs \citep{piketty1998self}. %Theoretical work by \cite{stark2014reconciling} ... 
+\cite{giuliano2024aggregate} find empirically that lived experience matters: those who grew up in a recession tend to become more conservative. \cite{landier2008investigating} observe that citizens slowly learn from their home country's experiences with failed or successful economic systems. They also find that those with higher financial wealth tend to support private profits, although wealth explains little of the dispersion in opinions. These papers touch on earlier theories by French socioligists Pierre Bourdieu and Raymond Boudon \citep{piketty2000theories}. Bourdieu believed that individuals from lower-class backgrounds are discouraged by the “dominant discourse,” and therefore don’t make mobility-enhancing investments---similar to the idea of ``statistical discrimination.'' Boudon, on the other hand, believed that lower class families transmit less ambition and taste for economic success.
+
+A growing literature has investigated the role of personal values. \cite{enke2020moral} finds that, controlling for party and ideology, U.S. voters with communal (or universalist) values tend to vote for communal (or universalist) politicians. Much of this literature is supported by online surveys. \cite{landier2022neoliberal} surveyed participants in the U.S., France, and Germany to find that when there is a tradeoff between an economically efficient solution and a pro-social objective, those with individualist values tend to favor the economically efficient solution. \cite{davidai2019politics} dispel the idea that ``zero-sum thinkers'' lean one way by finding that liberals think of economic inequality as a zero-sum game, while conservatives think of social inequality as a zero-sum game. \cite{stantcheva2021understanding} finds that showing informational videos on efficiency effects of taxes (relating to self-interest concerns) does not change preferences, but videos on redistributive effects of taxes (relating to fairness concerns) do change preferences. Similar information treatments find modest policy stance changes after participants are educated on the level US income inequality, the link between top income tax rates and economic growth \citep{kuziemko2015elastic}, and the extent of income mobility in the U.S. today \citep{alesina2018intergenerational}.
+
+% \cite{alesina2018intergenerational} find that liberals in the U.S. are more pessimistic about income mobility, conservatives greatly overestimate income mobility, and that when educated about the lack of mobility in the U.S. today, liberals and moderates increase their support for education and healthcare, but not welfare and progressive taxes. 
+
+In-group favoritism seems to play a large role; when the minority group is more prominent, or believed to be poorer and thus use the social safety net more, support for redistribution by the majority group falls significantly \citep{fischbacher2023identity, alesina2023immigration}. 
+
+Historically, the World Political Cleavages and Inequality Database \citep{gethin2022political} finds a worldwide gender reversal in political preferences: women in many developed countries, including the U.S., have become much more liberal in recent decades, while men have not. We aim to understand recent trends, but also to settle long-standing questions about why people become more conservative as they age.
+
+Our survey design is inspired heavily by \cite{stantcheva2023run}, which sets forth best practices for online surveys. While the literature has recently focused on the importance of values, finding little evidence to support the self-interest hypothesis in the population as a whole, our project focuses on young peoples' political beliefs and understanding why our beliefs change as we age. We see the project as a first step towards understanding the youth's political beliefs, focusing on economic self-interest; future projects can analyze the role of values and other preferences.
+
+\newpage
+\section*{\centering \LARGE \normalfont Questionnaire}
+
+\section*{Consent/screening}
+
+\begin{enumerate}
+    \item Thank you for your interest! We are a team of researchers from the University of Southern California conducting a study on economic preferences in the U.S. 
+    The survey consists of multiple-choice and short-answer questions and will take approximately 15 minutes to complete.
+    To participate, you must be a U.S. resident aged 18 or older. Do you confirm that you meet these criteria and would like to participate?
+
+    Participation is voluntary, and you may exit the survey at any time. Your responses will be anonymous---no personally identifiable information will be retained, and you will not be personally identified in any findings. If you have any questions about the study, please contact us at nccarlso@usc.edu.
+
+    \textit{Yes, I would like to participate and confirm that I am a U.S. resident aged 18 or older.; No, I do not wish to participate or do not meet the eligibility criteria.}
+\end{enumerate}
+
+\section*{Bot check}
+
+\begin{enumerate}[resume]
+
+    \item Please write the word “cactus” in the signature box below to confirm you are a human participant. This helps us ensure data quality. This is not a legal signature and will only be used for quality checks.
+
+    [alternatively, ``banjo'']
+
+    \textit{[signature box]}
+
+\end{enumerate}
+
+\section*{Age}
+
+\begin{enumerate}[resume]
+
+    \item What is your age?
+
+    \textit{[text box]}
+
+\end{enumerate}
+
+% \section*{Economic effects of tax proposal}
+
+% \begin{enumerate}[resume]
+%     % \item What is the main reason you support or oppose this policy?
+
+%     % \textit{It would directly save/lose me money; It would be good/bad for the economy; It would be fair/unfair; It would help/hurt people in need; Other: [text box]}
+
+%     \item Would the proposed policy from the previous question increase or decrease people's drive to start businesses?
+
+%     \textit{Decrease significantly; Decrease somewhat; No effect; Increase somewhat; Increase significantly; Unsure}
+
+%     \item Would the previous policy increase or decrease people's drive to work hard in their jobs/careers?
+
+%     \textit{Decrease significantly; Decrease somewhat; No effect; Increase somewhat; Increase significantly; Unsure}
+    
+%     \item Would the previous policy reduce or increase the growth of the U.S. economy?
+
+%     \textit{Decrease significantly; Decrease somewhat; No effect; Increase somewhat; Increase significantly; Unsure}
+    
+% \end{enumerate}
+
+\section*{Redistributive preferences}
+
+\begin{enumerate}[resume]
+
+    % \item In your opinion, what would be the fair split of the federal income tax burden?
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.75\linewidth]{images/income tax sliders.png}
+    % \end{figure}
+    
+    \item Should the government concern itself with reducing income differences between rich and poor people?
+
+    \textit{The government should concern itself with this.; The government should not concern itself with this.}
+    
+    \item Should the federal income tax be more progressive than it is now (redistributing more income from the rich to the poor)?
+
+    [Randomly shown to half of the participants at the end of the survey, before the Demographics section.]
+
+    \textit{Much more progressive (lower earners should pay a lot less than they do now and higher earners should pay a lot much more than they do now); Somewhat more progressive; No change; Somewhat less progressive; Much less progressive (everyone should be taxed at about the same rate)}
+
+    % \item On a scale from 1 to 5, should the government concern itself with reducing income differences between rich and poor people?
+
+    % \textit{5: The government should do everything in its power to reduce income differences between rich and poor people.; 4; 3; 2; 1: The government should not concern itself with reducing income differences between rich and poor people.}
+
+    \item How have your views about redistribution of income (from the rich to the poor) changed over time? 
+
+    \textit{I now support redistribution much more than in the past; I now support redistribution slightly more than in the past; No change; I now support redistribution slightly less than in the past; I now support redistribution much less than in the past; Other [text box]}
+
+    \item Why did your views on redistribution improve? 
+    
+    [Only displayed if the respondent answered that they now support redistribution ``slightly more'' or ``much more.'']
+
+    \textit{Taxes affect me less now; I think the policy is better for the economy now; I think the policy is more fair now; Other: [text box]}
+
+    \item Why did your views on redistribution worsen? 
+    
+    [Only displayed if the respondent answered that they now support redistribution ``slightly less'' or ``much less.'']
+
+    \textit{Taxes affect me more now; I think the policy is worse for the economy now; I think the policy is less fair now; Other: [text box]}
+
+    % \item (Optional) If you changed your opinion, why did it change?
+
+    % \textit{[text box]}
+    
+\end{enumerate}
+
+
+\section*{Tax proposal (randomized)}
+
+\begin{enumerate}[resume]
+    \item Imagine the government is considering reducing federal income taxes for lower earners and raising federal income taxes for higher earners. There will be no change in total government spending, because the increased tax payments by the higher earners offset the reduced tax payments by the lower earners. 
+    
+    The proposed policy is pictured in gray in the figure below. The percentages shown are effective personal income tax rates, which represent what the average person pays after deductions, exemptions and credits. The policy only involves federal income taxes, so the percentages shown in the figure do not include taxes for medicare and social security, or state/local taxes.
+
+    [Participants will be randomly shown one of the following proposals.]
+
+    \underline{Poor benefit}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{images/poor.png}
+        \label{fig:poor-benefit}
+    \end{figure}
+    \underline{Middle class benefits}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{images/middle.png}
+        \label{fig:middle-benefit}
+    \end{figure}
+    \underline{Poor and middle class both benefit}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{images/both.png}
+        \label{fig:both-benefit}
+    \end{figure}
+
+    Would you support or reject the proposed change?
+
+    \textit{Support strongly; Support moderately; Support slightly; Indifferent; Reject slightly; Reject moderately; Reject strongly}
+    
+\end{enumerate}
+
+% \section*{Attention screening}
+
+% \begin{enumerate}[resume]
+%     \item In the United States, there has been a lot of talk about the Davis Plan, which detractors would say is something we just made up. It is important to us that respondents are paying attention and thinking through their responses. So if you've made it this far, please select the first and last answer boxes to ensure that your responses are recorded and you receive your compensation. Proponents, on the other hand, say that the Davis Plan would drive innovation. 
+
+%     Would you support this policy?
+
+%     \textit{Strongly support; Somewhat support; Neutral; Somewhat against; Strongly against}
+% \end{enumerate}
+
+\section*{Beliefs about incentive effects}
+
+\begin{enumerate}[resume]
+    \item If taxes on high incomes are increased and taxes on low incomes are decreased, people will not work as hard in their jobs.
+
+    \textit{Agree strongly; Agree somewhat; Neutral; Disagree somewhat; Disagree strongly; Unsure}
+
+    % \item If the government gave you \$60,000 a year, would you work less or more?
+
+    % \textit{Much less; A bit less; No change; A bit more; Much more; Not sure}
+
+    \item A large income gap is needed to motivate entrepreneurs to start businesses and innovate.
+
+    \textit{Agree strongly; Agree somewhat; Neutral; Disagree somewhat; Disagree strongly; Unsure}
+
+    % \item Are poorer people generally lazier?
+\end{enumerate}
+
+\section*{Alternative policies}
+
+\begin{enumerate}[resume]
+    \item To support lower-income and middle-income Americans, the government should focus on improving education quality and access.
+
+    \textit{Agree strongly; Agree somewhat; Indifferent; Disagree somewhat; Disagree strongly}
+
+    \item To support lower-income and middle-income Americans, the government should focus on protecting domestic jobs from international competition, for example, through tariffs.
+
+    \textit{Agree strongly; Agree somewhat; Indifferent; Disagree somewhat; Disagree strongly}
+
+    \item To support lower-income and middle-income Americans, the government should focus on cutting taxes by reducing government services.
+
+    \textit{Agree strongly; Agree somewhat; Indifferent; Disagree somewhat; Disagree strongly}
+
+    \item To support lower-income and middle-income Americans, the government should introduce publicly funded universal health insurance for all Americans (with the possibility to still purchase extra private insurance).
+
+    \textit{Agree strongly; Agree somewhat; Indifferent; Disagree somewhat; Disagree strongly}
+
+    \item To support lower-income and middle-income Americans, the government should introduce a federal wealth tax on high-wealth individuals.
+
+    \textit{Agree strongly; Agree somewhat; Indifferent; Disagree somewhat; Disagree strongly}
+    
+\end{enumerate}
+
+\section*{Zero-sum beliefs}
+
+\begin{enumerate}[resume]
+    % \item Some people believe that monetary success tends to come at the expense of others, while some people believe that success monetary success tends to come to those who create value for others. How would you describe your views on this scale?
+
+    % \textit{5 = Wealth usually grows so there is enough for everyone.; 4; 3; 2; 1 = People usually get rich at the expense of others.}
+
+    \item People usually get rich at the expense of others rather than by creating value for others.
+
+    \textit{Agree strongly; Agree somewhat; Neither agree nor disagree; Disagree somewhat; Disagree strongly; Unsure}
+
+    \item In recent decades, large gains in CEO and executive salaries have been at the expense of the salaries of average workers.
+
+    \textit{Agree strongly; Agree somewhat; Neither agree nor disagree; Disagree somewhat; Disagree strongly; Unsure}
+
+    \item In recent decades, women’s wage gains have been at the expense of men’s wages.
+
+    \textit{Agree strongly; Agree somewhat; Neither agree nor disagree; Disagree somewhat; Disagree strongly; Unsure}
+
+    \item Diversity, equity, and inclusion (DEI) initiatives create opportunities for some at the expense of others.
+
+    \textit{Agree strongly; Agree somewhat; Neither agree nor disagree; Disagree somewhat; Disagree strongly; Unsure}
+    
+\end{enumerate}
+
+\section*{Current state of mobility and personal mobility}
+
+\begin{enumerate}[resume]
+    % \item Most people in the United States nowadays have the chance to become economically successful.
+
+    % \textit{Disagree strongly; Disagree somewhat; Neutral; Agree somewhat; Agree strongly; Unsure}
+    \item Consider a child coming from the poorest 20\% of families in the U.S. today. They are very determined and work hard in school, and later in life, they will work hard at their career. What do you believe is the chance that they make it into the richest 20\% of families/individuals when they are older?
+
+    \textit{Almost guaranteed (80-100\%); Likely (60-80\%); Even chance (40-60\%); Unlikely (20-40\%); Almost no chance (0-20\%); Unsure}
+
+    \item What do you believe is the chance that they make it into the richest 50\% of families/individuals when they are older?
+
+    \textit{Almost guaranteed (80-100\%); Likely (60-80\%); Even chance (40-60\%); Unlikely (20-40\%); Almost no chance (0-20\%); Unsure}
+
+    \item Is it harder or easier to move up in the U.S. now than when your parents were growing up (in terms of income/wealth)?
+
+    \textit{Much harder now; Somewhat harder now; No change; Somewhat easier now; Much easier now; Unsure}
+
+    \item Thinking about your past achievements, do you believe that your hard work in life has paid off or not?
+
+    \textit{It has paid off a lot; It has paid off somewhat; It has not paid off much; Unsure}
+
+    \item Thinking about your future achievements, do you believe that your hard work in life will pay off or not?
+
+    \textit{It will pay off a lot; It will pay off somewhat; It will not pay off much; Unsure}
+
+    \item Do you believe your education will pay off in terms of economic opportunity?
+
+    \textit{It will pay off a lot; It will pay off somewhat; It will not pay off much; Unsure}
+    
+\end{enumerate}
+
+\section*{Family mobility and relative income}
+
+\begin{enumerate}[resume]
+    % \item Do you expect to earn more or less than your family when you were growing up?
+
+    % \textit{Much less; Less; About the same; More; Much more; Unsure}
+
+    % \item Growing up, was your household income higher or lower than your father's household when he was young?
+
+    % \textit{My family's income was much lower; Lower; About the same; Higher; My family's income was much higher; Unsure}
+
+    % \item Growing up, was your household income higher or lower than your mother's household when she was young?
+
+    % \textit{My family's income was much lower; Lower; About the same; Higher; My family's income was much higher; Unsure}
+
+    \item When your mother (or first caretaker) was growing up, how did her (or their) family income compare to other American families?
+
+    \textit{Far below average; Below average; Average; Above average; Far above average; Unsure / Not applicable}
+
+    \item When your father (or second caretaker) was growing up, how did his (or their) family income compare to other American families?
+
+    \textit{Far below average; Below average; Average; Above average; Far above average}
+
+    \item When you were growing up, how did your family income compare to other American families?
+
+    \textit{Far below average; Below average; Average; Above average; Far above average}
+
+    \item Right now, how does your personal income compare with other Americans your age?
+
+    \textit{Far below average; Below average; Average; Above average; Far above average}
+    
+\end{enumerate}
+
+\section*{Income uncertainty}
+
+\begin{enumerate}[resume]
+
+    \item In the following questions, we will define personal income as income you earned yourself in a given year, and household income as the total income earned by yourself and any spouse, partner, or children under your care old enough to work. Income includes earnings from wages, self-employment, investment returns, pensions and retirement withdrawals.
+    
+    Are you the only person in your household or the only person earning income in your household?
+
+    \textit{Yes; No, someone else also earns income}
+
+    \item In 10 years, do you expect that more than one person in your household will be earning income? 
+
+    \textit{Yes, more than one person; No, just myself}
+
+    \item What was your total personal income (before taxes) last year (2024)?
+
+    It is fine to approximate. Please enter a number such as 50,000 or 50000, but not \$50,000.
+
+    \textit{[text box]}
+
+    % \textit{\$0-\$10,000, \$10,000-\$20,000, \$20,000-\$30,000, \$30,000-\$40,000, \$40,000-\$50,000, \$50,000-\$60,000, \$60,000-\$70,000, \$70,000-\$80,000, \$80,000-\$90,000, \$90,000-\$110,000, \$110,000-\$150,000, \$150,000-\$200,000, \$200,000-\$300,000, \$300,000-\$400,000, \$400,000+}
+
+    \item What do you expect your annual personal income (before taxes) to be 10 years from now?
+
+    Please ignore inflation and answer using the value of a dollar today.
+
+    \textit{[text box]}
+
+
+    \item How certain are you that your personal income will be close to this number?
+
+    \textit{Very certain; Somewhat certain; Not very certain}
+
+    % \item What is the percentage chance that your personal income in 5 years will be within \$10,000 of the previous answer?
+
+    % \item What is the highest your annual personal income might reasonably be, before taxes, 10 years from now?
+
+     \item Thinking ahead 10 years, what is the highest your annual personal income (before taxes) might be under good—but still realistic—circumstances?
+
+    \textit{[text box]}
+
+    % \item What is the lowest your annual personal income might reasonably be, before taxes, 10 years from now?
+
+    \item Thinking ahead 10 years, what is the lowest your annual personal income (before taxes) might be under bad—but still realistic—circumstances?
+
+    \textit{[text box]}
+
+    [The following questions in this section appear according to the responses at the beginning.]
+
+    \item What was your total household income (before taxes) last year (2024)?
+
+    \textit{[text box]}
+
+    % \textit{\$0-\$10,000, \$10,000-\$20,000, \$20,000-\$30,000, \$30,000-\$40,000, \$40,000-\$50,000, \$50,000-\$60,000, \$60,000-\$70,000, \$70,000-\$80,000, \$80,000-\$90,000, \$90,000-\$110,000, \$110,000-\$150,000, \$150,000-\$200,000, \$200,000-\$300,000, \$300,000-\$400,000, \$400,000+}
+
+    \item What do you expect your annual household income (before taxes) to be 10 years from now? 
+
+    \textit{[text box]}
+
+    \item How certain are you that your household income will be close to this number?
+
+    \textit{Very certain; Somewhat certain; Not very certain}
+
+    % \item What is the highest your annual household income might reasonably be, before taxes, 10 years from now?
+
+    \item Thinking ahead 10 years, what is the highest your annual household income (before taxes) might be under good—but still realistic—circumstances?
+
+    \textit{[text box]}
+
+    % \item What is the lowest your annual household income might reasonably be, before taxes, 10 years from now?
+
+    \item Thinking ahead 10 years, what is the lowest your annual household income (before taxes) might be under bad—but still realistic—circumstances?
+
+    \textit{[text box]}
+    
+\end{enumerate}
+
+\section*{Perceived future income needs}
+
+\begin{enumerate}[resume]
+    \item At least how much annual household income (before taxes) would you need to live comfortably now?
+
+    \textit{[text box]}
+
+    % \textit{\$0-\$10,000, \$10,000-\$20,000, \$20,000-\$30,000, \$30,000-\$40,000, \$40,000-\$50,000, \$50,000-\$60,000, \$60,000-\$70,000, \$70,000-\$80,000, \$80,000-\$90,000, \$90,000-\$110,000, \$110,000-\$150,000, \$150,000-\$200,000, \$200,000-\$300,000, \$300,000-\$400,000, \$400,000+}
+
+    [The following questions in this section appear only if the respondent is under 30 years old.]
+    
+    \item Is it more likely that you will or  will not have children to support in your 30s?
+
+    \textit{Will have children; Will not have children}
+
+    \item Assuming your answer to the previous question becomes true, how much annual household income (before taxes) will you need to live comfortably in your 30s?
+
+    \textit{[text box]}
+
+    % \textit{\$0-\$10,000, \$10,000-\$20,000, \$20,000-\$30,000, \$30,000-\$40,000, \$40,000-\$50,000, \$50,000-\$60,000, \$60,000-\$70,000, \$70,000-\$80,000, \$80,000-\$90,000, \$90,000-\$110,000, \$110,000-\$150,000, \$150,000-\$200,000, \$200,000-\$300,000, \$300,000-\$400,000, \$400,000+}
+
+    \item Is it more likely that you will or will not have children to support in your 40s?
+
+    \textit{Will have children; Will not have children}
+
+    \item Assuming your answer to the previous question becomes true, how much annual household income (before taxes) will you need to live comfortably in your 40s?
+
+    \textit{[text box]}
+
+    % \textit{\$0-\$10,000, \$10,000-\$20,000, \$20,000-\$30,000, \$30,000-\$40,000, \$40,000-\$50,000, \$50,000-\$60,000, \$60,000-\$70,000, \$70,000-\$80,000, \$80,000-\$90,000, \$90,000-\$110,000, \$110,000-\$150,000, \$150,000-\$200,000, \$200,000-\$300,000, \$300,000-\$400,000, \$400,000+}
+    
+\end{enumerate}
+
+\section*{Generosity and universalism}
+
+\begin{enumerate}[resume]
+
+    \item Imagine you unexpectedly receive \$100 as a gift. You have the option to keep all of it for yourself or give some of it to a complete stranger who is struggling to afford basic necessities. The money cannot be given to anyone else or donated elsewhere.
+
+    How much of the \$100 would you choose to give to the stranger?
+
+    \textit{[text box]}
+
+    \item Imagine again that you unexpectedly receive \$100 as a gift. You have the option to keep all of it for yourself or give some of it to a friend or family member. The money cannot be given to anyone else or donated elsewhere.
+
+    How much of the \$100 would you choose to give to a friend or family member?
+
+    \textit{[text box]}
+
+    % \item Which of the following statements best reflects your view of fairness?
+
+    % \textit{People should get what they have earned through their own efforts, even if some end up with more than others.; No one should fall too far behind, even if it means adjusting outcomes to help those with less.}
+
+    % \item A fair society ensures that everyone gets what they earn, even if some have more than others.
+
+    % \textit{Agree strongly; Agree somewhat; Neutral; Disagree somewhat; Disagree strongly}
+
+    % \item A fair society ensures that no one has too little, even if it means redistributing from those who have more.
+
+    % \textit{Agree strongly; Agree somewhat; Neutral; Disagree somewhat; Disagree strongly}
+    
+\end{enumerate}
+
+\section*{Time discounting}
+
+\begin{enumerate}[resume]
+    % \item How much money would you need to receive in 1 year to make it as attractive as receiving \$500 today?
+
+    % \textit{[text box]}
+
+    % \item How much money would you need to receive in 5 years to make it as attractive as receiving \$500 today?
+
+    % \textit{[text box]}
+
+    \item Would you prefer \$1,000 today or \$1,100 in 1 year?
+
+    \textit{\$1,000 today; \$1,100 in 1 year; Indifferent}
+
+    \item Would you prefer \$1,000 today or \$1,500 in 1 year?
+
+    \textit{\$1,000 today; \$1,500 in 1 year; Indifferent}
+
+    \item Would you prefer \$1,000 today or \$2,000 in 1 year?
+
+    \textit{\$1,000 today; \$2,000 in 1 year; Indifferent}
+
+    \item Would you prefer \$1,000 today or \$1,100 in 5 years?
+
+    \textit{\$1,000 today; \$1,100 in 5 years; Indifferent}
+
+    \item Would you prefer \$1,000 today or \$1,500 in 5 years?
+
+    \textit{\$1,000 today; \$1,500 in 5 years; Indifferent}
+
+    \item Would you prefer \$1,000 today or \$2,000 in 5 years?
+
+    \textit{\$1,000 today; \$2,000 in 5 years; Indifferent}
+
+    % \item How often do you prioritize your immediate wants/needs over achieving your long-term goals?
+
+    % \textit{Always; Often; Sometimes; Rarely; Never}
+    \item I often prioritize my current needs and desires, even if it means delaying my long-term goals.
+
+    \textit{Agree strongly; Agree somewhat; Indifferent; Disagree somewhat; Disagree strongly}
+    
+\end{enumerate}
+
+    % \item What is the percentage chance that your personal income in 5 years will be within \$10,000 of the previous answer?
+
+    % \textit{[slider 0-100]}
+
+    % \item What do you expect your annual personal income to be (before taxes) at the peak of your career? 
+
+    % \textit{[text box]}
+
+    % \item What is the lowest income you might personally earn (before taxes) at the peak of your career?
+
+    % \textit{[text box]}
+
+    % \item What is the highest income you might personally earn (before taxes) at the peak of your career?
+
+    % \textit{[text box]}
+
+
+\section*{Career plans and materialism}
+
+\begin{enumerate}[resume]
+
+    \item What do you value most in a job? Please rank top to bottom from most to least important by clicking or tapping on the choice tabs and dragging them up or down.
+
+    \textit{Salary and benefits; Reasonable workload and/or flexible hours; Career growth and development; Meaningful and/or challenging work; Positive work environment and relationships}
+
+    % \item Imagine there are 100 grapes in front of you. 1 of them is poisonous and you will die immediately if you eat it, but if you eat any of the other 99 grapes, you will earn \$100,000 for each grape. How many grapes do you choose to eat?
+
+    % \textit{[text box]}
+
+    \item I would be satisfied with a modest income that covers basic needs—food, housing, clothing, healthcare, transportation—with a small amount left over for occasional extras.
+
+    \textit{Agree strongly; Agree somewhat; Neutral; Disagree somewhat; Disagree strongly}
+
+    \item Do you plan on starting a business at some point?
+
+    \textit{Definitely / I have already started a business; Probably; Maybe; Probably not; Definitely not}
+
+    
+    % \item Is being successful in your career important to you?
+
+    % \textit{Not at all important; Not very important; Moderately important; Very important; Extremely important}
+
+    % \item Is earning a lot of money an important goal for you?
+
+    % \textit{Not important at all; Not very important; Moderately important; Very important; Extremely important}
+
+    % \item I am satisfied with the material things I currently own.
+
+    % \textit{Agree strongly; Agree somewhat; Neutral; Disagree somewhat; Disagree strongly}
+
+\end{enumerate}
+
+\section*{Financial (in)security}
+
+\begin{enumerate}[resume]
+
+    \item How stable is your current primary source of income?
+
+    \textit{Very stable; Somewhat stable; Neutral; Somewhat unstable; Very unstable}
+
+    \item To what degree are you worried about losing your job or not finding a job?
+
+    \textit{Very worried; Somewhat worried; Not very worried; Not worried at all}
+
+    \item If you were to lose your job in the next 12 months, how likely is it that you would find a job with similar or higher pay within 3 months?
+
+    \textit{Almost certain (90-100\%); Likely (60-90\%); Even chance (40-60\%); Unlikely (10-40\%); Almost no chance (0-10\%)}
+
+    \item If you lost your source of income, how long could you maintain your current lifestyle using your financial safety net (savings and assets)?
+
+    \textit{Less than 1 month; 1-3 months; 3-6 months; More than 6 months}
+
+    % \item Would receiving an extra \$10,000 a year change your quality of life?
+
+    % \textit{Not at all; A moderate amount; A large amount} 
+
+\end{enumerate}
+
+\section*{Existential uncertainty}
+
+\begin{enumerate}[resume]
+
+    \item What is the risk of losing your job to artificial intelligence (AI) in the next 10 years?
+
+    \textit{I have already lost a job to AI; The risk is high; The risk is substantial; The risk is low; No risk}
+
+    \item What is the risk that you have to relocate due to climate events in the next 10 years?
+
+    \textit{I have already relocated due to climate events; The risk is high; The risk is substantial; The risk is low; No risk}
+
+    \item What is the risk that you have to live without health insurance in the next 10 years?
+
+    \textit{I currently live without health insurance; The risk is high; The risk is substantial; The risk is low; No risk}
+
+    \item What is the risk that you are unable to ever own a home?
+
+    \textit{The risk is high; The risk is substantial; The risk is low; No risk; I already have owned or currently own a home}
+
+\end{enumerate}
+
+\section*{Demographics}
+
+Thank you for making it this far! To conclude, we would like to ask you some demographic questions.
+
+\begin{enumerate}[resume]
+
+    \item What is your gender?
+
+    \textit{Male; Female; Non-binary; Prefer not to say}
+
+    \item Please indicate your marital status.
+
+    \textit{Single; Married; Cohabitating; Other [text box]}
+
+    \item How many children have you had?
+
+    \textit{I do not have children; 1; 2; 3; 4; 5 or more}
+
+    \item How many children in total do you plan on having over your lifetime?
+
+    \textit{0; 1; 2; 3; 4; 5 or more; Unsure}
+
+    \item How would you describe your ethnicity and/or race?
+
+    \textit{American Indian or Alaska Native; Asian or Asian American; Black or African American; Hispanic or Latino; Middle Eastern or North African; Native Hawaiian or Pacific Islander; 
+    White or European American; Other [text box]}
+    
+    % \item How would you describe your ethnicity/race?
+
+    % \textit{European American/White; African American/Black; Hispanic/Latino; Asian/Asian American; Other [text box]}
+
+    % https://www.census.gov/newsroom/blogs/random-samplings/2024/04/updates-race-ethnicity-standards.html#:~:text=Question%20Stem%20and%20Instructions,instances%2C%20better%20than%20other%20variations.
+
+    \item Were you born in the United States?
+
+    \textit{Yes; No}
+
+    \item Were both of your parents born in the United States?
+
+    \textit{Yes; No}
+
+    \item In which state do you currently reside? (If you are in college or temporarily stationed with the military, please enter the location you spend the most time in.)
+
+    \textit{[state dropdown]}
+
+    \item What is your current 5-digit ZIP code? (If you are in college or temporarily stationed with the military, please enter the location you spend the most time in. You may skip if you are not sure.)
+
+    \textit{[text box]}
+
+    \item Which state do you consider your home state (birthplace or place you grew up)?
+
+    \textit{[state dropdown]}
+
+    \item What is the name of your home town or city (birthplace or place you grew up)?
+
+    \textit{[text box]}
+
+    \item Would you consider your home town or city urban, suburban, or rural?
+
+    \textit{Urban; Suburban; Rural}
+
+    \item Are you a student right now?
+
+    \textit{Not a student; High school; 2-year college; 4-year college; Master’s degree (e.g., MA, MS, MBA); Research doctoral program (e.g., PhD, DSc); Professional doctoral program (e.g., JD, MD)}
+
+    \item Which category best describes your highest level education?
+
+    \textit{Eighth grade or less; Some high school; High school degree / GED; Some college; 2-year college degree; 4-year college degree; Master’s degree (e.g., MA, MS, MBA); Research doctoral degree (e.g., PhD, DSc); Professional doctoral degree (e.g., JD, MD)}
+
+    \item What is the highest level of education you plan on obtaining?
+
+    \textit{Eighth grade or less; Some high school; High school degree / GED; Some college; 2-year college degree; 4-year college degree; Master’s degree (e.g., MA, MS, MBA); Research doctorate (e.g., PhD, DSc); Professional doctorate (e.g., JD, MD)}
+
+    \item Which category best describes your mother's (or first caregiver's) highest level of education?
+
+    \textit{Eighth grade or less; Some high school; High school degree / GED; Some college; 2-year college degree; 4-year college degree; Master’s degree (e.g., MA, MS, MBA); Research doctorate (e.g., PhD, DSc); Professional doctorate (e.g., JD, MD)}
+
+    \item Which category best describes your father's (or second caregiver's) highest level of education?
+
+    \textit{Eighth grade or less; Some high school; High school degree / GED; Some college; 2-year college degree; 4-year college degree; Master’s degree (e.g., MA, MS, MBA); Research doctorate (e.g., PhD, DSc); Professional doctorate (e.g., JD, MD)}
+
+    \item What is your current employment status?
+
+    \textit{Full-time employee; Part-time employee; Self-employed or small business owner; Unemployed and looking for work; Student; Not in the labor force (for example: retired, or full-time parent)}
+
+    \item On economic policy matters, where do you see yourself on the liberal/conservative spectrum?
+    
+    \textit{Liberal; Moderate; Conservative}
+
+    \item On social policy matters, where do you see yourself on the liberal/conservative spectrum?
+    
+    \textit{Liberal; Moderate; Conservative}
+
+    \item Who did you vote for in the 2024 U.S. presidential election?
+
+    \textit{Kamala Harris; Donald Trump; Other [text box]; I did not vote}
+
+    \item Who did you vote for in the 2020 U.S. presidential election?
+
+    \textit{Joe Biden; Donald Trump; Other [text box]; I did not vote}
+
+    % \item As we conclude, it is important that we only include responses from people who devoted their full attention to the previous questions. In your honest opinion, should we use your responses, or should we discard them? Your answer will not affect in any way the payment you will receive for taking this survey.
+
+    % \textit{Yes, I have devoted full attention to the questions so far and I think you should use my responses for your study.; No, I have not devoted full attention to the questions so far and I think you should not use my responses for your study.}
+
+\end{enumerate}
+
+\section*{Feedback}
+
+\begin{enumerate}[resume]
+
+    % \item In the spirit of the survey, we have an extra pool of \$10,000 that we plan on giving participants. One possibility is to give more money to those who spent more time completing the survey (time spent does not include this question.) How do you think we should distribute the money?
+
+    % \textit{Split the \$10,000 among those in the top 1\% of time spent (around \$1,000 each); Split the \$10,000 among those in the top 10\% of time spent (around \$100 each); Split the \$10,000 among those in the top 50\% of time spent (around \$20 each); Give everyone an equal cut of the \$10,000 (around \$10 each); Give all \$10,000 to someone at random, no matter how much time they spent}
+
+    % \item In which percentile do you believe you fall regarding the time spent on this survey?
+
+    % \textit{Top 1\% (spent a lot of time); Top 10\%; Top 50\%; Bottom 50\% (did not spend much time)}
+
+    \item Do you feel that this survey was left- or right-wing biased or unbiased?
+
+    \textit{Left-wing biased; Right-wing biased; Unbiased}
+
+    \item Let us know if you have any feedback—we're especially interested in whether any questions were confusing or if the survey length felt appropriate. Otherwise, we thank you for participating in the project!
+
+    \textit{[text box]}
+    
+\end{enumerate}
+
+% \section*{Work in progress: Self-reported evolution of beliefs}
+
+% \begin{enumerate}
+%     \item How have your beliefs about redistribution of income (from the rich to the poor) changed over time?
+
+%     \textit{I now support it much more; I now support it significantly more; I now support it slightly more; No change in opinion; I now support it slightly less; I now support it significantly less; I now support it much less; Multiple changes of opinion in different directions; Other: [text box]}
+
+%     \item Why did you change your opinion? 
+
+%     \textit{[additional questions in progress]}
+    
+% \end{enumerate}
+
+\end{document}

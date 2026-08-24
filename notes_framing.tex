@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage{graphicx} 
+
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{5pt}
+
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{centernot}
+\usepackage{nicefrac}
+\usepackage{bm}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[round]{natbib} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumerate}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{subcaption}
+
+\setlist[itemize]{label=\textendash}
+
+\newenvironment{answer}{\par\vspace{0.8em}\textbf{A:}}{\par}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\fa}{\text{ for all }} 
+\newcommand{\ex}{\text{ there exists }}
+\newcommand{\st}{\text{ such that }}
+\newcommand{\for}{\text{ for }}
+\newcommand{\andt}{\text{ and }}
+\newcommand{\ort}{\text{ or }}
+\newcommand{\ift}{\text{ if }}
+\newcommand{\where}{\text{ where }}
+\newcommand{\but}{\text{ but }}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\rat}{\mathbb{Q}}
+\newcommand{\com}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\corr}{\rightrightarrows}
+\newcommand{\ul}{\underline}
+\newcommand{\bft}{\textbf}
+\newcommand{\itt}{\textit}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\operatorname{P}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Unif}{\operatorname{Unif}}
+\newcommand{\Bias}{\operatorname{Bias}}
+\newcommand{\N}{\operatorname{N}}
+\newcommand{\MSE}{\operatorname{MSE}}
+\newcommand{\iffs}{\Leftrightarrow}
+\newcommand{\prefeq}{\trianglerighteq}
+\newcommand{\pref}{\triangleright}
+\newcommand{\indiff}{\mathrel{\triangleright\triangleleft}}
+
+\title{Conceptual framing}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% \begin{center}
+%     {\Large Conceptual analysis} \\
+%     \vspace{0.5em}
+% \end{center}
+
+% \section*{\centering \LARGE \normalfont Codebook}
+
+\section*{Policy choice framework}
+
+Claim: redistributive preferences can be framed as stemming from either beliefs or preferences about the economic game.
+
+Let the \textit{economic game} be defined as the conditional distribution of a society's members' income and wealth depending on their choices of effort, investment, risk-taking, personal traits, and inherited wealth. Knowing this conditional distribution would tell us the current distribution of income and wealth, one's personal circumstances, circumstances of in-groups and out-groups, notions of mobility, and whether competition is zero-sum.
+
+\textit{Beliefs} are disagreements about the current state of the economic game and how the economic game would change in response to policy. 
+
+\textit{Preferences} map a societal economic game to a personal utility. This definition encompasses notions of fairness, generosity, universalism, and preference for consumption vs. leisure. Fairness could be described as the mapping between effort, risk-taking, or investment to income; generosity as the extent to which others' income factors into one's own utility; universalism as the extent to which specific groups factor into one's own utility; and preference for leisure as how much one values economic games that minimize effort. 
+
+\blue{Useful for decomposing age gradient? Possible accounting strategies? }
+
+\subsection*{2x2 beliefs}
+
+Changes in the economic game are often most relevant for young people because they haven't played it yet; they have yet to work hard in their careers, invest in their education, and take risks to advance themselves. 
+
+However, motives for redistribution may depend on which game young people believe themselves to be playing. Consider a simplified situation where the game is defined by whether it is zero-sum vs. positive-sum and high-mobility vs. low-mobility. In a mobile/zero-sum setting,
+redistribution might reduce wasteful effort (“rat race” competition), especially for individuals with a strong distaste for effort
+or preference for leisure. In immobile settings, redistribution may instead function as insurance, especially for those with high perceived exposure to downside risk.
+% insure themselves from unlucky career/income draws
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cc}
+        & \textbf{Immobile} & \textbf{Mobile} \\
+        \hline
+        \textbf{Positive-sum} & Allow some risk & Allow some competition \\
+        \textbf{Zero-sum} & Insure income & Reduce competition
+    \end{tabular}
+    \caption{Beliefs about economic game and redistributive preferences}
+\end{table}
+
+If exposure to career competition and income risk declines with age, the relative weight on these motives may shift over the
+life cycle. That is, even fixing one's underlying beliefs about the system over their entire life cycle, their policy preferences could evolve as they age.
+
+
+\end{document}

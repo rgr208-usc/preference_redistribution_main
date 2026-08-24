@@ -1,0 +1,68 @@
+\documentclass[landscape]{article}
+\usepackage[a4paper,landscape,margin=1in]{geometry}  % Set page layout
+\usepackage{graphicx}
+\usepackage{amsmath}  % Optional: Better math formatting
+\usepackage{xstring}  % Provides \StrSubstitute command
+\usepackage{pgffor} % Allows loops
+\usepackage{threeparttable}  % Package for table notes
+\usepackage{amsmath}  % Optional: Better math formatting
+\begin{document}
+\clearpage
+\foreach \var in {
+    shouldconcern_sebar,
+    shouldconcernpred_sebar,
+    progressivity_sebar,
+    progressivitypred_sebar,
+    viewchange_sebar,
+    proposal_sebar,
+    proposalpred_sebar,
+    proposal_poor_sebar,
+    proposal_middle_sebar,
+    proposal_both_sebar,
+    taxdemotivates_sebar,
+    gapmotivates_sebar,
+    fundedu_sebar,
+    protecttrade_sebar,
+    cuttaxes_sebar,
+    univhealth_sebar,
+    wealthtax_sebar,
+    zerosumrich_sebar,
+    zerosumceo_sebar,
+    zerosumwomen_sebar,
+    zerosumdei_sebar,
+    moveup20_sebar,
+    moveup50_sebar,
+    moveupnow_sebar,
+    workhaspaid_sebar,
+    workwillpay_sebar,
+    eduwillpay_sebar,
+    stranger100_sebar,
+    friend100_sebar,
+    oneyr1100_sebar,
+    oneyr1500_sebar,
+    oneyr2000_sebar,
+    fiveyr1100_sebar,
+    fiveyr1500_sebar,
+    fiveyr2000_sebar,
+    currentdesires_sebar,
+    satisfiedbasics_sebar,
+    startbiz_sebar,
+    stableincome_sebar,
+    worriedjob_sebar,
+    similarjob_sebar,
+    safetynet_sebar,
+    riskai_sebar,
+    riskclimate_sebar,
+    riskhealth_sebar,
+    riskhome_sebar,
+     riskhome2_sebar,
+} {%
+    \includegraphics[width=\textwidth]{graphs/\var.png}%
+    \clearpage
+}
+
+
+\end{document}
+
+
+\end{document\

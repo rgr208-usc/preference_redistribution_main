@@ -1,0 +1,43 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Proposal (Ordered Logit, Odds Ratios)}
+\begin{tabular}{l*{4}{c}}
+\toprule
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{All}&\multicolumn{1}{c}{Poor}&\multicolumn{1}{c}{Middle}&\multicolumn{1}{c}{Both}\\
+\midrule
+proposal    &                     &                     &                     &                     \\
+zerosumrich &       1.219\sym{***}&       1.277\sym{***}&       1.157\sym{***}&       1.271\sym{***}\\
+            &     (0.042)         &     (0.081)         &     (0.066)         &     (0.076)         \\
+\addlinespace
+zerosumceo  &       1.289\sym{***}&       1.394\sym{***}&       1.159\sym{**} &       1.338\sym{***}\\
+            &     (0.050)         &     (0.103)         &     (0.070)         &     (0.092)         \\
+\addlinespace
+zerosumdei  &       0.852\sym{***}&       0.885\sym{**} &       0.923\sym{*}  &       0.745\sym{***}\\
+            &     (0.024)         &     (0.044)         &     (0.044)         &     (0.039)         \\
+\addlinespace
+taxdemotivates&       0.607\sym{***}&       0.549\sym{***}&       0.686\sym{***}&       0.570\sym{***}\\
+            &     (0.023)         &     (0.037)         &     (0.043)         &     (0.038)         \\
+\addlinespace
+stranger100 &       1.030\sym{**} &       1.060\sym{**} &       1.022         &       1.003         \\
+            &     (0.014)         &     (0.026)         &     (0.024)         &     (0.023)         \\
+\addlinespace
+riskclimate &       1.107\sym{**} &       1.117         &       1.090         &       1.143         \\
+            &     (0.052)         &     (0.092)         &     (0.089)         &     (0.096)         \\
+\addlinespace
+eduwillpay  &       1.077\sym{**} &       1.041         &       1.069         &       1.121\sym{*}  \\
+            &     (0.040)         &     (0.069)         &     (0.066)         &     (0.077)         \\
+\addlinespace
+density     &       1.124\sym{**} &       1.098         &       1.068         &       1.182         \\
+            &     (0.065)         &     (0.112)         &     (0.105)         &     (0.125)         \\
+\addlinespace
+male        &       1.310\sym{***}&       1.519\sym{***}&       1.227         &       1.271\sym{*}  \\
+            &     (0.102)         &     (0.212)         &     (0.162)         &     (0.176)         \\
+\midrule
+Observations&        2250         &         729         &         772         &         749         \\
+Pseudo R²  &      0.0779         &       0.104         &      0.0377         &       0.117         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Exponentiated coefficients; Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
