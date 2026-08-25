@@ -76,9 +76,7 @@ Using long-running, repeatedly fielded surveys (the GSS and ANES), we further es
 \end{figure}
 
 
-\subsection{Literature review}
-
-A long tradition models preferences for redistribution as driven by material self-interest: in the canonical framework, individuals below the mean income favor more redistribution than those above it. Yet a large body of evidence finds that self-interest explains only a limited share of the variation in attitudes, and that beliefs, values, and perceptions of fairness matter at least as much \citep{alesina2011preferences}. An older political-science literature had already documented the weak explanatory power of narrow self-interest, and recent economics has increasingly turned to the beliefs people hold about how the economy works. We contribute to this shift by asking which beliefs, if any, account for a specific and growing pattern---the age gradient in redistributive support.
+This paper draws on and connects several strands of research on the determinants of redistributive preferences. A long tradition models such preferences as driven by material self-interest: in the canonical framework, individuals below the mean income favor more redistribution than those above it. Yet a large body of evidence finds that self-interest explains only a limited share of the variation in attitudes, and that beliefs, values, and perceptions of fairness matter at least as much \citep{alesina2011preferences}. An older political-science literature had already documented the weak explanatory power of narrow self-interest, and recent economics has increasingly turned to the beliefs people hold about how the economy works. We contribute to this shift by asking which beliefs, if any, account for a specific and growing pattern---the age gradient in redistributive support.
 
 Whether inequality is seen as acceptable depends heavily on beliefs about its \emph{origins}. \citet{piketty1995social} shows how differing beliefs about the roles of effort and luck can sustain distinct long-run redistribution equilibria, and \citet{benabou2006belief} formalize how motivated ``just-world'' beliefs generate a low-redistribution equilibrium alongside a high-redistribution one. Empirically, \citet{alesina2018intergenerational} document that Americans are overly optimistic about upward mobility and that those who are more pessimistic favor more redistribution, with effects that hinge on views of government. Experimental work reinforces the role of fairness views: \citet{almaas2020cutthroat} find that Americans tolerate inequality arising from performance far more than inequality arising from luck, and are more efficiency-seeking than Scandinavians, while \citet{enke2020moral} links moral universalism to more redistributive political preferences.
 
@@ -89,9 +87,20 @@ A parallel literature emphasizes beliefs about the \emph{efficiency} costs of re
 Finally, a literature on formative experiences helps explain why cohorts might differ and why the gradient could be widening. Macroeconomic conditions experienced during impressionable years leave durable imprints on economic attitudes \citep{malmendier2011depression}, and \citet{giuliano2023recessions} find that individuals who came of age during recessions place more weight on luck relative to effort and are more supportive of redistribution. This motivates our investigation of what may have shifted the beliefs of younger cohorts. Relative to these strands---each of which typically studies a single belief or a single survey---we assemble a comprehensive battery of candidate explanations in one instrument, ask which are robust and sizable, and use the answer to account for both the level and the widening of the age gradient.
 
 \newpage
-\section{A widening age gradient in redistributive preferences}
+\section{Age Gradient in Support for Redistribution: Evidence from 2025 Survey}
 
-Recent surveys reveal a strong age gradient \blue{(or generational gap)} in preferences for the redistribution of income and wealth.
+\subsection{The Survey Design}
+
+
+Our survey was fielded in 2025 to a sample of roughly 2{,}000 U.S. adults recruited through Prolific, balanced equally between respondents younger and older than 30 to ensure ample statistical power on both sides of the divide of interest. Alongside a battery of redistribution-preference questions, it elicits a broad range of beliefs, values, financial circumstances, and demographics, which we exploit in later sections to adjudicate among competing explanations for the age gap. \todo{Describe the wave-1 questionnaire, the Prolific bot-screening process, and summary statistics.}
+
+
+\todo{Describe wave 1 questionnaire, Prolific bot process, and summary statistics.}
+
+\subsection{Age Gradient Evidence}
+
+
+Our 2025 survey reveals a strong age gradient \blue{(or generational gap)} in preferences for the redistribution of income and wealth.
 
 \begin{figure}[H]
     \centering
@@ -100,8 +109,6 @@ Recent surveys reveal a strong age gradient \blue{(or generational gap)} in pref
     \label{fig:cross-section}
 \end{figure}
 \todo{Need to add labels and captions to plots, add any end-notes to tables, and make some tables latex rather than pdf}
-
-Longitudinal surveys suggest that this gradient has widened: as Figure~\ref{fig:widening} shows, it is barely noticeable in the 1970s and 1980s but pronounced in the most recent waves.
 
 In our online survey data, unadjusted regressions of age on policy preferences confirm the current existence of an age divide. For the binary question ``Should the government concern itself with reducing income differences between rich and poor people?'' we use a logistic regression, and for the remainder of the section, we use simple OLS regressions. The negative age coefficient suggests that, on average, older Americans support redistribution less and younger Americans support redistribution more.
 
@@ -130,111 +137,15 @@ pro-redistribution. Standard errors in parentheses.
 \end{threeparttable}
 \end{table}
 
-Cross-checking against the most recent waves of the GSS and ANES, together with the large survey of \citet{chinoy2026zero}, confirms the finding.
-\begin{table}[H]
-\caption{Single-period bivariate OLS regressions}
-\centering
-\begin{threeparttable}
-\begin{tabular}{lccc}
-\toprule
- & GSS reduce inc. diffs. & ANES guaranteed income & Chinoy et al. reduce inc. diffs. \\
-\midrule
-Age & -0.2573$^{***}$ & -0.2064$^{***}$ & -0.1811$^{***}$ \\
-    & (0.0238) & (0.0148) & (0.0061) \\
-\midrule
-N & 1,710 & 4,520 & 26,730 \\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}[flushleft]
-\footnotesize
-\item Data: GSS fielded 2021, ANES fielded 2024, Chinoy et al. fielded 2020-23
-\item Both age and outcome z-scored (per-SD units). All outcomes coded high =
-pro-redistribution. Standard errors in parentheses.
-\item $^{*}$ $p<0.1$, $^{**}$ $p<0.05$, $^{***}$ $p<0.01$.
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
-
-The widening of the generational divide over time is strongly statistically significant. The negative age coefficient suggests that older Americans support redistribution less, the positive period coefficient suggests that support across the population has increased over time, and the negative coefficient on the age-period interaction suggests that in later (more recent) years, the age gradient has steepened.
-
-\begin{table}[H]
-\caption{Multi-period OLS regressions with age-period interaction}
-\label{table:multi-period-regression}
-\centering
-\begin{threeparttable}
-\begin{tabular}{lcc}
-\toprule
- & GSS reduce inc. diffs. & ANES guaranteed income \\
-\midrule
-Age & -0.0356$^{**}$ & -0.0239$^{***}$ \\
-    & (0.0153) & (0.0091) \\
-Period & 0.0365$^{***}$ & 0.0428$^{***}$ \\
-       & (0.0079) & (0.0027) \\
-Age $\times$ Period & -0.0506$^{***}$ & -0.0278$^{***}$ \\
-                    & (0.0078) & (0.0027) \\
-\midrule
-N & 13,071 & 45,853 \\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}[flushleft]
-\footnotesize
-\item Data: GSS waves 1987-2021, ANES waves 1972-2024
-\item Both age and outcome z-scored (per-SD units). All outcomes coded high =
-pro-redistribution. Period = decades since first wave used, kept continuous.
-Standard errors in parentheses.
-\item $^{*}$ $p<0.1$, $^{**}$ $p<0.05$, $^{***}$ $p<0.01$.
-\item F-test of Age $\times$ Period $=0$: GSS $F=42.17$, ANES $F=106.86$.
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
-
-\subsection{Cohort effects or age effects?}
-
-The age, period, and cohort (APC) effects cannot be separately identified without additional restrictions. A \emph{widening} of the gradient, however, cannot come from period effects alone; it must reflect cohort effects or time-varying age effects. The figures below offer suggestive evidence. Generations start at different mean levels---partly explained by the positive period effects in Table~\ref{table:multi-period-regression}, but potentially also reflecting positive cohort effects. Preferences are fairly stable over time within a generation, suggesting cohort effects, while a mild decline over the life cycle suggests some age effects as well (especially if period effects trend in the opposite direction). Later sections test whether the underlying mechanisms are more consistent with the age/life-cycle hypothesis or the cohort/imprinting hypothesis.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{graphs/pair_apc_GSS_GOVEQINC.pdf}
-    \caption{GSS (\textsc{goveqinc}): mean support by age bracket (left) and by survey year (right), plotted separately for each birth generation. Generations begin at different levels and are fairly flat over the life cycle, pointing to a cohort component in the gradient.}
-    \label{fig:apc-gss}
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{graphs/pair_apc_ANES_VCF0809.pdf}
-    \caption{ANES (\textsc{vcf0809}): mean support by age bracket (left) and by survey year (right), plotted separately for each birth generation.}
-    \label{fig:apc-anes}
-\end{figure}
-
-Plotting age against predicted mean preferences under birth-decade (cohort) versus survey-year (period) fixed effects suggests that cohort effects drive a large part of the age gradient, whereas period effects---as expected---do not: controlling for birth-decade fixed effects shrinks the age slope, while controlling for survey-year fixed effects leaves it essentially unchanged (Figure~\ref{fig:fe-curves}).
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{0.48\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{graphs/fe_GSS_GOVEQINC.pdf}
-    \caption{GSS (\textsc{goveqinc})}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.48\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{graphs/fe_ANES_VCF0809.pdf}
-    \caption{ANES (\textsc{vcf0809})}
-\end{subfigure}
-\caption{The age--preference slope under birth-decade (cohort) versus survey-year (period) fixed effects. Controlling for cohort flattens the age slope, whereas controlling for period leaves it essentially unchanged---consistent with cohort effects, rather than period effects, driving much of the age gradient.}
-\label{fig:fe-curves}
-\end{figure}
+\subsection{The Robust Determinants of Support for Redistribution}
 
 
+\nic{Could be a lifecycle aspect to some of these beliefs, so the title may be claiming too much.}
 
-\newpage
-\section{The life-cycle hypothesis: rationality under financial uncertainty}
+\subsubsection{Position and financial risk: weak evidence}
+
 % financial position and risks
 
-\subsection{Survey design}
-
-\todo{Describe wave 1 questionnaire, Prolific bot process, and summary statistics.}
-
-\subsection{Empirical tests: weak evidence}
 
 \todo{Insert tests/falsification.}
 
@@ -249,11 +160,8 @@ So far, we find statistically significant but quantitatively small evidence that
 \nic{Values/personality traits such as generosity, materialism, and universalism/individualism could plausibly change over the life cycle, but we find them to weakly predict preferences for redistribution.}
 
 \newpage
-\section{The cohort-imprinting hypothesis: beliefs about the economic game}
+\subsubsection{Mechanism clusters and sample coverage}
 
-\nic{Could be a lifecycle aspect to some of these beliefs, so the title may be claiming too much.}
-
-\subsection{Mechanism clusters and sample coverage}
 
 The following tables describe the definitions of the variable clusters used in later sections and the number of questions fielded in each survey that fall within a cluster (our own, longitudinal, or recently-published data).
 
@@ -408,7 +316,8 @@ other preferences & fairness of the current distribution & 1~(1987-2021) & \text
     
 \end{landscape}
 
-\subsection{Shapley decomposition: most-important predictors of preferences}
+\subsubsection{Shapley decomposition: most-important predictors of preferences}
+
 
 \todo{Insert classes of variables collected/used in the longitudinal surveys. Chose candidate correlates representing every hypothesis I could think of from the literature.}
 
@@ -471,9 +380,11 @@ ANES features few questions about relevant economic beliefs, and WVS has good qu
 
 
 \newpage
-\section{Can divergence in beliefs explain divergence in preferences?}
+\subsection{Explaining the Age Gradient}
 
-\subsection{Age gradients in beliefs: suggestive graphs}
+
+\subsubsection{Age gradients in beliefs: suggestive graphs}
+
 
 Our online survey and \cite{chinoy2026zero} find strong age gradients in zero-sum wealth beliefs: young people on average are more likely to believe that people become wealthy by taking from others.
 
@@ -542,7 +453,8 @@ Lastly, young Americans seem increasingly less confident in the U.S. government.
     \includegraphics[width=0.5\linewidth]{graphs/WVS_E069_11_evl.pdf}
 \end{figure}
 
-\subsection{Gelbach decomposition}
+\subsubsection{Gelbach decomposition}
+
 
 Methodology: Our Gelbach decomposition compares a ``short'' model with only age as a covariate to a ``full'' model with age and many other variables (in this case, beliefs) as covariates. Our full model will feature a smaller coefficient (in absolute value) on the age covariate, suggesting an omitted variable bias in the short model that will be attributed to different belief covariates. If a belief is negatively correlated with age and positively correlated with demand for redistribution (or vice-versa), it will be an important/highly-ranked contributor in the Gelbach decomposition. If it is correlated with age but not preferences, or preferences but not age, it will not show up in the decomposition.
 
@@ -572,11 +484,121 @@ The GSS decomposition follows similar themes, but features a slightly different 
 \end{figure}
 
 \newpage
-\section{Why did beliefs change?}
+\subsection{Robustness: Evidence from Other Recent Surveys}
+
+Cross-checking against the most recent waves of the GSS and ANES, together with the large survey of \citet{chinoy2026zero}, confirms the finding.
+\begin{table}[H]
+\caption{Single-period bivariate OLS regressions}
+\centering
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & GSS reduce inc. diffs. & ANES guaranteed income & Chinoy et al. reduce inc. diffs. \\
+\midrule
+Age & -0.2573$^{***}$ & -0.2064$^{***}$ & -0.1811$^{***}$ \\
+    & (0.0238) & (0.0148) & (0.0061) \\
+\midrule
+N & 1,710 & 4,520 & 26,730 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Data: GSS fielded 2021, ANES fielded 2024, Chinoy et al. fielded 2020-23
+\item Both age and outcome z-scored (per-SD units). All outcomes coded high =
+pro-redistribution. Standard errors in parentheses.
+\item $^{*}$ $p<0.1$, $^{**}$ $p<0.05$, $^{***}$ $p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+\newpage
+\section{The Widening Age Gradient in Support for Redistribution: Evidence and Determinants}
+
+Longitudinal surveys suggest that this gradient has widened: as Figure~\ref{fig:widening} shows, it is barely noticeable in the 1970s and 1980s but pronounced in the most recent waves.
+
+The widening of the generational divide over time is strongly statistically significant. The negative age coefficient suggests that older Americans support redistribution less, the positive period coefficient suggests that support across the population has increased over time, and the negative coefficient on the age-period interaction suggests that in later (more recent) years, the age gradient has steepened.
+
+\begin{table}[H]
+\caption{Multi-period OLS regressions with age-period interaction}
+\label{table:multi-period-regression}
+\centering
+\begin{threeparttable}
+\begin{tabular}{lcc}
+\toprule
+ & GSS reduce inc. diffs. & ANES guaranteed income \\
+\midrule
+Age & -0.0356$^{**}$ & -0.0239$^{***}$ \\
+    & (0.0153) & (0.0091) \\
+Period & 0.0365$^{***}$ & 0.0428$^{***}$ \\
+       & (0.0079) & (0.0027) \\
+Age $\times$ Period & -0.0506$^{***}$ & -0.0278$^{***}$ \\
+                    & (0.0078) & (0.0027) \\
+\midrule
+N & 13,071 & 45,853 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Data: GSS waves 1987-2021, ANES waves 1972-2024
+\item Both age and outcome z-scored (per-SD units). All outcomes coded high =
+pro-redistribution. Period = decades since first wave used, kept continuous.
+Standard errors in parentheses.
+\item $^{*}$ $p<0.1$, $^{**}$ $p<0.05$, $^{***}$ $p<0.01$.
+\item F-test of Age $\times$ Period $=0$: GSS $F=42.17$, ANES $F=106.86$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\subsection{Cohort effects or age effects?}
+
+
+The age, period, and cohort (APC) effects cannot be separately identified without additional restrictions. A \emph{widening} of the gradient, however, cannot come from period effects alone; it must reflect cohort effects or time-varying age effects. The figures below offer suggestive evidence. Generations start at different mean levels---partly explained by the positive period effects in Table~\ref{table:multi-period-regression}, but potentially also reflecting positive cohort effects. Preferences are fairly stable over time within a generation, suggesting cohort effects, while a mild decline over the life cycle suggests some age effects as well (especially if period effects trend in the opposite direction). Later sections test whether the underlying mechanisms are more consistent with the age/life-cycle hypothesis or the cohort/imprinting hypothesis.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{graphs/pair_apc_GSS_GOVEQINC.pdf}
+    \caption{GSS (\textsc{goveqinc}): mean support by age bracket (left) and by survey year (right), plotted separately for each birth generation. Generations begin at different levels and are fairly flat over the life cycle, pointing to a cohort component in the gradient.}
+    \label{fig:apc-gss}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{graphs/pair_apc_ANES_VCF0809.pdf}
+    \caption{ANES (\textsc{vcf0809}): mean support by age bracket (left) and by survey year (right), plotted separately for each birth generation.}
+    \label{fig:apc-anes}
+\end{figure}
+
+Plotting age against predicted mean preferences under birth-decade (cohort) versus survey-year (period) fixed effects suggests that cohort effects drive a large part of the age gradient, whereas period effects---as expected---do not: controlling for birth-decade fixed effects shrinks the age slope, while controlling for survey-year fixed effects leaves it essentially unchanged (Figure~\ref{fig:fe-curves}).
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphs/fe_GSS_GOVEQINC.pdf}
+    \caption{GSS (\textsc{goveqinc})}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphs/fe_ANES_VCF0809.pdf}
+    \caption{ANES (\textsc{vcf0809})}
+\end{subfigure}
+\caption{The age--preference slope under birth-decade (cohort) versus survey-year (period) fixed effects. Controlling for cohort flattens the age slope, whereas controlling for period leaves it essentially unchanged---consistent with cohort effects, rather than period effects, driving much of the age gradient.}
+\label{fig:fe-curves}
+\end{figure}
+
+
+
+\newpage
+\subsection{Why did beliefs change?}
+
 
 \todo{Can look into growth during formative years, inequality, and exposure to diverse groups. Emphasize zero-sum wealth/income vs. zero-sum race/social equality, since a shock may move them in opposite directions (not explored in \cite{chinoy2026zero}).}
 
+
+\newpage
 \section{Conclusion}
+
 
 \bibliographystyle{ecta} % ecta apalike
 \bibliography{refs}
