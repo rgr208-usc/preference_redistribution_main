@@ -1,0 +1,443 @@
+\documentclass{article}
+\usepackage{graphicx} 
+
+% \setlength{\parindent}{0pt}
+% \setlength{\parskip}{5pt}
+
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{centernot}
+\usepackage{nicefrac}
+\usepackage{bm}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[round]{natbib} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumerate}
+
+\newenvironment{answer}{\par\vspace{0.8em}\textbf{A:}}{\par}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\fa}{\text{ for all }} 
+\newcommand{\ex}{\text{ there exists }}
+\newcommand{\st}{\text{ such that }}
+\newcommand{\for}{\text{ for }}
+\newcommand{\andt}{\text{ and }}
+\newcommand{\ort}{\text{ or }}
+\newcommand{\ift}{\text{ if }}
+\newcommand{\where}{\text{ where }}
+\newcommand{\but}{\text{ but }}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\rat}{\mathbb{Q}}
+\newcommand{\com}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\corr}{\rightrightarrows}
+\newcommand{\ul}{\underline}
+\newcommand{\bft}{\textbf}
+\newcommand{\itt}{\textit}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\operatorname{P}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Unif}{\operatorname{Unif}}
+\newcommand{\Bias}{\operatorname{Bias}}
+\newcommand{\N}{\operatorname{N}}
+\newcommand{\MSE}{\operatorname{MSE}}
+\newcommand{\iffs}{\Leftrightarrow}
+\newcommand{\prefeq}{\trianglerighteq}
+\newcommand{\pref}{\triangleright}
+\newcommand{\indiff}{\mathrel{\triangleright\triangleleft}}
+\newcommand{\citeh}[1]{\noindent \textbf{\cite*{#1}}}
+\newcommand{\citem}[1]{\medskip \noindent \textbf{\cite*{#1}}}
+\newcommand{\texth}[1]{\noindent \textit{#1}}
+\newcommand{\textm}[1]{\medskip \noindent \textit{#1}}
+
+\title{Literature Review}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\section*{Data sources}
+
+\noindent \textbf{U.S.-based online surveys:} 
+
+\cite{chinoy2026zero, stantcheva2021understanding, alesina2018intergenerational}
+
+\medskip\noindent\textbf{U.S.-based long-running surveys} (repeated cross-section not longitudinal): 
+
+General Social Survey (GSS), American National Election Studies (ANES)
+
+\medskip\noindent\textbf{International long-running surveys} (repeated cross-section not longitudinal): 
+
+World/European Values Survey (WVS/EVS), International Social Survey Programme (ISSP)
+
+\medskip\noindent\textbf{Macro data}
+
+World Inequality Database (WID), World Political Cleavages and Inequality Database (WPID), etc.
+
+\medskip\noindent\textbf{Could use:} 
+
+Understanding America Survey, Microdata on California propositions
+
+
+
+
+\section*{Positioning}
+
+\subsection*{Our paper's contributions}
+
+\begin{itemize}
+    \item \blue{fill out}
+\end{itemize}
+
+\subsection*{Our survey's advantages}
+
+\begin{itemize}
+    \item We observe circumstances/expectations/values/beliefs of an individual all in one survey, while others focus on a specific mechanism, meaning we're well positioned to compare relative importance of mechanisms (even if we reject some of our novel ones). 
+    \item Our comprehensive treatment of the lifecycle economic self-interest hypothesis is unique. Detailed questions about one's current financial situation, expected income path, income uncertainty/risk, long-term AI/climate/housing/health risk, and time preference are rare or nonexistent in other academic surveys.
+    \item Importance of zero-sum beliefs is relatively new and other papers do not decompose these views like we do with zerosumdei/ceo/rich (although we could do better in a second wave).
+    \item Other unique/uncommon questions include: our visual tax policy proposal (more concrete than ``government should equalize incomes''), self-reported change in preferences plus why it changed (nonexistent elsewhere, could also be improved in second wave), incentive effects (more common in lab experiments), alternative policies to support low-income (useful for disentangling channels).
+    \item We have a large sample in the 18-29 range (many surveys are noisier in that range) and our survey is recent, capturing what beliefs look like in 2026.
+\end{itemize}
+
+
+
+
+\section*{Closest relatives}
+
+\citeh{chinoy2026zero}
+
+A more zero-sum mindset is strongly associated with more support for government redistribution. Zero-sum thinking is associated with the degree of intergenerational upward mobility, immigration, and slavery of an individual and their ancestors.
+
+\citem{ashok2015support}
+
+Support for redistribution in the U.S. has fallen among the elderly, possibly because they fear universal programs crowding out Medicare.
+
+\citem{davidai2019politics}
+
+Conservatives view social inequalities---where the status quo is frequently challenged---as zero-sum, but liberals view economic inequalities---where the status quo has remained relatively unchallenged---as zero-sum.
+
+
+
+
+\section*{Belief formation}
+
+\texth{Shared history}
+
+\citem{mannheim1952sociological}
+
+Generations are shaped not by simple biological aging, but by shared social and historical locations during formative years.
+
+\citem{alesina2007good}
+
+Time spent under Communism increases demand for redistribution. Tested in East Germany.
+
+\citem{fuchs2015endogeneity}
+
+Time spent under democracy increases support for democracy.
+
+\citem{landier2008investigating}
+
+Evidence of slow, home-biased and path-dependent learning about the comparative virtues of economic systems.
+
+\textm{Formative years}
+
+\citem{krosnick1989aging}
+
+Using ANES data, the authors find support for the impressionable years hypothesis (highly susceptible to change in late adolescence/early adulthood) over the increasing persistence hypothesis (gradually more resistant to change over lifecycle) for political attitudes.
+
+\citem{malmendier2011depression}
+
+Early ``individual experiences of macroeconomic shocks'' paper. Individuals who experienced low stock market returns throughout their lives reported lower willingness to take financial risk, with stronger effects on young people.
+
+\citem{roth2018experienced}
+
+People who have experienced higher inequality during their lives are less in favor of redistribution. Uses European Social Survey, U.S. GSS, and German GSS.
+
+\textm{Recessions}
+
+\citem{carreri2023economic}
+
+Politicians who experienced a recession hold more conservative positions on redistribution.
+
+\citem{giuliano2023recessions}
+
+Individuals who experienced a recession when young are less in favor of redistribution, evidence for impressionable years hypothesis. Uses regional variation in U.S. GSS, validated by Integrated Values Survey (WVS/EVS).
+
+\textm{Comparative}
+
+\citem{carvalho2023zero}
+
+Demotivating beliefs (envy of others, belief in the importance of luck, disdain for competitive
+effort, and traditional beliefs in witchcraft) evolve when interactions are zero-sum, i.e., one person's gain comes at the expense of others.
+
+
+
+\section*{U.S. trends/uniqueness}
+
+\textm{Inequality}
+
+\textm{Overall/low-income growth}
+
+\textm{Absolute mobility}
+
+\citem{chetty2017fading}
+
+Declining absolute mobility.
+
+\textm{Political institutions/power}
+
+\citem{alesina2001doesn}
+
+Differences between the US and European welfare states appear to be the result of racial heterogeneity in the US and American political institutions limiting the political power of the poor and the growth of a socialist party.
+
+\textm{Media/narratives}
+
+
+
+
+\section*{Correlates of redistributive preferences}
+
+\texth{Culture}
+
+\citem{alesina2011preferences}
+
+Handbook review of preferences for redistribution. Emphasizes the role of historical experiences, cultural factors, and personal history.
+
+\citem{luttmer2011culture}
+
+Immigrants from high-preference countries are more likely to vote for pro-redistribution parties.
+
+\textm{Generosity/altruism}
+
+\citem{landier2022neoliberal}
+
+Support for deviation from efficient solutions is strongly correlated with moral values as defined by Haidt (2013): care, fairness, loyalty and authority. While the traditional left-right divide spans some of this variation, an even bigger role is played by what we label ``individualism.''
+
+\textm{In-group preferences}
+
+\citem{enke2020moral}
+
+Heterogeneity in adherence to universalist values (individual rights, justice, impartial fairness, and avoidance of externalities) versus communal/particularist values (community, loyalty, betrayal, respect, and tradition) helps explain modern U.S. voting shifts.
+
+\citem{alesina2023immigration}
+
+Simply making respondents think about immigration before asking questions about redistribution makes them support less redistribution. The perception that immigrants are economically weaker and more likely to take advantage of the welfare system is strongly correlated with lower support for redistribution. 
+% Information about the true shares and origins of immigrants does not change support for redistribution. 
+% especially if immigrants are perceived as more likely to take advantage of the welfare system.
+% narratives shape people’s views on immigration more deeply than hard facts.
+
+\citem{fischbacher2023identity}
+
+In a lab setting, ingroup favoritism is a strong motive for redistribution in general, and it is the most important motive for redistribution to increase or reverse inequality.
+
+\citem{londono2022impact}
+
+Exposure to low-income peers caused high-income students to diversify their social networks, have more accurate perceptions of the income distribution, and support progressive redistribution.
+
+\textm{Zero-sum beliefs}
+
+\citem{wilkins2015you}
+
+When high status groups perceive discrimination against them, they espouse zero-sum beliefs.
+
+\citem{davidai2019politics}
+
+Conservatives view social inequalities---where the status quo is frequently challenged---as zero-sum, but liberals view economic inequalities---where the status quo has remained relatively unchallenged---as zero-sum.
+
+\citem{chinoy2026zero}
+
+A more zero-sum mindset is strongly associated with more support for government redistribution. Zero-sum thinking is associated with the degree of intergenerational upward mobility, immigration, and slavery of an individual and their ancestors.
+
+\textm{Fairness/equal opportunity}
+
+\citem{fong2001social}
+
+Self- and exogenous-determination beliefs have large and significant effects on support for
+redistribution. A likely interpretation is that people are reciprocal or hold strong principles of equity.
+
+\citem{alesina2005preferences}
+
+People who believe that American society offers equal opportunities are more averse to redistribution.
+
+\citem{cappelen2007pluralism}
+
+In a lab setting, estimates the prevalence of three principles of distributive justice (strict egalitarianism, liberal egalitarianism, and libertarianism) and the distribution of the weight attached to fairness.
+
+\citem{durante2014preferences}
+
+Lab experiment to study how demand for redistribution of income depends on
+self-interest, insurance motives, and social concerns relating to inequality and efficiency.
+
+\citem{stantcheva2021understanding}
+
+Support for income and estate taxes is most strongly correlated with perceived fairness of inequality and taxation and broader views of the government, while efficiency concerns play a minor role.
+
+\citem{fehr2026social}
+
+Uncovers three fundamentally distinct social preference types: predominantly selfish, inequality
+averse, and altruistic individuals. Inequality averse and altruistic individuals display a much stronger support for redistribution, and for them, beliefs about the role of effort and luck for success are highly relevant.  Between the two, altruistic individuals are considerably less supportive of policies aimed at reducing the incomes of the rich.
+% While inequality averse individuals display strong support for policies aimed at reducing the incomes of the rich, altruistic individuals are considerably less supportive of these policies.
+
+\textm{Policy framing}
+
+\citem{kuziemko2023compensate}
+
+Less-educated Americans differentially demand predistribution policies (e.g., a federal jobs guarantee, higher minimum wages, protectionism, and stronger unions), while more-educated Americans differentially favor redistribution (taxes and transfers).
+
+\textm{Reference groups/relative position}
+
+\citem{kuziemko2014last}
+
+Low-income individuals might oppose redistribution because it could differentially help the group just beneath them.
+
+\citem{cruces2013biased}
+
+Those who overestimate their relative position tend to demand higher levels of redistribution when informed of their true ranking.
+
+\citem{karadja2017richer}
+
+Individuals who are richer than they initially thought demand less redistribution.
+
+\citem{hoy2021relatively}
+
+Contrary to prevailing wisdom, people who are told they are relatively poorer than they thought are less concerned about inequality and are not more supportive of redistribution. 
+
+\citem{hvidberg2023social}
+
+People view inequalities within their co-workers and education groups as significantly more unfair than overall inequality, yet underestimate inequality the most exactly within these groups. Lower-ranked respondents in all groups tend to overestimate their own position among others.
+
+\textm{Perceptions about inequality/mobility}
+
+\citem{norton2011building}
+
+Individuals in the U.S. dramatically overestimate the degree of equality in the wealth distribution and select an even more equal distribution than their estimates.
+
+\citem{kuziemko2015elastic} 
+
+An information treatment has large effects on views about inequality but only slightly moves tax and transfer policy preferences. This is partially explained by respondents’ low trust in government.
+% a disconnect between concerns about social issues and the public policies meant to address them
+
+\citem{alesina2018intergenerational}
+
+Pessimistic information about mobility and increases support for redistribution, but not for  right-wing respondents, possibly because they do not see the government as the solution.
+
+\textm{Economic insecurity/self-interest}
+
+\citem{sears1990limited} 
+
+Unless the short-term economic effect is very direct, self-interest is not a very significant or large predictor of policy preferences, and “symbolic” attitudes have much more influence.
+
+\citem{bossert2023economic}
+
+Conditional on current economic resources, economic insecurity is associated with both
+greater political participation and more support for conservative parties.
+
+\citem{melcher2023economic}
+
+Economic insecurity has a systematic and strong effect on the redistributive, class, and racial attitudes of Americans. Economic insecurity—one’s worry or anxiety regarding the potential of future economic hardship—and cognitive economic insecurity—an individual’s more or less dispassionate estimate of future economic hardship—often have distinct and complementary effects.
+
+
+
+
+
+\section*{Theory}
+
+\textm{Demand for redistribution}
+
+\citem{meltzer1981rational}
+
+Inequality increases demand for redistribution. An increase in mean income relative to the income of the decisive voter increases the size of government.
+
+\citem{fehr1999theory}
+
+Introduces the concept of inequality aversion; equality per se having value.
+
+\citem{benabou2001social}
+
+Prospect of upward mobility (POUM) decreases demand for redistribution. However, the authors conclude the POUM channel is probably dominated by the demand for social insurance.
+
+\medskip
+
+\blue{Find these papers: ``Economic models suggest that redistribution is a function of the variance and skewness of the pre-tax income distribution, the volatility of income, the social costs of taxation and the expected income mobility of the median voter.''}
+
+\textm{Societal equilibria}
+
+\citem{piketty1995social}
+
+Left-wing dynasties believing less in individual effort and voting for more
+redistribution coexist with right-wing dynasties. 
+% Persistent differences in perceptions about social mobility can generate persistent differences in redistribution across countries.
+
+\citem{piketty1998self}
+
+If a society infers better traits from one’s social status (implying they believe less in luck), then, ironically, income inequality may become more persistent. This is because the rich are more motivated to stay rich.
+
+\citem{alesina2005fairness}
+
+If a society believes that luck, birth, connections, and/or corruption determine wealth, it will levy high taxes, thus distorting allocations and making these beliefs self-sustained.
+
+\citem{benabou2006belief}
+
+Belief in a just world and redistributive politics. An “American” equilibrium with a high prevalence of just-world beliefs and a relatively laissez- faire public policy, and a “European” equilibrium with more pessimism and a more extensive welfare state.
+
+
+
+
+
+
+
+
+
+
+\newpage \noindent \blue{from previous review:}
+
+\section*{Related survey questions}
+
+\noindent \textbf{\cite{armantier2017overview}} ``An overview of the survey of consumer expectations''
+
+\medskip \noindent \textbf{\cite{falk2018global}} ``Global evidence on economic preferences''
+
+\medskip \noindent \textbf{\cite{strathman1994consideration}} ``The consideration of future consequences: Weighing immediate and distant outcomes of behavior''
+
+\medskip \noindent \textbf{\cite{enke2023moral}} ``Moral universalism and the structure of ideology''
+
+
+
+
+\section*{Not yet summarized}
+
+\noindent \textbf{\cite{almaas2020cutthroat}} ``Cutthroat capitalism v. cuddly socialism''
+
+\medskip \noindent \textbf{\cite{rehm2009risks}} ``Risks and redistribution: An individual-level analysis''
+
+\medskip \noindent \textbf{\cite{margalit2013explaining}} ``Explaining social policy preferences: Evidence from the Great Recession''
+
+\medskip \noindent \textbf{\cite{piketty2014optimal}} ``Optimal taxation of top labor incomes: A tale of three elasticities''
+
+\medskip \noindent \textbf{\cite{stantcheva2021perceptions}} ``Perceptions and preferences for redistribution''
+
+\medskip \noindent \textbf{\cite{sorelle2023political}} ``The political benefits of student loan debt relief''
+
+\medskip \noindent \textbf{\cite{ansell2014political}} ``The political economy of ownership: Housing markets and the welfare state''
+
+\medskip \noindent \textbf{\cite{furtado2025housing}} ``Housing unaffordability and political preferences among young people in Europe''
+
+\medskip \noindent \textbf{\cite{steele2020wealth}} ``Wealth and preferences for redistribution: The effects of financial assets and home equity in 31 countries''
+
+\bibliographystyle{ecta} % apalike
+\bibliography{refs}
+
+\end{document}

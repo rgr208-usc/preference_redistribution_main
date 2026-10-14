@@ -52,7 +52,7 @@ In the United States, at any given point in time, young people are much more sup
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\linewidth]{graphs/fig1_age_gradient_recent.pdf}
+    \includegraphics[width=\linewidth]{figures/fig1_age_gradient_recent.pdf}
     \caption{The age gradient in support for redistribution, across four independent datasets. Each panel plots the mean response ($\pm 1$ standard error) by age bracket, using the most recent wave of each source. In every dataset, support is highest among the youngest respondents and declines steadily with age.}
     \label{fig:age-gradient}
 \end{figure}
@@ -70,7 +70,7 @@ Using long-running, repeatedly fielded surveys (the GSS and ANES), we further es
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_headline.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_headline.pdf}
     \caption{The age gradient has widened over time. Mean support for government reduction of income differences by age bracket ($\pm 1$ standard error), for the earliest, middle, and most recent available waves of the GSS (\textsc{goveqinc}, 1987--2021) and the ANES (\textsc{vcf0809}, 1972--2024). The gradient is barely visible in the earliest waves and steepens markedly in the most recent ones.}
     \label{fig:widening}
 \end{figure}
@@ -106,11 +106,11 @@ Our 2025 survey reveals a strong age gradient \blue{(or generational gap)} in pr
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_shouldconcern.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_shouldconcern.pdf}
     \caption{The cross-sectional age gradient replicates in a single wave. Mean response by age bracket ($\pm 1$ standard error) in our own 2025 survey (``should the government concern itself with reducing income differences,'' coded $0/1$) and in \citet{chinoy2026zero} (1--7 scale).}
     \label{fig:cross-section}
 \end{figure}
-\todo{Need to add labels and captions to plots, add any end-notes to tables, and make some tables latex rather than pdf}
+\todo{Need to add labels and captions to plots, add any end-notes to , and make some  latex rather than pdf}
 
 In our online survey data, unadjusted regressions of age on policy preferences confirm the current existence of an age divide. For the binary question ``Should the government concern itself with reducing income differences between rich and poor people?'' we use a logistic regression, and for the remainder of the section, we use simple OLS regressions. The negative age coefficient suggests that, on average, older Americans support redistribution less and younger Americans support redistribution more.
 
@@ -250,31 +250,31 @@ We will find that although we consider a diverse range of beliefs, viewpoints, v
 
 \todo{Insert classes of variables collected/used in the longitudinal surveys. Chose candidate correlates representing every hypothesis I could think of from the literature.}
 
-A Shapley decomposition splits a regression's R-squared across predictors. To handle correlated predictors fairly, the method averages each predictor's marginal contribution over all possible orderings of entry. Shares are non-negative and sum to the full model's R-squared, so each number is interpreted as that variable's percentage of explained variance. In the ``by cluster'' tables, we simply sum the percentage explained by each variable in the cluster.
+A Shapley decomposition splits a regression's R-squared across predictors. To handle correlated predictors fairly, the method averages each predictor's marginal contribution over all possible orderings of entry. Shares are non-negative and sum to the full model's R-squared, so each number is interpreted as that variable's percentage of explained variance. In the ``by cluster'' , we simply sum the percentage explained by each variable in the cluster.
 
-In the tables below, Shapley decompositions for a range of surveys suggest that beliefs about the zero-sumness of wealth and social/racial equality are the most important predictors of redistributive preferences, followed by beliefs about deservingness/attribution, aggregate efficiency, and opportunity/mobility. 
+In the  below, Shapley decompositions for a range of surveys suggest that beliefs about the zero-sumness of wealth and social/racial equality are the most important predictors of redistributive preferences, followed by beliefs about deservingness/attribution, aggregate efficiency, and opportunity/mobility. 
 
 Our online survey suggests the importance of beliefs relating to aggregate efficiency, the zero-sumness of wealth, and the zero-sumness of DEI initiatives.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/07_prolific_progressivity_variable.pdf}
+    \includegraphics[width=\linewidth]{figures/07_prolific_progressivity_variable.pdf}
     \caption{Shapley decomposition of preferences for tax progressivity, own 2025 survey, by variable.}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/07_prolific_progressivity_cluster.pdf}
+    \includegraphics[width=\linewidth]{figures/07_prolific_progressivity_cluster.pdf}
     \caption{Shapley decomposition of preferences for tax progressivity, own 2025 survey, by variable cluster.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/09_prolific_shouldconcern_variable.pdf}
+    \includegraphics[width=\linewidth]{figures/09_prolific_shouldconcern_variable.pdf}
     \caption{Shapley decomposition of ``government should reduce income differences,'' own 2025 survey, by variable.}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/09_prolific_shouldconcern_cluster.pdf}
+    \includegraphics[width=\linewidth]{figures/09_prolific_shouldconcern_cluster.pdf}
     \caption{Shapley decomposition of ``government should reduce income differences,'' own 2025 survey, by cluster.}
 \end{figure}
 
@@ -282,12 +282,12 @@ Data from \cite{chinoy2026zero} suggests the importance of discrimination, zero-
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/10_chinoy_gov_outcome_variable.pdf}
+    \includegraphics[width=\linewidth]{figures/10_chinoy_gov_outcome_variable.pdf}
     \caption{Shapley decomposition of support for redistribution, Chinoy et al., by variable.}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/10_chinoy_gov_outcome_cluster.pdf}
+    \includegraphics[width=\linewidth]{figures/10_chinoy_gov_outcome_cluster.pdf}
     \caption{Shapley decomposition of support for redistribution, Chinoy et al., by cluster.}
 \end{figure}
 
@@ -295,12 +295,12 @@ While \citet{stantcheva2021understanding} originally found that views about gove
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/12_stantcheva_dummy_g10006_1_variable.pdf}
+    \includegraphics[width=\linewidth]{figures/12_stantcheva_dummy_g10006_1_variable.pdf}
     \caption{Shapley decomposition of support for redistribution, Stantcheva, by variable.}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/12_stantcheva_dummy_g10006_1_cluster.pdf}
+    \includegraphics[width=\linewidth]{figures/12_stantcheva_dummy_g10006_1_cluster.pdf}
     \caption{Shapley decomposition of support for redistribution, Stantcheva, by cluster.}
 \end{figure}
 
@@ -308,12 +308,12 @@ ANES features few questions about relevant economic beliefs, and WVS has good qu
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/02_gss_goveqinc_variable.pdf}
+    \includegraphics[width=\linewidth]{figures/02_gss_goveqinc_variable.pdf}
     \caption{Shapley decomposition of ``government should reduce income differences,'' GSS, by variable.}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/02_gss_goveqinc_cluster.pdf}
+    \includegraphics[width=\linewidth]{figures/02_gss_goveqinc_cluster.pdf}
     \caption{Shapley decomposition of ``government should reduce income differences,'' GSS, by cluster.}
 \end{figure}
 
@@ -322,14 +322,14 @@ ANES features few questions about relevant economic beliefs, and WVS has good qu
 \subsection{Explaining the Age Gradient}
 
 
-\subsubsection{Age gradients in beliefs: suggestive graphs}
+\subsubsection{Age gradients in beliefs: suggestive figures}
 
 
 Our online survey and \cite{chinoy2026zero} find strong age gradients in zero-sum wealth beliefs: young people on average are more likely to believe that people become wealthy by taking from others.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_zerosum_wealth.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_zerosum_wealth.pdf}
     \caption{Age gradients in zero-sum wealth beliefs: own 2025 survey and Chinoy et al.}
 \end{figure}
 
@@ -337,7 +337,7 @@ The WVS also displays prominent age gradients in a question gauging beliefs abou
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.5\linewidth]{graphs/WVS_E040_evl.pdf}
+    \includegraphics[width=.5\linewidth]{figures/WVS_E040_evl.pdf}
     \caption{Age gradient in beliefs about whether hard work brings success (WVS), by wave.}
 \end{figure}
 
@@ -345,7 +345,7 @@ While our online survey finds that young people see DEI as less zero-sum, \citet
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_zerosum_social.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_zerosum_social.pdf}
     \caption{Age gradients in social and DEI zero-sum beliefs: own survey and Chinoy et al.}
 \end{figure}
 
@@ -353,7 +353,7 @@ Backing up the point that framing could be the issue, young people are less like
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_framing_check.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_framing_check.pdf}
     \caption{Framing check: age gradients in zero-sum beliefs about non-citizens and in views of racism (Chinoy et al.).}
 \end{figure}
 
@@ -365,7 +365,7 @@ Our only long-running zero-sum wealth question, from the WVS, is inconclusive ab
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_zerosum_longrun.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_zerosum_longrun.pdf}
     \caption{Long-run evolution of zero-sum wealth beliefs (WVS) and structural-advantage beliefs (GSS), by wave.}
 \end{figure}
 
@@ -373,7 +373,7 @@ Though there is no long-running zero-sum race/social equality question, the ANES
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_race_longrun.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_race_longrun.pdf}
     \caption{Long-run evolution of the age gradient in affirmative-action support and the non-white share of cohorts (ANES).}
 \end{figure}
 
@@ -381,7 +381,7 @@ There also seems to be an evolving gradient in perceived economic situation: you
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_self_position.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_self_position.pdf}
     \caption{Age gradients in perceived economic position: subjective social class (GSS) and change in personal finances (ANES).}
 \end{figure}
 
@@ -389,7 +389,7 @@ Further, young Americans tend to display more post-materialist values (willing t
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_postmaterial.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_postmaterial.pdf}
     \caption{Age gradients in post-materialist values and confidence in the environmental movement (WVS).}
 \end{figure}
 
@@ -397,7 +397,7 @@ Lastly, young Americans seem increasingly less confident in the U.S. government.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{graphs/WVS_E069_11_evl.pdf}
+    \includegraphics[width=0.5\linewidth]{figures/WVS_E069_11_evl.pdf}
     \caption{Age gradient in confidence in the U.S. government (WVS), by wave.}
 \end{figure}
 
@@ -410,12 +410,12 @@ As we would expect, zerosumrich is highly-ranked because it is negatively correl
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/05_prolific_shouldconcern_tier1.pdf}
+    \includegraphics[width=\linewidth]{figures/05_prolific_shouldconcern_tier1.pdf}
     \caption{Gelbach decomposition of the young--old gap in ``government should reduce income differences,'' own 2025 survey.}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/07_prolific_progressivity_tier1.pdf}
+    \includegraphics[width=\linewidth]{figures/07_prolific_progressivity_tier1.pdf}
     \caption{Gelbach decomposition of the young--old gap in tax progressivity, own 2025 survey.}
 \end{figure}
 
@@ -423,7 +423,7 @@ Cross-checking with outside surveys, data from \cite{chinoy2026zero} yields simi
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/01_chinoy_gov_outcome_tier1.pdf}
+    \includegraphics[width=\linewidth]{figures/01_chinoy_gov_outcome_tier1.pdf}
     \caption{Gelbach decomposition of the young--old gap in support for redistribution, Chinoy et al.}
 \end{figure}
 
@@ -431,7 +431,7 @@ The GSS decomposition follows similar themes, but features a slightly different 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{tables/03_gss_goveqinc_tier1.pdf}
+    \includegraphics[width=\linewidth]{figures/03_gss_goveqinc_tier1.pdf}
     \caption{Gelbach decomposition of the young--old gap in support for redistribution, GSS.}
 \end{figure}
 
@@ -522,13 +522,13 @@ The age, period, and cohort (APC) effects cannot be separately identified withou
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_apc_GSS_GOVEQINC.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_apc_GSS_GOVEQINC.pdf}
     \caption{GSS (\textsc{goveqinc}): mean support by age bracket (left) and by survey year (right), plotted separately for each birth generation. Generations begin at different levels and are fairly flat over the life cycle, pointing to a cohort component in the gradient.}
     \label{fig:apc-gss}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphs/pair_apc_ANES_VCF0809.pdf}
+    \includegraphics[width=\linewidth]{figures/pair_apc_ANES_VCF0809.pdf}
     \caption{ANES (\textsc{vcf0809}): mean support by age bracket (left) and by survey year (right), plotted separately for each birth generation.}
     \label{fig:apc-anes}
 \end{figure}
@@ -539,13 +539,13 @@ Plotting age against predicted mean preferences under birth-decade (cohort) vers
 \centering
 \begin{subfigure}{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{graphs/fe_GSS_GOVEQINC.pdf}
+    \includegraphics[width=\textwidth]{figures/fe_GSS_GOVEQINC.pdf}
     \caption{GSS (\textsc{goveqinc})}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{graphs/fe_ANES_VCF0809.pdf}
+    \includegraphics[width=\textwidth]{figures/fe_ANES_VCF0809.pdf}
     \caption{ANES (\textsc{vcf0809})}
 \end{subfigure}
 \caption{The age--preference slope under birth-decade (cohort) versus survey-year (period) fixed effects. Controlling for cohort flattens the age slope, whereas controlling for period leaves it essentially unchanged---consistent with cohort effects, rather than period effects, driving much of the age gradient.}

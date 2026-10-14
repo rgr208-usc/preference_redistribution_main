@@ -53,6 +53,10 @@
 \newcommand{\prefeq}{\trianglerighteq}
 \newcommand{\pref}{\triangleright}
 \newcommand{\indiff}{\mathrel{\triangleright\triangleleft}}
+\newcommand{\citeh}[1]{\noindent \textbf{\cite*{#1}}}
+\newcommand{\citem}[1]{\medskip \noindent \textbf{\cite*{#1}}}
+\newcommand{\texth}[1]{\noindent \textit{#1}}
+\newcommand{\textm}[1]{\medskip \noindent \textit{#1}}
 
 \title{Literature Review}
 \author{}
@@ -62,166 +66,346 @@
 
 \maketitle
 
-\section*{Redistribution theory}
 
-\noindent \textbf{\cite{piketty1995social}} ``Social mobility and redistributive politics''
 
-If voters estimate the relative importance of effort and predetermined factors based on their own family’s experience, then those whose families have never moved up in the income distribution will put in less effort. Some countries may have ``left-wing dynasties'' that favor redistribution because of the self-fulfilling cycle of believing less in individual effort and experiencing less income mobility.
 
-\medskip \noindent \textbf{\cite{piketty1998self}} ``Self-fulfilling beliefs about social status''
+\section*{Data sources}
 
-Humans value the signal that social class/income status sends about how smart or hardworking they are. If a society infers better traits from one’s social status (implying they believe less in luck), then, ironically, income inequality may become more persistent. This is because the rich are more motivated to stay rich.
+\noindent \textbf{U.S.-based online surveys:} 
 
-\medskip \noindent \textbf{\cite{piketty2000theories}} ``Theories of persistent inequality and intergenerational mobility''
+\cite{chinoy2026zero, stantcheva2021understanding, alesina2018intergenerational}
 
-Part 6.2 on covers inequality due to self-fulfilling beliefs. It mentions statistical discrimination: if a class of workers believes they will be discriminated against, they will underinvest in themselves because the return to their investment is lower, and they will, simply by expecting discrimination, have worse outcomes. This theory is similar to Pierre Bourdieu’s idea that individuals from lower-class backgrounds are discouraged by the “dominant discourse,” and therefore don’t make mobility-enhancing investments. Raymond Boudon, on the other hand, advocated for the “reference group” theory: lower class families transmit less ambition and taste for economic success. The latter theory places the blame on the individual, the former on society as a whole.
+\medskip\noindent\textbf{U.S.-based long-running surveys} (repeated cross-section not longitudinal): 
 
-\medskip \noindent \textbf{\cite{stark2014reconciling}} ``Reconciling the Rawlsian and the utilitarian approaches to the maximization of social welfare''
+General Social Survey (GSS), American National Election Studies (ANES)
 
-In theoretical models, a utilitarian social planner (one who maximizes the sum of citizens' welfare) often distributes wealth differently than a Rawlsian social planner (who maximizes the wealth of the worse-off). If you change citizens' utility function by giving them an aversion to being relatively poor, then you can generate equilibria where the Rawlsian and utilitarian planners select the same income distribution.
+\medskip\noindent\textbf{International long-running surveys} (repeated cross-section not longitudinal): 
 
-\medskip \noindent \textbf{\cite{bisin2004cooperation}} ``Cooperation as a transmitted cultural trait''
+World/European Values Survey (WVS/EVS), International Social Survey Programme (ISSP)
 
-This is a model where parents derive utility from their children’s own cooperativeness (``imperfect empathy''). Parents can put in effort to make their children more cooperative (teaching them, enrolling them in certain activities, etc.), but their social environment can also influence them (``oblique transmission''). Parents are most incentivized to transmit cooperativeness to their children when they’re part of a minority group of other cooperative families. This is when the parents’ effort has the highest payoff.
+\medskip\noindent\textbf{Macro data}
 
-% \medskip \noindent \textbf{\cite{bisin2003empirical}:}
+World Inequality Database (WID), World Political Cleavages and Inequality Database (WPID), etc.
 
-% Mentions two papers. The first, Bisin Topa Verdier (2001), is a model where religion can be transmitted indirectly by parents (simply by their children imitating them) or directly (with costly effort on the parents’ part). BSV 2001 examine the relative importance of direct vs. indirect transmission by exploiting the fact that homogamous families (parents with the same religion) are much more likely to have children who grow up to be a part of the same religion. 
+\medskip\noindent\textbf{Could use:} 
 
-% The second, Otto Christiansen Feldman (1994), looks at the role of genetics vs. environment in the inheritance of IQ. They deal with a problem in studies on identical twins reared apart where the twins’ adopted families may still have correlated environments. They show, using IQ correlations between siblings, parents, half-siblings, and adopted children, that the role of environment is much more important than previously thought.
+Understanding America Survey, Microdata on California propositions
 
-\medskip \noindent \textbf{\cite{benabou2006belief}} ``Belief in a just world and redistributive politics''
 
-It can be valuable to maintain belief in a just world to motivate yourself to put in more effort. So, in a regime with a low tax rate, where the return to effort is high, beliefs in a just world are highly beneficial. On the other hand, in a regime with high redistribution, beliefs in a just world are less useful. There is a complementarity to individuals’ beliefs: a person who believes in a just world will vote for less redistribution, increasing the incentives of others to believe in a just world (and vice-versa).
 
 
-\section*{Redistribution empirics}
+\section*{Positioning}
 
-\noindent \textbf{\cite{landier2008investigating}} ``Investigating capitalism aversion''
+\subsection*{Our paper's contributions}
 
-Testing two competing theories of pro-capitalism opinions: self-serving vs. genuine disagreement about economic efficiency. They find that the former explains some variation. The latter also explains some variation, but it involves ``slow learning'' from events that occur in one’s home country. They also find support for cultural forces: religion and legal origins explain around 40\% of cross-country variation in capitalism aversion.
+\blue{partly filled out}
 
-\medskip \noindent \textbf{\cite{alesina2011preferences}} ``Preferences for redistribution''
+\begin{itemize}
+    \item Documenting widening age gap
+    \item Comprehensively testing lifecycle self-interest hypotheses
+    \item Comparing explanatory power of circumstances, expectations, values, and beliefs in one survey
+    \item A decomposition of zero-sum beliefs that accounts for attribution/blame in different contexts (in progress)
+    \item Harmonizing online and long-running surveys to compare drivers of support for redistribution (and to decompose the age gap)
+    \item Cross-country and within-US analysis to discover historical drivers of US belief shift/age gap (in progress)
+\end{itemize}
 
-Investigates theories for why a person might want to reduce/increase inequality.
+\subsection*{Our survey's advantages}
 
-Inequality directly in the utility function: (1) Based on one's own expected future income and social mobility. (2) Positive externalities (less crime, more educated and thus more productive workforce, incentive effects promoting growth etc.) (3) Views about what a justifiable level of inequality is (they may care more about "fairness" in general), or foster empathy towards those in poverty (they have more compassion). One could have a max-min/Rawlsian approach, they might want everyone's income to be equal, they might want inequality determined by the market, etc. This might change based on the perceived amount effort vs. luck involved in becoming rich. 
+\begin{itemize}
+    \item We observe circumstances, expectations, values, and beliefs of an individual all in one survey, while others tend to focus on a specific mechanism or compare fairness and efficiency, meaning we're well positioned to compare relative importance of mechanisms (even if we reject some of our novel ones). 
+    \item Our comprehensive treatment of the lifecycle economic self-interest hypothesis is unique. Detailed questions about one's current financial situation, expected income path, income uncertainty/risk, long-term AI/climate/housing/health risk, and time preference are rare or nonexistent in other academic surveys.
+    \item Importance of zero-sum beliefs is relatively new and other papers do not decompose these views into specific targets/beneficiaries/programs like we do (CEOs, gender, diversity initiatives). Still, we could do a better decomposition in a second wave.
+    \item Other unique/uncommon questions include: our visual tax policy proposal (more concrete than ``government should equalize incomes''), self-reported change in preferences plus why it changed (nonexistent elsewhere, could also be improved in second wave), incentive effects (less-common in large surveys), alternative policies to support low-income (useful for disentangling channels), and whether hard work and education has/will pay off (other measures of mobility more common).
+    \item Our 2025 sample provides a valuable post-2024 view of beliefs and preferences, and we have a large sample in the 18-29 range (many surveys are noisier in that range).
+\end{itemize}
 
-Evidence collected from other papers: In countries with clear-cut minority groups, the majority is against redistribution and the minority favors redistribution; ``altruism does not travel across ethnic lines.'' This is one of the strongest factors mentioned. They find an inverse U-shaped relationship between age and preferences for redistribution. More inequality in a country may incentivize working longer. Inherited culture and the structure of the family (hierarchical vs. egalitarian, do children care for parents) may matter.
 
-\medskip \noindent \textbf{\cite{giuliano2014retracted}} ``Growing up in a recession''
 
-The retracted article. \textbf{\cite{giuliano2023recessions}} suggests the opposite of these results. This article said that young people who experience a depression (compared to other generations that experience the depression but don’t grow up in it) favor redistribution more and believe that luck plays a greater role than effort in economic outcomes. This was stronger for those living in a region hit harder by the depression and the poor. 
 
-\medskip \noindent \textbf{\cite{giuliano2024aggregate}} ``Aggregate shocks and the formation of preferences and beliefs'' 
+\section*{Closest relatives}
 
-A literature review. The main finding is that negative aggregate shocks (depressions) result in a social and economic conservative shift, especially among the younger generations for whom it may be more salient. It could be that those who went through the shock prioritize their own interests more: less handouts to others in their own country and more protectionism against other countries. In other words, ``altruism towards the outgroup (universalism) is a luxury good.'' Or, it could be that they want someone to blame, like minorities or immigrants. Or, it could be that they lose trust in the government (which caused the crisis or did not handle it well); there is evidence that trust in legislative bodies, politicians, financial institutions, etc. is procyclical.
+\citem{ashok2015support}
 
-Some theories for why the young are affected more: (1) youth is an “impressionable” time when core beliefs are synthesized and become stable afterwards (the suggested age range is 15-27) (2) people disengage with events distant from their immediate life as they get older. Both of these theories require an assumption that knowledge gained in real situations has greater impact (rather than news from other people/countries).
+Support for redistribution in the U.S. has fallen among the elderly, possibly because they fear universal programs crowding out Medicare.
 
-Two other findings: (1) Those who went through a depression are less likely to invest in stocks the future, but this is more due to lower expected returns (a belief) than higher risk aversion (a preference). (2) Personal negative shocks (such as job losses) increase support for redistribution in the short-term.
+\citeh{chinoy2026zero}
 
-\medskip \noindent \textbf{\cite{gethin2021political}} ``Political cleavages and social inequalities in fifty democracies, 1948–2020''
+A more zero-sum mindset is strongly associated with more support for government redistribution. Zero-sum thinking is associated with the degree of intergenerational upward mobility, immigration, and slavery of an individual and their ancestors.
 
-World Political Cleavages and Inequality Database with many socioeconomic breakdowns. Some interesting findings for our purposes: (1) Religiosity and living in a rural environment are both significantly correlated with conservatism (Figs 1.8, 1.15). Could young people be less religious and more urban? Could this lead to more ``universalist'' (less preference towards their direct community), and thus more liberal, beliefs? (2) In Western democracies, newer generations are more liberal if they are more educated, but older generations are more liberal if they are less educated (Figs 1.2, 1.22). (3) A reversal of gender cleavages in Western democracies. Women used to be more conservative, and now they are more liberal (Fig 1.25).
 
-\medskip \noindent \textbf{\cite{enke2020moral}} ``Moral values and voting''
 
-Controlling for party and ideology, voters with communal (or universalist) values (measured by the Moral Foundations Questionnaire) tend to vote for communal (or universalist) politicians (measured by text analysis of candidates’ speeches).  Enke finds that rural Americans have become more communal, suggesting that these values can shift over time within an individual.
 
-\medskip \noindent \textbf{\cite{sears1990limited}} ``The limited effect of economic self-interest on the political attitudes of the mass public''
+\section*{Belief formation}
 
-Unless the short-term economic effect is very direct, self-interest is not a very significant or large predictor of policy preferences, and “symbolic” attitudes have much more influence.
+\texth{Shared history}
 
-\medskip \noindent \textbf{\cite{melcher2023economic}} ``Economic self-interest and Americans’ redistributive, class, and racial attitudes: The case of economic insecurity''
+\citem{mannheim1952sociological}
 
-Studies find the effect of economic self-interest on political attitudes to be small or insignificant because they do not consider the role of economic insecurity (anxiety surrounding income and estimates of future economic hardship).
+Generations are shaped not by simple biological aging, but by shared social and historical locations during formative years.
 
-\medskip \noindent \textbf{\cite{bossert2023economic}} ``Economic insecurity and political preferences''
+\citem{alesina2007good}
 
-Constructs an economic insecurity index which looks at past variations in economic resources to measure individual anxiety about, and hence the threat of, what the future may bring. Finds that economic insecurity increases support for conservative parties.
+Time spent under Communism increases demand for redistribution. Tested in East Germany.
 
-\medskip \noindent \textbf{\cite{davidai2019politics}} ``The politics of zero-sum thinking''
+\citem{fuchs2015endogeneity}
 
-Liberals think of economic inequality as zero-sum, whereas conservatives think that inequality allows the ``pie'' to grow and benefit everyone. Conservatives think of social inequality as zero-sum (giving rights or benefits to an immigrant or minority directly hurts me), whereas liberals think giving others rights betters society as a whole.
+Time spent under democracy increases support for democracy.
 
+\citem{landier2008investigating}
 
-\section*{Online surveys/lab results}
+Evidence of slow, home-biased and path-dependent learning about the comparative virtues of economic systems.
 
-\noindent \textbf{\cite{kuziemko2015elastic}} ``How elastic are preferences for redistribution? Evidence from randomized survey experiments''
+\textm{Formative years}
 
-They treat participants by providing information on US income inequality, the link between top income tax rates and economic growth, and the estate tax. Tax and transfer policy preferences are shifted only slightly.
+\citem{krosnick1989aging}
 
-\medskip \noindent \textbf{\cite{stantcheva2021understanding}} ``Understanding tax policy''
+Using ANES data, the authors find support for the impressionable years hypothesis (highly susceptible to change in late adolescence/early adulthood) over the increasing persistence hypothesis (gradually more resistant to change over lifecycle) for political attitudes.
 
-Showing informational videos on efficiency effects of taxes doesn't change preferences, but videos on redistributive effects of taxes do change preferences.
+\citem{malmendier2011depression}
 
-\medskip \noindent \textbf{\cite{stantcheva2023run}} ``How to run surveys: A guide to creating your own identifying variation and revealing the invisible''
+Early ``individual experiences of macroeconomic shocks'' paper. Individuals who experienced low stock market returns throughout their lives reported lower willingness to take financial risk, with stronger effects on young people.
 
-\medskip \noindent \textbf{\cite{hvidberg2023social}} ``Social positions and fairness views on inequality''
+\citem{roth2018experienced}
 
-People consider inequalities conditional on the same level of education or sector of work as most unfair. High-income people tend to underestimate their income raking, and low-income people tend to overestimate their income ranking. 
+People who have experienced higher inequality during their lives are less in favor of redistribution. Uses European Social Survey, U.S. GSS, and German GSS.
 
-\medskip \noindent \textbf{\cite{chinoy2025zero}} ``Zero-sum thinking and the roots of US political divides''
+\textm{Recessions}
 
-They survey 20,400 U.S. residents, measuring zero-sum beliefs by asking respondents whether they think that gains for some tend to come at the expense of others, with respect to: the economic well-being of U.S. citizens and non-citizens, trade gains across different countries, wealth gains of different ethnic groups in the U.S., and wealth accumulation of different income classes in the U.S. The survey includes detailed ancestry data, on income levels, country residence, immigration, and slavery, allowing the authors to examine the origins of zero-sum beliefs and how they are passed down. Experiencing slavery contributes to zero-sum beliefs, while immigrating and experiencing upward income mobility does the opposite.
+\citem{carreri2023economic}
 
-They find evidence of a general zero-sum world view that cuts across different contexts. Those with zero-sum beliefs tend to support redistribution, affirmative action, and restrictive immigration policy. While zero-sum beliefs correlate with party choice, there is significant variation within the Democratic and Republican parties. An analysis of questions from the WVS is consistent with their findings.
+Politicians who experienced a recession hold more conservative positions on redistribution.
 
-\medskip \noindent \textbf{\cite{carvalho2023zero}} ``Zero-sum thinking, the evolution of effort-suppressing beliefs, and economic development''
+\citem{giuliano2023recessions}
 
-In their model, effort-suppressing beliefs (for example, disdain for successful people or stigmatizing ambition) can arise when an economy is zero-sum, making the material welfare of the group higher in aggregate because less effort is wasted shifting resources from one person to another. When an economy is not zero-sum, i.e., success/effort can increase aggregate resources, effort-suppressing beliefs may not be optimal. Introducing technology in the model, there can be multiple growth regimes: one where technology is low, effort is low, and technological change is minimal, and another one where technology is high, effort is high, and technological change is rapid.
-As a test of the theory, they survey a small sample from the Democratic Republic of Congo. To measure the zero-sumness of one’s environment, they asked whether each of the following types of gains comes at the expense of others: earnings, profits, wealth, trade, power, and happiness.
+Individuals who experienced a recession when young are less in favor of redistribution, evidence for impressionable years hypothesis. Uses regional variation in U.S. GSS, validated by Integrated Values Survey (WVS/EVS).
 
-\medskip \noindent \textbf{\cite{alesina2018intergenerational}} ``Intergenerational mobility and preferences for redistribution''
+\textm{Comparative}
 
-Their treatment involved showing participants animated videos ``summarizing recent survey findings'' which emphasized the lack of mobility of the poor. The treatment reduced perceptions of mobility and increased support for redistribution, mostly for “equality of opportunity” policies (funding education, universal healthcare) but mildly for ``equality of outcome'' policies (welfare, progressive taxes). In general, left-wing respondents are more pessimistic about mobility. And, conservatives' policy preferences are less responsive to the treatment, perhaps because they don't think government intervention is the solution.
-Americans, especially poor Americans, are most overly-optimistic about mobility.
+\citem{carvalho2023zero}
 
-\medskip \noindent \textbf{\cite{alesina2023immigration}} ``Immigration and redistribution''
+Demotivating beliefs (envy of others, belief in the importance of luck, disdain for competitive
+effort, and traditional beliefs in witchcraft) evolve when interactions are zero-sum, i.e., one person's gain comes at the expense of others.
 
-Simply making respondents think about immigration reduces their support for redistribution. Perceptions that immigrants are economically weaker and more likely to take advantage of the welfare system are correlated with lower support for redistribution.
 
-\medskip \noindent \textbf{\cite{landier2022neoliberal}} ``Who is neoliberal? Durkheimian individualism and support for market mechanisms''
 
-When there is a tradeoff between an economically efficient solution and a pro-social objective, more ``individualist'' people (measured by Haidt’s Moral Foundations Questionnaire) tend to favor the economically efficient solution. To measure policy preferences, they use vignettes about hypothetical local policies.
+\section*{U.S. trends/uniqueness}
 
-\medskip \noindent \textbf{\cite{hoy2021relatively}} ``Why are relatively poor people not more supportive of redistribution?''
+\textm{Inequality}
 
-When people are informed that they are poorer than they thought, they are no more supportive of redistribution and they become less concerned about inequality. The authors theorize that this is because they use their own living standard as a benchmark for what's acceptable for others.
+\textm{Overall/low-income growth}
 
-\medskip \noindent \textbf{\cite{fischbacher2023identity}} ``Identity breeds inequality: evidence from a laboratory experiment on redistribution''
+\textm{Absolute mobility}
 
-An interesting design to elicit preferences for redistribution. They ask participants to redistribute another person's income. They tell participants this person's political orientation, nationality, and whether their income is earned, random, or unfair. Decisions often favor one's ingroup. 
+\citem{chetty2017fading}
 
-\medskip \noindent \textbf{\cite{wilkins2015you}} ``You can win but I can't lose: Bias against high-status groups increases their zero-sum beliefs about discrimination''
+Declining absolute mobility.
+
+\textm{Political institutions/power}
+
+\citem{alesina2001doesn}
+
+Differences between the US and European welfare states appear to be the result of racial heterogeneity in the US and American political institutions limiting the political power of the poor and the growth of a socialist party.
+
+\textm{Media/narratives}
+
+
+
+
+\section*{Correlates of redistributive preferences}
+
+\texth{Culture}
+
+\citem{alesina2011preferences}
+
+Handbook review of preferences for redistribution. Emphasizes the role of historical experiences, cultural factors, and personal history.
+
+\citem{luttmer2011culture}
+
+Immigrants from high-preference countries are more likely to vote for pro-redistribution parties.
+
+\textm{Generosity/altruism}
+
+\citem{landier2022neoliberal}
+
+Support for deviation from efficient solutions is strongly correlated with moral values as defined by Haidt (2013): care, fairness, loyalty and authority. While the traditional left-right divide spans some of this variation, an even bigger role is played by what we label ``individualism.''
+
+\textm{In-group preferences}
+
+\citem{enke2020moral}
+
+Heterogeneity in adherence to universalist values (individual rights, justice, impartial fairness, and avoidance of externalities) versus communal/particularist values (community, loyalty, betrayal, respect, and tradition) helps explain modern U.S. voting shifts.
+
+\citem{alesina2023immigration}
+
+Simply making respondents think about immigration before asking questions about redistribution makes them support less redistribution. The perception that immigrants are economically weaker and more likely to take advantage of the welfare system is strongly correlated with lower support for redistribution. 
+% Information about the true shares and origins of immigrants does not change support for redistribution. 
+% especially if immigrants are perceived as more likely to take advantage of the welfare system.
+% narratives shape people’s views on immigration more deeply than hard facts.
+
+\citem{fischbacher2023identity}
+
+In a lab setting, ingroup favoritism is a strong motive for redistribution in general, and it is the most important motive for redistribution to increase or reverse inequality.
+
+\citem{londono2022impact}
+
+Exposure to low-income peers caused high-income students to diversify their social networks, have more accurate perceptions of the income distribution, and support progressive redistribution.
+
+\textm{Zero-sum beliefs}
+
+\citem{wilkins2015you}
 
 When high status groups perceive discrimination against them, they espouse zero-sum beliefs.
 
-\medskip \noindent \textbf{\cite{kuziemko2023compensate}} ``Compensate the losers? Economic policy and partisan realignment in the US''
+\citem{davidai2019politics}
 
-Less-educated Americans differentially demand ``predistribution'' policies (e.g., a federal jobs guarantee, higher minimum wages, protectionism, and stronger unions), while more-educated Americans differentially favor redistribution (taxes and transfers). This helps explain the recent partisan realignment by education.
+Conservatives view social inequalities---where the status quo is frequently challenged---as zero-sum, but liberals view economic inequalities---where the status quo has remained relatively unchallenged---as zero-sum.
 
-\medskip \noindent \textbf{\cite{kuziemko2014last}} ``Last-place aversion: evidence and redistributive implications''
+\citem{chinoy2026zero}
 
-Last-place aversion suggests that low-income individuals might oppose redistribution because it could differentially help the group just beneath them.
+A more zero-sum mindset is strongly associated with more support for government redistribution. Zero-sum thinking is associated with the degree of intergenerational upward mobility, immigration, and slavery of an individual and their ancestors.
 
-\medskip \noindent \textbf{\cite{epper2020other}} ``Other-regarding preferences and redistributive politics''
+\textm{Fairness/equal opportunity}
 
-Investigating how altruistic and self-centered preferences affect redistributive views. Altruism and inequality aversion play a large role for above-median income individuals.
+\citem{fong2001social}
+
+Self- and exogenous-determination beliefs have large and significant effects on support for
+redistribution. A likely interpretation is that people are reciprocal or hold strong principles of equity.
+
+\citem{alesina2005preferences}
+
+People who believe that American society offers equal opportunities are more averse to redistribution.
+
+\citem{cappelen2007pluralism}
+
+In a lab setting, estimates the prevalence of three principles of distributive justice (strict egalitarianism, liberal egalitarianism, and libertarianism) and the distribution of the weight attached to fairness.
+
+\citem{durante2014preferences}
+
+Lab experiment to study how demand for redistribution of income depends on
+self-interest, insurance motives, and social concerns relating to inequality and efficiency.
+
+\citem{stantcheva2021understanding}
+
+Support for income and estate taxes is most strongly correlated with perceived fairness of inequality and taxation and broader views of the government, while efficiency concerns play a minor role.
+
+\citem{fehr2026social}
+
+Uncovers three fundamentally distinct social preference types: predominantly selfish, inequality
+averse, and altruistic individuals. Inequality averse and altruistic individuals display a much stronger support for redistribution, and for them, beliefs about the role of effort and luck for success are highly relevant.  Between the two, altruistic individuals are considerably less supportive of policies aimed at reducing the incomes of the rich.
+% While inequality averse individuals display strong support for policies aimed at reducing the incomes of the rich, altruistic individuals are considerably less supportive of these policies.
+
+\textm{Policy framing}
+
+\citem{kuziemko2023compensate}
+
+Less-educated Americans differentially demand predistribution policies (e.g., a federal jobs guarantee, higher minimum wages, protectionism, and stronger unions), while more-educated Americans differentially favor redistribution (taxes and transfers).
+
+\textm{Reference groups/relative position}
+
+\citem{kuziemko2014last}
+
+Low-income individuals might oppose redistribution because it could differentially help the group just beneath them.
+
+\citem{cruces2013biased}
+
+Those who overestimate their relative position tend to demand higher levels of redistribution when informed of their true ranking.
+
+\citem{karadja2017richer}
+
+Individuals who are richer than they initially thought demand less redistribution.
+
+\citem{hoy2021relatively}
+
+Contrary to prevailing wisdom, people who are told they are relatively poorer than they thought are less concerned about inequality and are not more supportive of redistribution. 
+
+\citem{hvidberg2023social}
+
+People view inequalities within their co-workers and education groups as significantly more unfair than overall inequality, yet underestimate inequality the most exactly within these groups. Lower-ranked respondents in all groups tend to overestimate their own position among others.
+
+\textm{Perceptions about inequality/mobility}
+
+\citem{norton2011building}
+
+Individuals in the U.S. dramatically overestimate the degree of equality in the wealth distribution and select an even more equal distribution than their estimates.
+
+\citem{kuziemko2015elastic} 
+
+An information treatment has large effects on views about inequality but only slightly moves tax and transfer policy preferences. This is partially explained by respondents’ low trust in government.
+% a disconnect between concerns about social issues and the public policies meant to address them
+
+\citem{alesina2018intergenerational}
+
+Pessimistic information about mobility and increases support for redistribution, but not for  right-wing respondents, possibly because they do not see the government as the solution.
+
+\textm{Economic insecurity/self-interest}
+
+\citem{sears1990limited} 
+
+Unless the short-term economic effect is very direct, self-interest is not a very significant or large predictor of policy preferences, and “symbolic” attitudes have much more influence.
+
+\citem{bossert2023economic}
+
+Conditional on current economic resources, economic insecurity is associated with both
+greater political participation and more support for conservative parties.
+
+\citem{melcher2023economic}
+
+Economic insecurity has a systematic and strong effect on the redistributive, class, and racial attitudes of Americans. Economic insecurity—one’s worry or anxiety regarding the potential of future economic hardship—and cognitive economic insecurity—an individual’s more or less dispassionate estimate of future economic hardship—often have distinct and complementary effects.
 
 
-\section*{Longitudinal studies}
 
-% \noindent \textbf{\cite{inglehart2000world}} ``World values surveys and European values surveys''
 
-\noindent \textbf{\cite{wvs7}} (WVS/EVS)
 
-% \medskip \noindent \textbf{\cite{smith2012general}} ``General social surveys''
+\section*{Theory}
 
-\medskip \noindent \textbf{\cite{gss2022}} General Social Survey (GSS)
+\textm{Demand for redistribution}
 
-\medskip \noindent \textbf{\cite{anes2020}} (ANES)
+\citem{meltzer1981rational}
+
+Inequality increases demand for redistribution. An increase in mean income relative to the income of the decisive voter increases the size of government.
+
+\citem{fehr1999theory}
+
+Introduces the concept of inequality aversion; equality per se having value.
+
+\citem{benabou2001social}
+
+Prospect of upward mobility (POUM) decreases demand for redistribution. However, the authors conclude the POUM channel is probably dominated by the demand for social insurance.
+
+\medskip
+
+\blue{Find these papers: ``Economic models suggest that redistribution is a function of the variance and skewness of the pre-tax income distribution, the volatility of income, the social costs of taxation and the expected income mobility of the median voter.''}
+
+\textm{Societal equilibria}
+
+\citem{piketty1995social}
+
+Left-wing dynasties believing less in individual effort and voting for more
+redistribution coexist with right-wing dynasties. 
+% Persistent differences in perceptions about social mobility can generate persistent differences in redistribution across countries.
+
+\citem{piketty1998self}
+
+If a society infers better traits from one’s social status (implying they believe less in luck), then, ironically, income inequality may become more persistent. This is because the rich are more motivated to stay rich.
+
+\citem{alesina2005fairness}
+
+If a society believes that luck, birth, connections, and/or corruption determine wealth, it will levy high taxes, thus distorting allocations and making these beliefs self-sustained.
+
+\citem{benabou2006belief}
+
+Belief in a just world and redistributive politics. An “American” equilibrium with a high prevalence of just-world beliefs and a relatively laissez- faire public policy, and a “European” equilibrium with more pessimism and a more extensive welfare state.
+
+
+
+
+
+
+
+
+
+
+\newpage \noindent \blue{from previous review:}
 
 \section*{Related survey questions}
 
@@ -234,9 +418,13 @@ Investigating how altruistic and self-centered preferences affect redistributive
 \medskip \noindent \textbf{\cite{enke2023moral}} ``Moral universalism and the structure of ideology''
 
 
+
+
 \section*{Not yet summarized}
 
-\noindent \textbf{\cite{rehm2009risks}} ``Risks and redistribution: An individual-level analysis''
+\noindent \textbf{\cite{almaas2020cutthroat}} ``Cutthroat capitalism versus cuddly socialism: Are Americans more meritocratic and efficiency-seeking than Scandinavians?''
+
+\medskip \noindent \textbf{\cite{rehm2009risks}} ``Risks and redistribution: An individual-level analysis''
 
 \medskip \noindent \textbf{\cite{margalit2013explaining}} ``Explaining social policy preferences: Evidence from the Great Recession''
 
@@ -251,6 +439,102 @@ Investigating how altruistic and self-centered preferences affect redistributive
 \medskip \noindent \textbf{\cite{furtado2025housing}} ``Housing unaffordability and political preferences among young people in Europe''
 
 \medskip \noindent \textbf{\cite{steele2020wealth}} ``Wealth and preferences for redistribution: The effects of financial assets and home equity in 31 countries''
+
+\medskip \noindent \textbf{\cite{alesina2021perceptions}} ``Perceptions of Racial Gaps, their Causes, and Ways to Reduce Them''
+
+\medskip \noindent \textbf{\cite{ali2025political}} ``The Political Economy of Zero-Sum Thinking''
+
+\medskip \noindent \textbf{\cite{bonnet2025explains}} ``What explains preferences for redistribution? Evidence from an international survey''
+
+\medskip \noindent \textbf{\cite{busemeyer2009attitudes}} ``Attitudes towards redistributive spending in an era of demographic ageing: the rival pressures from age and income in 14 OECD countries''
+
+\medskip \noindent \textbf{\cite{cappelen2013just}} ``Just Luck: An Experimental Study of Risk-Taking and Fairness''
+
+\medskip \noindent \textbf{\cite{cappelen2025universalism}} ``Universalism: Global Evidence''
+
+\medskip \noindent \textbf{\cite{carstensen1999taking}} ``Taking time seriously: A theory of socioemotional selectivity.''
+
+\medskip \noindent \textbf{\cite{cavaille2023fair}} ``Fair Enough?: Support for Redistribution in the Age of Inequality''
+
+\medskip \noindent \textbf{\cite{cojocaru2014prospects}} ``Prospects of upward mobility and preferences for redistribution: Evidence from the Life in Transition Survey''
+
+\medskip \noindent \textbf{\cite{corneo2002individual}} ``Individual preferences for political redistribution''
+
+\medskip \noindent \textbf{\cite{cox2024great}} ``Great expectations: The effect of unmet labor market expectations after higher education on ideology''
+
+\medskip \noindent \textbf{\cite{cusack2006risks}} ``Risks at Work: The Demand and Supply Sides of Government Redistribution''
+
+\medskip \noindent \textbf{\cite{cutler2021older}} ``Older adults across the globe exhibit increased prosocial behavior but also greater in-group preferences''
+
+\medskip \noindent \textbf{\cite{eaton1980optimal}} ``Optimal Redistributive Taxation and Uncertainty''
+
+\medskip \noindent \textbf{\cite{frohlich1987laboratory}} ``Laboratory Results on Rawls's Distributive Justice''
+
+\medskip \noindent \textbf{\cite{fullerton2010generational}} ``Generational Conflict Or Methodological Artifact?''
+
+\medskip \noindent \textbf{\cite{gartner2017individual}} ``Individual risk preferences and the demand for redistribution''
+
+\medskip \noindent \textbf{\cite{gelbach2016covariates}} ``When Do Covariates Matter? And Which Ones, and How Much?''
+
+\medskip \noindent \textbf{\cite{gethin2022brahmin}} ``Brahmin Left Versus Merchant Right: Changing Political Cleavages in 21 Western Democracies, 1948--2020''
+
+\medskip \noindent \textbf{\cite{giuliano2024aggregate}} ``Aggregate Shocks and the Formation of Preferences and Beliefs''
+
+\medskip \noindent \textbf{\cite{goerres2010age}} ``Age-based self-interest, intergenerational solidarity and the welfare state: A comparative analysis of older people's attitudes towards public childcare in 12 OECD countries''
+
+\medskip \noindent \textbf{\cite{harsanyi1953cardinal}} ``Cardinal Utility in Welfare Economics and in the Theory of Risk-taking''
+
+\medskip \noindent \textbf{\cite{harsanyi1955cardinal}} ``Cardinal Welfare, Individualistic Ethics, and Interpersonal Comparisons of Utility''
+
+\medskip \noindent \textbf{\cite{huettner2012axiomatic}} ``Axiomatic arguments for decomposing goodness of fit according to Shapley and Owen values''
+
+\medskip \noindent \textbf{\cite{iversen2001asset}} ``An Asset Theory of Social Policy Preferences''
+
+\medskip \noindent \textbf{\cite{jocker2024growing}} ``Growing Up in a Polarized Party System: Ideological Divergence and Partisan Sorting Across Generations''
+
+\medskip \noindent \textbf{\cite{kenworthy2007inequality}} ``Inequality, public opinion and redistribution''
+
+\medskip \noindent \textbf{\cite{krawczyk2010glimpse}} ``A glimpse through the veil of ignorance: Equality of opportunity and support for redistribution''
+
+\medskip \noindent \textbf{\cite{kurer2022disappointed}} ``Disappointed Expectations: Downward Mobility and Electoral Change''
+
+\medskip \noindent \textbf{\cite{lin2018government}} ``Is it the government's responsibility to reduce income inequality? An age-period-cohort analysis of public opinion toward redistributive policy in the United States, 1978 to 2016''
+
+\medskip \noindent \textbf{\cite{luttmer2001group}} ``Group Loyalty and the Taste for Redistribution''
+
+\medskip \noindent \textbf{\cite{meuleman2019economic}} ``The economic context of solidarity. Period vs. cohort differences in support for income redistribution in Britain and the United States''
+
+\medskip \noindent \textbf{\cite{moene2001inequality}} ``Inequality, Social Insurance, and Redistribution''
+
+\medskip \noindent \textbf{\cite{munger2022generation}} ``Generation Gap: Why the Baby Boomers Still Dominate American Politics and Culture''
+
+\medskip \noindent \textbf{\cite{ogrady2023ideological}} ``Is ideological polarisation by age group growing in Europe?''
+
+\medskip \noindent \textbf{\cite{owens2013material}} ``Material Welfare and Changing Political Preferences: The Case of Support for Redistributive Social Policies''
+
+\medskip \noindent \textbf{\cite{pittau2016attitude}} ``Has the attitude of US citizens towards redistribution changed over time?''
+
+\medskip \noindent \textbf{\cite{rainer2008subjective}} ``Subjective income and employment expectations and preferences for redistribution''
+
+\medskip \noindent \textbf{\cite{ravallion2000wants}} ``Who wants to redistribute?''
+
+\medskip \noindent \textbf{\cite{rawls1971theory}} ``A Theory of Justice''
+
+\medskip \noindent \textbf{\cite{rehm2012insecure}} ``Insecure Alliances: Risk, Inequality, and Support for the Welfare State''
+
+\medskip \noindent \textbf{\cite{roberts2006patterns}} ``Patterns of mean-level change in personality traits across the life course: A meta-analysis of longitudinal studies.''
+
+\medskip \noindent \textbf{\cite{shorrocks2013decomposition}} ``Decomposition procedures for distributional analysis: a unified framework based on the Shapley value''
+
+\medskip \noindent \textbf{\cite{sinn1995theory}} ``A Theory of the Welfare State''
+
+\medskip \noindent \textbf{\cite{thewissen2019automation}} ``Automation and the Welfare State: Technological Change as a Determinant of Redistribution Preferences''
+
+\medskip \noindent \textbf{\cite{vanheuvelen2018intercohort}} ``The Intercohort Dynamics of Support for Redistribution in 54 Countries, 1985--2017''
+
+\medskip \noindent \textbf{\cite{varian1980redistributive}} ``Redistributive taxation as social insurance''
+
+\medskip \noindent \textbf{\cite{vlandas2021ageing}} ``Ageing and the economy: a literature review of political and policy mechanisms''
 
 \bibliographystyle{ecta} % apalike
 \bibliography{refs}
