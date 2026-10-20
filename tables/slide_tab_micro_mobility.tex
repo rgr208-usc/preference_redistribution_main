@@ -1,0 +1,35 @@
+   \begin{tabular}{lccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{3}{c}{Support for redistribution (VCF0809)}\\
+                                       & state$+$yr     & $+$age                  & $+$cohort FE \\   
+      Model:                           & (1)            & (2)                     & (3)\\  
+      \midrule
+      \emph{Variables}\\
+      Own-state absolute mobility (SD) & -0.095$^{***}$ & -0.003                  & -0.012\\   
+                                       & (0.008)        & (0.016)                 & (0.063)\\   
+      Age                              &                & -0.024$^{***}$          &   \\   
+                                       &                & (0.004)                 &   \\   
+      Age$^2$                          &                & 0.0002$^{***}$          &   \\   
+                                       &                & ($4.11\times 10^{-5}$)  &   \\   
+      \midrule
+      \emph{Fixed-effects}\\
+      State                            & Yes            & Yes                     & Yes\\  
+      Survey year                      & Yes            & Yes                     & Yes\\  
+      Birth year (cohort)              &                &                         & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations                     & 30,252         & 30,252                  & 30,252\\  
+      R$^2$                            & 0.02219        & 0.02505                 & 0.02650\\  
+      Within R$^2$                     & 0.00715        & 0.01006                 & $3.29\times 10^{-6}$\\   
+      \midrule \midrule
+      \multicolumn{4}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+      \multicolumn{4}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\vspace{3pt}\par\centering{\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}
+\multicolumn{1}{l}{\itshape Economic size (significant columns only):}
+ & (1) & (2) & (3)\\
+\midrule
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $-0.095$ & -- & --\\
+\quad as \% of the young--old gap & 45\% & -- & --\\
+\end{tabular}}

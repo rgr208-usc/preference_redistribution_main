@@ -1,0 +1,35 @@
+      \begin{adjustbox}{max width=\linewidth}
+   \begin{tabular}{lccccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variables: & \multicolumn{3}{c}{Reduce income differences} & \shortstack{More progressive\\ taxes} & \shortstack{Support redistributive\\ proposal}\\
+      Spec.: & home FE & $+$age & $+$coh. & \multicolumn{2}{c}{home FE} \\ 
+      Model:                 & (1)            & (2)      & (3)          & (4)     & (5)\\  
+      \midrule
+      \emph{Variables}\\
+      Absolute mobility (SD) & -0.113$^{***}$ & -0.077   & -0.303$^{*}$ & -0.031  & -0.060$^{**}$\\   
+                             & (0.034)        & (0.091)  & (0.164)      & (0.044) & (0.028)\\   
+      Age                    &                & -0.036   &              &         &   \\   
+                             &                & (0.028)  &              &         &   \\   
+      Age$^2$                &                & 0.0003   &              &         &   \\   
+                             &                & (0.0002) &              &         &   \\   
+      \midrule
+      \emph{Fixed-effects}\\
+      Home state             & Yes            & Yes      & Yes          & Yes     & Yes\\  
+      Birth year (cohort)    &                &          & Yes          &         & \\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations           & 998            & 998      & 998          & 998     & 998\\  
+      R$^2$                  & 0.04822        & 0.04990  & 0.09092      & 0.04996 & 0.04385\\  
+      \midrule \midrule
+      \multicolumn{6}{l}{\emph{Clustered (Home state) standard-errors in parentheses}}\\
+      \multicolumn{6}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+      \end{adjustbox}
+\vspace{3pt}\par\centering{\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccc}
+\multicolumn{1}{l}{\itshape Economic size (significant columns only):}
+ & (1) & (2) & (3) & (4) & (5)\\
+\midrule
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $-0.113$ & -- & -- & -- & $-0.060$\\
+\quad as \% of the young--old gap & 43\% & -- & -- & -- & 45\%\\
+\end{tabular}}
