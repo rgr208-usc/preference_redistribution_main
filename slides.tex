@@ -1,12 +1,15 @@
 \documentclass[aspectratio=169]{beamer}
+
 \usetheme{Boadilla}
 \setbeamertemplate{caption}[numbered]
+\bibliographystyle{apalike}
 
 \usepackage{natbib}
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{appendixnumberbeamer}
-\bibliographystyle{apalike}
+\usepackage{adjustbox}
+\usepackage{caption}
 
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
@@ -28,8 +31,8 @@
 \subtitle{Survey evidence on a widening U.S. age gap}
 % Documenting a widening U.S. age gap and its drivers
 
-\author[Carlson and Rancière]{Niclas Carlson and Romain Rancière}
-% \institute{Columbia Business School}
+\author[Carlson, Kahn and Rancière]{Niclas Carlson\inst{1} \and Matthew E. Kahn\inst{2} \and Romain Rancière\inst{2}}
+\institute[]{\inst{1} Columbia Business School \and \inst{2} University of Southern California}
 \date{\today}
 
 \begin{document}
@@ -39,25 +42,21 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{Structure}
-\begin{enumerate}
-    \item Motivation: Preference of Young People (Saez Poll)
-    \item Motivating Graphs
-    \item Summary of Finding
-    \item Prolific Survey -- details (Blocks)..
-    \item Different Hypotheses / Tests
-    \item Robust Determinants
-    \item How much they explains
-    \item Discussion Slide: 
-    \begin{enumerate}
-        \item Tax Demotivate (Growth of the Pie -- no age gradient)
-        \item Univesal Zero Sum: DEI 
-        \item Zero-Sum (Growth of the Pie vs. Distribution of the Pie - Fairness)Reflection of Growin Inequality)
-    \end{enumerate}
-    \item Comparison Existing Survey / Internationa Evidence
-    \item Understanding how this gap has evolved. 
-\end{enumerate}
-\end{frame}
+% \begin{frame}{Structure}
+% \begin{enumerate}
+%     \item Motivation: preferences of young people (Prop 40 polls)
+%     \item Motivating gradients (Prolific 2025 data)
+%     \item Hypotheses and summary of findings
+%     \item Prolific survey details and question blocks
+%     \item Most important/robust correlates of preferences
+%     \item Mow much they explain the age gap 
+%     \item Discussion Slide: zero-sum (growth of the pie vs. distribution of the pie) vs. deservingness/attribution (fairness, reflection of growing inequality)
+%     \item Comparison to existing surveys and other countries
+%     \item Widening of U.S. age gap over time and widening belief gap.
+%     \item Understanding why these gaps have arisen: inequality, growth, mobility, housing, perceived conflict, social security, race.
+%     \item Future analysis and plausible explanations
+% \end{enumerate}
+% \end{frame}
 
 
 \begin{frame}{Why do young Americans have different preferences?}
@@ -128,7 +127,7 @@ Two competing hypotheses:
     \item $N = 2,415$, one half 18--30, one half $>30$.
     \item 15 minutes on average, 92 questions.
     \item Covers current financial position, history, expectations, risks, beliefs about the economy, and values.
-    \item Benchmarked against external surveys: \cite{chinoy2026zero}, GSS, ANES, and WVS/EVS.
+    % \item Benchmarked against external surveys: \cite{chinoy2026zero}, GSS, ANES, and WVS/EVS.
     % government should reduce income differences, federal tax progressivity, and support for a revenue-neutral tax-shift proposal.
     % \item Built to test the two hypotheses head-to-head: 26 self-interest constructs (income, financial position, long-term risk, upward-mobility prospects, time preference) against beliefs and values (zero-sum, attribution/deservingness, fairness).
 \end{itemize}
@@ -153,18 +152,29 @@ Two competing hypotheses:
     \item \textit{Description of revenue-neutral tax.} Would you support or reject the proposed change? 
     \begin{figure}
         \centering
-        \includegraphics[width=0.6\linewidth]{figures/proposal-both.png}
+        \includegraphics[width=0.57\linewidth]{figures/proposal-both.png}
     \end{figure}
 \end{enumerate}
 \end{frame}
 
 
 
-\begin{frame}{Strongest correlates: add-one-in}
+\begin{frame}{Strongest correlates: forward selection}
 
 \begin{figure}
     \centering
     \includegraphics[width=0.75\linewidth]{figures/fig_slide_addonein.pdf}
+\end{figure}
+    
+\end{frame}
+
+
+2
+\begin{frame}{Strongest correlates from forward selection}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/table_slide_addonein.pdf}
 \end{figure}
     
 \end{frame}
@@ -194,60 +204,6 @@ Two competing hypotheses:
 
 
 
-\begin{frame}{Benchmarking: strongest correlates}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{figures/fig_slide_shapley_groups.pdf}
-\end{figure}
-    
-\end{frame}
-
-\begin{frame}{Strongest correlates in \cite{chinoy2026zero}}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{figures/table_slide_shapley_chinoy.pdf}
-\end{figure}
-    
-\end{frame}
-
-
-
-\begin{frame}{Benchmarking: what accounts for the age gap}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{figures/fig_slide_gelbach_groups.pdf}
-\end{figure}
-    
-\end{frame}
-
-
-
-\begin{frame}{What accounts for the gap in \cite{chinoy2026zero}}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{figures/table_slide_gelbach_chinoy.pdf}
-\end{figure}
-    
-\end{frame}
-
-
-
-\begin{frame}{International age gradients in WVS/EVS 2017--2022}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{figures/fig_slide_e037_ends.pdf}
-    % \caption{\centering Age gap in redistributive preferences in WVS/EVS wave 2017--2022, countries grouped by institutional history}
-\end{figure}
-
-\end{frame}
-
-
-
 \begin{frame}{Discussion: is it zero-sum or deservingness?}
 
 Related but distinct beliefs
@@ -263,6 +219,104 @@ Observations
 \end{itemize}
     
 \end{frame}
+
+
+
+\begin{frame}{Comparing to other surveys: strongest correlates}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/fig_slide_shapley_groups.pdf}
+\end{figure}
+    
+\end{frame}
+
+
+
+% \begin{frame}{Strongest correlates in \cite{chinoy2026zero}}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{figures/table_slide_shapley_chinoy.pdf}
+% \end{figure}
+    
+% \end{frame}
+
+
+
+\begin{frame}{Comparing to other surveys: what accounts for the age gap}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/fig_slide_gelbach_groups.pdf}
+\end{figure}
+    
+\end{frame}
+
+
+
+% \begin{frame}{What accounts for the gap in \cite{chinoy2026zero}}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{figures/table_slide_gelbach_chinoy.pdf}
+% \end{figure}
+    
+% \end{frame}
+
+
+
+\begin{frame}{Age gap across countries}
+% (WVS/EVS 2017--2022)
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/fig_slide_e037_ends.pdf}
+    % \caption{\centering Age gap in redistributive preferences in WVS/EVS wave 2017--2022, countries grouped by institutional history}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Redistributive vs. zero-sum age gradient across countries}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/fig_slide_zerosum_reg_e037.pdf}
+    % \caption{\centering Age gradient in support for government responsibility (E037) vs.\ age gradient in zero-sum belief (E041), most recent WVS wave per country}
+\end{figure}
+% \vspace{-0.6em}
+% {\tiny\centering WVS items, 1--10 scales. Government responsibility (E037): 1 = ``People should take more responsibility'' \dots\ 10 = ``The government should take more responsibility''.\\
+% Zero-sum (E041): 1 = ``People can only get rich at the expense of others'' \dots\ 10 = ``Wealth can grow so there's enough for everyone''.\par}
+    
+\end{frame}
+
+
+
+\begin{frame}{Zero-sum beliefs and redistribution within countries}
+
+\begin{table}
+    \centering
+    \caption*{Individual-level WVS: redistribution on zero-sum belief}
+    \vspace{-0.4em}
+    {\fontsize{7.5}{8.5}\selectfont\setlength{\tabcolsep}{5pt}\input{tables/writeup_tab_zsmicro.tex}}
+\end{table}
+\vspace{-0.6em}
+\begin{center}
+{\tiny
+WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs clustered by country. Items z-scored over the estimation sample (SD of the outcome per 1 SD of zero-sum); age control is age in decades. 
+* $p<0.05$, ** $p<0.01$, *** $p<0.001$. Items on a 1--10 scale.
+\begin{itemize}\setlength{\itemsep}{0pt}
+    \item \texttt{E035}: 1 = ``Incomes should be made more equal'' \dots\ 10 = ``We need larger income differences as incentives'' (coded $+$ = pro-equality).
+    \item \texttt{E037}: 1 = ``People should take more responsibility'' \dots\ 10 = ``The government should take more responsibility'' (coded $+$ = pro-government).
+    \item \texttt{E041}: 1 = ``People can only get rich at the expense of others'' \dots\ 10 = ``Wealth can grow so there's enough for everyone'' (coded $+$ = zero-sum).
+\end{itemize}
+\par}
+\end{center}
+
+\end{frame}
+
 
 
 % \begin{frame}{Zero-sum or attribution beliefs?}
@@ -329,15 +383,27 @@ Observations
 
 
 
-\begin{frame}{Steepening age gradient in deservingness beliefs}
+\begin{frame}{Steepening age gradient in zero-sum and deservingness beliefs}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/pair_attribution_wealth.pdf}
+    \includegraphics[width=0.95\linewidth]{figures/triple_attribution_wealth.pdf}
     % \caption{Steepening age gradient in wealth attribution}
     \label{fig:placeholder}
 \end{figure}
     
+\end{frame}
+
+
+
+\begin{frame}{Redistribution and belief gaps over time}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/fig_zerosum_vs_gap.pdf}
+    % \caption{\centering Young--old gap over time in redistribution preference (GSS EQWLTH) vs.\ zero-sum (WVS E041) and structural-advantage (GSS OPWLTH) beliefs, common SD units: age gradient (left) and 3-bin gap (right)}
+\end{figure}
+
 \end{frame}
 
 
@@ -384,13 +450,147 @@ Observations
 
 
 
-\begin{frame}{Investigating belief drivers}
+% \begin{frame}{Investigating belief drivers}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{figures/fig_slide_ts_pair.pdf}
+%     % \caption{\centering Age gap in redistributive preferences versus current inequality and formative-years growth}
+% \end{figure}
+
+% \end{frame}
+
+
+
+\begin{frame}{Inequality, growth, housing and the age gradient}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{figures/fig_slide_ts_pair.pdf}
-    % \caption{\centering Age gap in redistributive preferences versus current inequality and formative-years growth}
+    \includegraphics[width=\linewidth]{figures/fig_slide_ts_pair.pdf}
+    % \caption{\centering Age gradient in support for redistribution (GSS, ANES) vs.\ three US series, with correlations over survey years}
 \end{figure}
+\vspace{-0.6em}
+{\tiny\centering Real estate: share of US household real estate held by households aged 55 and over minus the share held by those under 40, in percentage points (Federal Reserve Distributional Financial Accounts, quarterly from 1989). $r$ uses its annual mean.\par}
+
+\end{frame}
+
+
+
+\begin{frame}{Formative-years growth and redistribution}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{Prolific 2025: support for redistribution on home-state formative-years income growth}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.75}
+    \input{tables/slide_tab_prolific_micro_growth.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Formative-years growth: movers only}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{\centering Prolific 2025, movers only (home state $\neq$ current state): support for redistribution on home-state formative growth, with and without current-state FE}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_prolific_movers_growth.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Absolute mobility and redistribution}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{Prolific 2025: support for redistribution on home-state absolute mobility}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_prolific_micro_mobility.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Formative-years growth relative to the nation}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{Prolific 2025: support for redistribution on state$-$national formative growth}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_rel_prolific_growth.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Absolute mobility relative to the nation}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{Prolific 2025: support for redistribution on state$-$national absolute mobility}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_rel_prolific_mob.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Inequality grown up with and redistribution}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{Prolific 2025: support for redistribution on the top-10\% income share grown up with}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_top10_prolific.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Formative-years growth and zero-sum beliefs}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{Prolific 2025: zero-sum beliefs on home-state formative-years income growth}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.75}
+    \input{tables/slide_tab_prolific_zs_growth.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Absolute mobility and zero-sum beliefs}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{Prolific 2025: zero-sum beliefs on home-state absolute mobility}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_prolific_zs_mobility.tex}}
+\end{table}
 
 \end{frame}
 
@@ -408,15 +608,193 @@ Observations
 
 
 
-\begin{frame}{Preliminary findings}
+\begin{frame}{Formative-years growth gap vs. redistribution gap across states}
+
+\begin{figure}
+    \centering
+    \caption*{\centering ANES state $\times$ year: young--old redist. gap vs.\ formative-years growth gap, net of state and year FE}
+    \includegraphics[width=0.7\linewidth]{figures/fig_anes_partial_corr.pdf}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Formative-years growth and redistribution}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{ANES: support for redistribution on own-state formative-years growth}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.7}
+    \input{tables/slide_tab_micro_growth.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Absolute mobility and redistribution}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{ANES: support for redistribution on own-state absolute mobility}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_micro_mobility.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Formative-years growth relative to the nation}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{ANES: support for redistribution on state$-$national formative growth}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_rel_anes_growth.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Absolute mobility relative to the nation}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{ANES: support for redistribution on state$-$national absolute mobility}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_rel_anes_mob.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Inequality grown up with and redistribution}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \caption*{ANES: support for redistribution on the top-10\% income share grown up with}
+    \vspace{-1.1em}
+    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+    \input{tables/slide_tab_top10_anes.tex}}
+\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Perceived conflict between young and old}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/fig_slide_age_conflict.pdf}
+    % \caption{\centering Perceived conflict between young and older people (ISSP Social Inequality), mean on the 4-point scale (4 = very strong). Left: US, ages 18--38 and 59--79. Right: ages 18--79, US vs.\ rich democracies}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Social Security: the one service where the young want less}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/natsoc.pdf}
+    % \caption{\centering Left: share of white respondents saying Social Security spending is ``too little'', ages 18--38 and 59--79, by survey year. Right: young--old gap (SD) on each GSS spending item and the redistribution item, by era, 95\% intervals}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{The age gradient by race}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.65\linewidth]{figures/fig_slide_race_EQWLTH.pdf}
+\end{figure}
+    % \caption{\centering Left: GSS support for reducing income differences, white vs Black, ages 18--38 (solid) and 59--79 (dashed), six-year eras. Right: young--old gap (18--38 minus 59--79, SD) among white and Black respondents, Prolific and Chinoy items, 95\% intervals}
+
+\end{frame}
+
+
+
+\begin{frame}{The age gradient by race}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/xsec_gap_race.pdf}
+\end{figure}
+
+\end{frame}
+
+
+
+% \begin{frame}{Preliminary findings}
+
+% \begin{itemize}
+%     \item Inequality, growth, and mobility alone do not explain any of the age gradient in cross-country analysis; the U.S. time series correlation is an outlier. 
+%     \item Movement of older Americans' beliefs and non-formative-years placebo tests raise doubts about an imprinting story.
+%     \item Opposite age gradient on social security, emerging around 2020. 
+%     \item U.S. has highest perceived age conflict among rich democracies. Recently, the young perceive more conflict than the old.
+%     \item No age gap among Black Americans, only White/Hispanic.
+%     \item 3/4 of age gap survives within-party; not just higher polarization.
+% \end{itemize}
+    
+% \end{frame}
+
+
+
+\begin{frame}{Conclusions}
 
 \begin{itemize}
-    \item Inequality, growth, and mobility alone do not explain any of the age gradient in cross-country analysis; the U.S. time series correlation is an outlier. 
-    \item Movement of older Americans' beliefs and non-formative-years placebo tests raise doubts about an imprinting story.
-    \item Opposite age gradient on social security, emerging around 2020. 
-    \item U.S. has highest perceived age conflict among rich democracies. Recently, the young perceive more conflict than the old.
-    \item No age gap among Black Americans, only White/Hispanic.
-    \item 3/4 of age gap survives within-party; not just higher polarization.
+    \item The US age gap is new. 
+    \begin{itemize}
+        \item It started emerging in the 80s and widened substantially around 2020--24.
+    \end{itemize}
+    \item It is not the economic position of the young, but whether they believe the economic game is zero-sum or rigged. 
+    \begin{itemize}
+        \item Other academic surveys tend to agree.
+        % \item Zero-sum and deservingness are different beliefs with different age gaps.
+    \end{itemize}
+    \item The US age gap is near the top of 91 countries, with the UK and the Nordics. 
+    \item Where the young are more zero-sum, they tend to be more pro-redistribution, across and within countries.
+\end{itemize}
+    
+\end{frame}
+
+
+
+\begin{frame}{Future analysis}
+
+\begin{itemize}
+    \item Second survey wave
+    \begin{itemize}
+        \item Questions on moral values, govt. trust, religiosity, and race-related beliefs.
+        \item In-depth measurement and differentiation of zero-sum and attribution beliefs. % which our current items partly confound
+        \item An information provision or wording experiment generating exogenous belief variation.
+    \end{itemize}
+    \item Geographic and micro variation
+    \begin{itemize}
+        \item State and local-level age inequality measures: political representation (L2 voter files), policy tilt, real circumstances (housing, employment, etc.)
+    \end{itemize}
+    \item Text analysis
+    \begin{itemize}
+        \item Extracting zero-sum rich and zero-sum race narratives from Congressional speeches. Manifesto Project for cross-country.
+    \end{itemize}
+    % beliefs and preferences have moved a lot recently, so recent voter files (L2 and similar) and local exposure measures may give within-country variation.
 \end{itemize}
     
 \end{frame}
@@ -443,30 +821,6 @@ What explains sharp rise in gap post-2020?
     \item Elderly presidential candidates in 2020 and 2024
 \end{itemize}
 
-\end{frame}
-
-
-
-\begin{frame}{Future analysis}
-
-\begin{itemize}
-    \item Second survey wave
-    \begin{itemize}
-        \item A more comprehensive questionnaire pairing existing questions with govt. trust, religiosity, and race-related beliefs.
-        \item In-depth measurement and differentiation of zero-sum and attribution beliefs. % which our current items partly confound
-        \item An information provision or wording experiment generating exogenous belief variation.
-    \end{itemize}
-    \item Geographic and micro variation
-    \begin{itemize}
-        \item State and local-level age inequality measures: political representation (L2 voter files), policy tilt, real circumstances (housing, employment, etc.)
-    \end{itemize}
-    \item Text analysis
-    \begin{itemize}
-        \item Extracting zero-sum rich and zero-sum race narratives from Congressional speeches. Manifesto Project for cross-country.
-    \end{itemize}
-    % beliefs and preferences have moved a lot recently, so recent voter files (L2 and similar) and local exposure measures may give within-country variation.
-\end{itemize}
-    
 \end{frame}
 
 
