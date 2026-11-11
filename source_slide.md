@@ -1,6 +1,6 @@
 # Source of each figure and table in `slides.tex`
 
-Only slides that are live (not commented out) are listed. Slide numbers are PDF page numbers as of 2026-11-10.
+Only slides that are live (not commented out) are listed. Slide numbers are PDF page numbers as of 2026-11-11.
 Script paths are relative to `analysis_nic/`, which is not in this repo. `paper/analysis/18_collect_exhibits.R` copies the outputs into `paper_repo/figures` and `paper_repo/tables`.
 
 | Slide | Title | File in deck | Source |
@@ -9,7 +9,7 @@ Script paths are relative to `analysis_nic/`, which is not in this repo. `paper/
 | 2 | (same) | `figures/prop40_county_map.png` | Screenshot of the NYT county results map for Prop 40. |
 | 3 | Current age gap on income redistribution | `figures/fig_slide_prolific_triple.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
 | 4 | Current age gap on zero-sum beliefs | `figures/fig_slide_prolific_zerosum_triple.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 5, 36 | Redistribution and belief gaps over time | `figures/fig_zerosum_vs_gap.pdf` | `preliminary/macro_drivers/code/17_zerosum_gap_figure.py` |
+| 5, 37 | Redistribution and belief gaps over time | `figures/fig_zerosum_vs_gap.pdf` | `preliminary/macro_drivers/code/17_zerosum_gap_figure.py` |
 | 10 | Core outcomes | `figures/proposal-both.png` | Hand-made image (commit 20a8a0a). No script. |
 | 11 | Strongest correlates from forward selection | `tables/slide_tab_addonein.tex` | Retyped by hand from Niclas's `table_slide_addonein.pdf` (see the file header). The underlying estimates come from `paper/analysis/13_addonein.R`. |
 | 12 | Strongest correlates: forward selection | `figures/fig_slide_addonein.pdf` | Built from `paper/analysis/13_addonein.R` output and committed by Niclas (20a8a0a). No standalone slide script. |
@@ -21,23 +21,24 @@ Script paths are relative to `analysis_nic/`, which is not in this repo. `paper/
 | 19 | The age gradient by race | `figures/xsec_gap_race.pdf` | `preliminary/demographics/code/35_race_sex_xsec.R` |
 | 20 | The age gradient: men and women | `figures/xsec_gap_sex_all.pdf` | `preliminary/demographics/code/35_race_sex_xsec.R` |
 | 21 | Age gap across countries | `figures/fig_slide_e037_ends.pdf` | `preliminary/international/code/14_slide_e037.R` |
-| 22 | Redistributive vs. zero-sum age gradient across countries | `figures/fig_slide_zerosum_reg_e037.pdf` | `preliminary/international/code/19_zerosum_figures.py` |
-| 23 | Zero-sum beliefs and redistribution within countries | `tables/writeup_tab_zsmicro.tex` | `preliminary/international/code/13_writeup_figures.R`, using estimates from `20_zerosum_micro.R` |
-| 24 | Deservingness beliefs and redistribution within countries | `tables/writeup_tab_hwmicro.tex` | `preliminary/international/code/20c_hardwork_micro.R` |
-| 25 | Young and old over time | `figures/fig_slide_levels_pair.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 26 | Young and old over time (pooled) | `figures/fig_slide_levels_pair_pooled.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 27 | Following generations over time (GSS, by survey year) | `figures/fig_slide_cohort_gss.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 28 | Following generations over time (GSS, by age) | `figures/fig_slide_cohort_age_gss.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 29 | Following generations over time (ANES, by survey year) | `figures/fig_slide_cohort_anes.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 30 | Following generations over time (ANES, by age) | `figures/fig_slide_cohort_age_anes.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 31 | Young and old over time: white vs. Black | `figures/fig_slide_race_pair.pdf` | `preliminary/demographics/code/33_race_sex_age_levels.R` |
-| 32 | Young and old over time: men and women (GSS) | `figures/fig_slide_sex_split_EQWLTH.pdf` | `preliminary/demographics/code/33_race_sex_age_levels.R` |
-| 33 | Young and old over time: men and women (ANES) | `figures/fig_slide_sex_split_VCF0809.pdf` | `preliminary/demographics/code/33_race_sex_age_levels.R` |
-| 34 | Cross-sectional age gradient steepening over time | `figures/fig_slide_profile_pair.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
-| 35 | Steepening age gradient in zero-sum and deservingness beliefs | `figures/triple_attribution_wealth.pdf` | `preliminary/gap_measurement/code/05_slide_triple_attribution.R`, using `paper/analysis/05_belief_gradients.R` |
-| 37 | Inequality, growth, housing, mobility and the age gap | `figures/fig_slide_ts_2x2.pdf` | `preliminary/macro_drivers/code/10_slide_ts_pair.R` |
-| 39 | Absolute mobility and redistribution (Prolific) | `tables/slide_tab_prolific_micro_mobility.tex` | `preliminary/macro_drivers/code/20_prolific_micro.R`, put into slide format by `32_fit_tables.R` |
-| 40 | Absolute mobility and zero-sum beliefs | `tables/slide_tab_prolific_zs_mobility.tex` | `preliminary/macro_drivers/code/24_prolific_zerosum.R`, put into slide format by `32_fit_tables.R` |
-| 41 | Absolute mobility and redistribution (ANES) | `tables/slide_tab_micro_mobility.tex` | `preliminary/macro_drivers/code/19e_anes_mobility.R`, put into slide format by `32_fit_tables.R` |
-| 42 | Perceived conflict between young and old | `figures/fig_slide_age_conflict.pdf` | `preliminary/demographics/code/38_age_conflict.R` (writes `age_conflict.pdf`; renamed in the deck) |
-| 43 | Social Security: the one service where the young want less | `figures/natsoc.pdf` | `preliminary/demographics/code/37_natsoc.R` |
+| 22 | Redistributive vs. zero-sum age gradient across countries | `figures/fig_slide_zerosum_reg_e037.pdf` | `preliminary/international/code/17c_slide_gradient_scatter.R`, using gradients from `17_zerosum_regressions.R`. It replaces Niclas's hand-made version. |
+| 23 | Redistributive vs. deservingness age gradient across countries | `figures/fig_slide_luck_reg_e037.pdf` | `preliminary/international/code/17c_slide_gradient_scatter.R` |
+| 24 | Zero-sum beliefs and redistribution within countries | `tables/writeup_tab_zsmicro.tex` | `preliminary/international/code/13_writeup_figures.R`, using estimates from `20_zerosum_micro.R` |
+| 25 | Deservingness beliefs and redistribution within countries | `tables/writeup_tab_hwmicro.tex` | `preliminary/international/code/20c_hardwork_micro.R` |
+| 26 | Young and old over time | `figures/fig_slide_levels_pair.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
+| 27 | Young and old over time (pooled) | `figures/fig_slide_levels_pair_pooled.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
+| 28 | Following generations over time (GSS, by survey year) | `figures/fig_slide_cohort_gss.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
+| 29 | Following generations over time (GSS, by age) | `figures/fig_slide_cohort_age_gss.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
+| 30 | Following generations over time (ANES, by survey year) | `figures/fig_slide_cohort_anes.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
+| 31 | Following generations over time (ANES, by age) | `figures/fig_slide_cohort_age_anes.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
+| 32 | Young and old over time: white vs. Black | `figures/fig_slide_race_pair.pdf` | `preliminary/demographics/code/33_race_sex_age_levels.R` |
+| 33 | Young and old over time: men and women (GSS) | `figures/fig_slide_sex_split_EQWLTH.pdf` | `preliminary/demographics/code/33_race_sex_age_levels.R` |
+| 34 | Young and old over time: men and women (ANES) | `figures/fig_slide_sex_split_VCF0809.pdf` | `preliminary/demographics/code/33_race_sex_age_levels.R` |
+| 35 | Cross-sectional age gradient steepening over time | `figures/fig_slide_profile_pair.pdf` | `preliminary/gap_measurement/code/04_slide_figures.R` |
+| 36 | Steepening age gradient in zero-sum and deservingness beliefs | `figures/triple_attribution_wealth.pdf` | `preliminary/gap_measurement/code/05_slide_triple_attribution.R`, using `paper/analysis/05_belief_gradients.R` |
+| 38 | Inequality, growth, housing, mobility and the age gap | `figures/fig_slide_ts_2x2.pdf` | `preliminary/macro_drivers/code/10_slide_ts_pair.R` |
+| 40 | Absolute mobility and redistribution (Prolific) | `tables/slide_tab_prolific_micro_mobility.tex` | `preliminary/macro_drivers/code/20_prolific_micro.R`, put into slide format by `32_fit_tables.R` |
+| 41 | Absolute mobility and zero-sum beliefs | `tables/slide_tab_prolific_zs_mobility.tex` | `preliminary/macro_drivers/code/24_prolific_zerosum.R`, put into slide format by `32_fit_tables.R` |
+| 42 | Absolute mobility and redistribution (ANES) | `tables/slide_tab_micro_mobility.tex` | `preliminary/macro_drivers/code/19e_anes_mobility.R`, put into slide format by `32_fit_tables.R` |
+| 43 | Perceived conflict between young and old | `figures/fig_slide_age_conflict.pdf` | `preliminary/demographics/code/38_age_conflict.R` (writes `age_conflict.pdf`; renamed in the deck) |
+| 44 | Social Security: the one service where the young want less | `figures/natsoc.pdf` | `preliminary/demographics/code/37_natsoc.R` |
