@@ -61,12 +61,24 @@
 
 \begin{frame}{Do young Americans have different preferences?}
 
-    \begin{figure}
+    \begin{columns}[T]
+    \begin{column}{0.6\textwidth}
         \centering
-        \includegraphics[width=0.7\linewidth]{figures/table_slide_prop40.pdf}
-        % \caption{Young vs. old on billionaire tax}
-    \end{figure}
-    
+        \includegraphics[width=\linewidth]{figures/table_slide_prop40.pdf}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+        \centering
+        {\scriptsize\textbf{Actual vote, Nov.\ 3, 2026}}\\[2pt]
+        \includegraphics[height=0.55\textheight]{figures/prop40_county_map.png}\\
+        {\tiny Source: New York Times.}
+    \end{column}
+    \end{columns}
+
+    \vspace{4pt}
+    {\footnotesize
+    \textbf{Actual result:} 47.2\% Yes, 52.8\% No.
+    \textbf{AP Voter Poll:} a majority of voters under 30 voted Yes; roughly 7 in 10 voters 65+ voted No.\par}
+
 \end{frame}
 
 
@@ -184,11 +196,18 @@ Two competing hypotheses:
 
 \begin{frame}{Strongest correlates from forward selection}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\linewidth]{figures/table_slide_addonein.pdf}
-\end{figure}
-    
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.7\linewidth]{figures/table_slide_addonein.pdf}
+% \end{figure}
+\begin{center}
+{\footnotesize\textbf{Should the government concern itself with reducing income differences between rich and poor people?}\par}
+{\scriptsize\itshape Own survey, 2025. OLS, outcome and items in SD units; the ten items the add-one-in selects first.\par}
+\vspace{0.3em}
+{\scriptsize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.9}
+\input{tables/slide_tab_addonein.tex}}
+\end{center}
+
 \end{frame}
 
 
@@ -247,6 +266,16 @@ Observations
 
 
 
+\begin{frame}{Comparing to other surveys: support for redistribution by age}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/fig_slide_age_by_survey.pdf}
+\end{figure}
+
+\end{frame}
+
+
 \begin{frame}{Comparing to other surveys: strongest correlates}
 
 \begin{figure}
@@ -288,6 +317,30 @@ Observations
 % \end{figure}
     
 % \end{frame}
+
+
+
+\begin{frame}{The age gradient by race}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/xsec_gap_race.pdf}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{The age gradient: men and women}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/xsec_gap_sex_all.pdf}
+\end{figure}
+
+{\tiny\centering All races. Unweighted (neither survey ships weights); 95\% intervals, HC1 standard errors.\par}
+
+\end{frame}
 
 
 
@@ -343,6 +396,30 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 \end{frame}
 
 
+\begin{frame}{Deservingness beliefs and redistribution within countries}
+
+\begin{table}
+    \centering
+    \caption*{Individual-level WVS: redistribution on deservingness belief (\texttt{E040})}
+    \vspace{-0.4em}
+    {\fontsize{7.5}{8.5}\selectfont\setlength{\tabcolsep}{5pt}\input{tables/writeup_tab_hwmicro.tex}}
+\end{table}
+\vspace{-0.6em}
+\begin{center}
+{\tiny
+WVS waves carrying \texttt{E040} (1989--2022), ages 18--79, weighted, SEs clustered by country. Items z-scored over the estimation sample (SD of the outcome per 1 SD of the deservingness belief); age control is age in decades. 
+* $p<0.05$, ** $p<0.01$, *** $p<0.001$. Items on a 1--10 scale.
+\begin{itemize}\setlength{\itemsep}{0pt}
+    \item \texttt{E035}: 1 = ``Incomes should be made more equal'' \dots\ 10 = ``We need larger income differences as incentives'' (coded $+$ = pro-equality).
+    \item \texttt{E037}: 1 = ``People should take more responsibility'' \dots\ 10 = ``The government should take more responsibility'' (coded $+$ = pro-government).
+    \item \texttt{E040}: 1 = ``In the long run, hard work usually brings a better life'' \dots\ 10 = ``It's more a matter of luck and connections'' (coded $+$ = luck \& connections).
+\end{itemize}
+\par}
+\end{center}
+
+\end{frame}
+
+
 
 % \begin{frame}{Zero-sum or attribution beliefs?}
 
@@ -386,14 +463,182 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 
 
 
-\begin{frame}{Young-old age gap increasing over time}
+% \begin{frame}{Young-old age gap increasing over time}
+% 
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{figures/fig_slide_gap_pair.pdf}
+% \end{figure}
+% 
+% \end{frame}
+
+
+
+\begin{frame}{Young and old over time}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{figures/fig_slide_gap_pair.pdf}
+    \includegraphics[width=0.85\linewidth]{figures/fig_slide_levels_pair.pdf}
 \end{figure}
-    
+
 \end{frame}
+
+
+\begin{frame}{Young and old over time (pooled)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/fig_slide_levels_pair_pooled.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny Survey years pooled into 6-year periods (1972--77, 1978--83, \ldots); each point is the survey-weighted mean of the period, plotted at its average survey year.\par}
+
+\end{frame}
+
+
+\begin{frame}{Following generations over time (GSS, by survey year)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/fig_slide_cohort_gss.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny One line per birth decade. Survey years pooled into 6-year periods; each point is the survey-weighted mean of a cohort in a period, plotted at its average survey year. Ages 18--79; cells with fewer than 30 respondents dropped.\par}
+
+\end{frame}
+
+
+\begin{frame}{Following generations over time (GSS, by age)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/fig_slide_cohort_age_gss.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny One line per birth decade. Survey years pooled into 6-year periods; each point is the survey-weighted mean of a cohort in a period, plotted at the cohort's average age in that period. Ages 18--79; cells with fewer than 30 respondents dropped.\par}
+
+\end{frame}
+
+
+\begin{frame}{Following generations over time (ANES, by survey year)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/fig_slide_cohort_anes.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny One line per birth decade. Survey years pooled into 6-year periods; each point is the survey-weighted mean of a cohort in a period, plotted at its average survey year. Ages 18--79; cells with fewer than 30 respondents dropped.\par}
+
+\end{frame}
+
+
+\begin{frame}{Following generations over time (ANES, by age)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/fig_slide_cohort_age_anes.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny One line per birth decade. Survey years pooled into 6-year periods; each point is the survey-weighted mean of a cohort in a period, plotted at the cohort's average age in that period. Ages 18--79; cells with fewer than 30 respondents dropped.\par}
+
+\end{frame}
+
+
+
+
+% \begin{frame}{Support for redistribution by age, every survey wave}
+%
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.85\linewidth]{figures/fig_slide_age_by_wave.pdf}
+% \end{figure}
+% \vspace{-6pt}
+% {\tiny One line per survey wave, light (early) to dark (recent). Survey-weighted means, ages 18+; age-wave cells with fewer than 30 respondents dropped.\par}
+%
+% \end{frame}
+
+
+
+\begin{frame}{Young and old over time: white vs.\ Black}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/fig_slide_race_pair.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny Survey years pooled into 6-year periods (1972--77, 1978--83, \ldots); each point is the survey-weighted mean of the period, plotted at its average survey year. Periods with fewer than 30 respondents in a group are dropped.\par}
+
+\end{frame}
+
+
+% \begin{frame}{Young and old over time: Hispanics}
+%
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.78\linewidth]{figures/fig_slide_hisp_pair.pdf}
+% \end{figure}
+% {\tiny Survey-weighted means, 6-year eras; cells with fewer than 30 respondents dropped. GSS identifies Hispanic respondents only from 2000.\par}
+%
+% \end{frame}
+
+
+
+% \begin{frame}{Young and old over time: men vs.\ women}
+%
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.85\linewidth]{figures/fig_slide_sex_pair.pdf}
+% \end{figure}
+%
+% \end{frame}
+
+
+
+\begin{frame}{Young and old over time: men and women (GSS)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/fig_slide_sex_split_EQWLTH.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny Survey years pooled into 6-year periods (1972--77, 1978--83, \ldots); each point is the survey-weighted mean of the period, plotted at its average survey year. Periods with fewer than 30 respondents in a group are dropped.\par}
+
+\end{frame}
+
+
+
+\begin{frame}{Young and old over time: men and women (ANES)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/fig_slide_sex_split_VCF0809.pdf}
+\end{figure}
+\vspace{-6pt}
+{\tiny Survey years pooled into 6-year periods (1972--77, 1978--83, \ldots); each point is the survey-weighted mean of the period, plotted at its average survey year. Periods with fewer than 30 respondents in a group are dropped.\par}
+
+\end{frame}
+
+
+
+% \begin{frame}{Young and old over time: by sex and race (GSS)}
+% 
+% \begin{figure}
+%     \centering
+%     \includegraphics[height=0.8\textheight]{figures/gss_EQWLTH.pdf}
+% \end{figure}
+% 
+% \end{frame}
+% 
+% 
+% 
+% \begin{frame}{Young and old over time: by sex and race (ANES)}
+% 
+% \begin{figure}
+%     \centering
+%     \includegraphics[height=0.8\textheight]{figures/anes_VCF0809.pdf}
+% \end{figure}
+% 
+% \end{frame}
 
 
 
@@ -412,7 +657,7 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.95\linewidth]{figures/triple_attribution_wealth.pdf}
+    \includegraphics[width=0.88\linewidth]{figures/triple_attribution_wealth.pdf}
     % \caption{Steepening age gradient in wealth attribution}
     \label{fig:placeholder}
 \end{figure}
@@ -487,56 +732,88 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 
 
 
-\begin{frame}{Inequality, growth, housing and the age gap}
+\begin{frame}{Inequality, growth, housing, mobility and the age gap}
 
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{figures/fig_slide_ts_pair.pdf}
+    \includegraphics[height=0.72\textheight]{figures/fig_slide_ts_2x2.pdf}
     % \caption{\centering Age gradient in support for redistribution (GSS, ANES) vs.\ three US series, with correlations over survey years}
 \end{figure}
 \vspace{-0.6em}
-{\tiny\centering Real estate: share of US household real estate held by households aged 55 and over minus the share held by those under 40, in percentage points (Federal Reserve Distributional Financial Accounts, quarterly from 1989). $r$ uses its annual mean.\par}
+{\tiny\centering Real estate: share of US household real estate held by households aged 55 and over minus the share held by those under 40, in percentage points (Federal Reserve Distributional Financial Accounts, quarterly from 1989). Absolute mobility: share of children earning more than their parents (Chetty et al.\ 2017, national), averaged over the birth cohorts of each survey year's young group (born 18--38 years earlier); cohort data end in 1984, so the series ends in 2012.\par}
 
 \end{frame}
 
 
 
-\begin{frame}{Formative-years growth by birth cohort}
+% \begin{frame}{Formative-years growth by birth cohort}
+% 
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.82\linewidth]{figures/formative_growth_scatter.pdf}
+% \end{figure}
+% 
+% \end{frame}
+% 
+% 
+% 
+% \begin{frame}{Formative-years growth and redistribution}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{Prolific 2025: support for redistribution on home-state formative-years income growth}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.75}
+%     \input{tables/slide_tab_prolific_micro_growth.tex}}
+% \end{table}
+% 
+% \end{frame}
+% 
+% 
+% 
+% \begin{frame}{Formative-years growth: movers only}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{\centering Prolific 2025, movers only (home state $\neq$ current state): support for redistribution on home-state formative growth, with and without current-state FE}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_prolific_movers_growth.tex}}
+% \end{table}
+% 
+% \end{frame}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.82\linewidth]{figures/formative_growth_scatter.pdf}
-\end{figure}
-
-\end{frame}
 
 
+\begin{frame}{Measuring absolute mobility}
+\footnotesize
+\begin{itemize}
+    \item \textbf{Definition} (Chetty et al.\ 2017, ``The Fading American Dream''): share of children who earn more than their parents, comparing real household income at age $\approx 30$.
+    \item \textbf{Source}: Online Data Table 2, state $\times$ decadal birth cohort (1940s--1980s).
+    \item \textbf{Assignment} (Prolific 2025): each respondent gets the value for the state they \emph{grew up in} and their birth decade ($2025 - \text{age}$).
+    \begin{itemize}\footnotesize
+        \item It is the realized mobility of one's own cohort in one's home state (an outcome at $\approx 30$), not mobility observed during childhood.
+    \end{itemize}
+    \item \textbf{Scaling}: z-scored across respondents; $+$ $=$ higher mobility.
+%     \item \textbf{Relative version}: state value minus national absolute mobility for the same decade (Chetty national series, averaged by decade), then z-scored.
+    \item \textbf{Coverage}: series ends with the 1980s cohort $\Rightarrow$ respondents born 1990+ (age $\le 35$) drop out.
+\end{itemize}
 
-\begin{frame}{Formative-years growth and redistribution}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{Prolific 2025: support for redistribution on home-state formative-years income growth}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.75}
-    \input{tables/slide_tab_prolific_micro_growth.tex}}
-\end{table}
-
-\end{frame}
-
-
-
-\begin{frame}{Formative-years growth: movers only}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{\centering Prolific 2025, movers only (home state $\neq$ current state): support for redistribution on home-state formative growth, with and without current-state FE}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
-    \input{tables/slide_tab_prolific_movers_growth.tex}}
-\end{table}
+\vspace{-0.3em}
+\begin{center}
+{\scriptsize\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lccccc}
+\toprule
+Birth decade & 1940s & 1950s & 1960s & 1970s & 1980s \\
+Age in 2025 & 76--79 & 66--75 & 56--65 & 46--55 & 36--45 \\
+N (estimation sample) & 32 & 205 & 231 & 264 & 269 \\
+\bottomrule
+\end{tabular}}
+\end{center}
+\vspace{-0.4em}
+{\scriptsize\centering With home-state FE, variation is within state across decades $\Rightarrow$ highly collinear with cohort.\par}
 
 \end{frame}
 
@@ -557,63 +834,63 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 
 
 
-\begin{frame}{Formative-years growth relative to the nation}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{Prolific 2025: support for redistribution on state$-$national formative growth}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
-    \input{tables/slide_tab_rel_prolific_growth.tex}}
-\end{table}
-
-\end{frame}
-
-
-
-\begin{frame}{Absolute mobility relative to the nation}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{Prolific 2025: support for redistribution on state$-$national absolute mobility}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
-    \input{tables/slide_tab_rel_prolific_mob.tex}}
-\end{table}
-
-\end{frame}
+% \begin{frame}{Formative-years growth relative to the nation}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{Prolific 2025: support for redistribution on state$-$national formative growth}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_rel_prolific_growth.tex}}
+% \end{table}
+% 
+% \end{frame}
 
 
 
-\begin{frame}{Inequality grown up with and redistribution}
+% \begin{frame}{Absolute mobility relative to the nation}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{Prolific 2025: support for redistribution on state$-$national absolute mobility}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_rel_prolific_mob.tex}}
+% \end{table}
+% 
+% \end{frame}
 
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{Prolific 2025: support for redistribution on the top-10\% income share grown up with}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
-    \input{tables/slide_tab_top10_prolific.tex}}
-\end{table}
+% 
+% 
+% \begin{frame}{Inequality grown up with and redistribution}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{Prolific 2025: support for redistribution on the top-10\% income share grown up with}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_top10_prolific.tex}}
+% \end{table}
 
-\end{frame}
+% \end{frame}
 
 
 
-\begin{frame}{Formative-years growth and zero-sum beliefs}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{Prolific 2025: zero-sum beliefs on home-state formative-years income growth}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.75}
-    \input{tables/slide_tab_prolific_zs_growth.tex}}
-\end{table}
-
-\end{frame}
+% \begin{frame}{Formative-years growth and zero-sum beliefs}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{Prolific 2025: zero-sum beliefs on home-state formative-years income growth}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.75}
+%     \input{tables/slide_tab_prolific_zs_growth.tex}}
+% \end{table}
+% 
+% \end{frame}
 
 
 
@@ -644,30 +921,30 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 
 
 
-\begin{frame}{Formative-years growth gap vs. redistribution gap across states}
+% \begin{frame}{Formative-years growth gap vs. redistribution gap across states}
+% 
+% \begin{figure}
+%     \centering
+%     \caption*{\centering ANES state $\times$ year: young--old redist. gap vs.\ formative-years growth gap, net of state and year FE}
+%     \includegraphics[width=0.7\linewidth]{figures/fig_anes_partial_corr.pdf}
+% \end{figure}
+% 
+% \end{frame}
 
-\begin{figure}
-    \centering
-    \caption*{\centering ANES state $\times$ year: young--old redist. gap vs.\ formative-years growth gap, net of state and year FE}
-    \includegraphics[width=0.7\linewidth]{figures/fig_anes_partial_corr.pdf}
-\end{figure}
-
-\end{frame}
 
 
-
-\begin{frame}{Formative-years growth and redistribution}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{ANES: support for redistribution on own-state formative-years growth}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.7}
-    \input{tables/slide_tab_micro_growth.tex}}
-\end{table}
-
-\end{frame}
+% \begin{frame}{Formative-years growth and redistribution}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{ANES: support for redistribution on own-state formative-years growth}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.7}
+%     \input{tables/slide_tab_micro_growth.tex}}
+% \end{table}
+% 
+% \end{frame}
 
 
 
@@ -686,48 +963,48 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 
 
 
-\begin{frame}{Formative-years growth relative to the nation}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{ANES: support for redistribution on state$-$national formative growth}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
-    \input{tables/slide_tab_rel_anes_growth.tex}}
-\end{table}
-
-\end{frame}
-
-
-
-\begin{frame}{Absolute mobility relative to the nation}
-
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{ANES: support for redistribution on state$-$national absolute mobility}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
-    \input{tables/slide_tab_rel_anes_mob.tex}}
-\end{table}
-
-\end{frame}
+% \begin{frame}{Formative-years growth relative to the nation}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{ANES: support for redistribution on state$-$national formative growth}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_rel_anes_growth.tex}}
+% \end{table}
+% 
+% \end{frame}
 
 
 
-\begin{frame}{Inequality grown up with and redistribution}
+% \begin{frame}{Absolute mobility relative to the nation}
+% 
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{ANES: support for redistribution on state$-$national absolute mobility}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_rel_anes_mob.tex}}
+% \end{table}
+% 
+% \end{frame}
 
-\begin{table}
-    \centering
-    \setbeamerfont{caption}{size=\footnotesize}
-    \caption*{ANES: support for redistribution on the top-10\% income share grown up with}
-    \vspace{-1.1em}
-    {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
-    \input{tables/slide_tab_top10_anes.tex}}
-\end{table}
 
-\end{frame}
+
+% \begin{frame}{Inequality grown up with and redistribution}
+%
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{ANES: support for redistribution on the top-10\% income share grown up with}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_top10_anes.tex}}
+% \end{table}
+%
+% \end{frame}
 
 
 
@@ -755,26 +1032,18 @@ WVS waves carrying \texttt{E041} (1990--2014), ages 18--79, weighted, SEs cluste
 
 
 
-\begin{frame}{The age gradient by race}
+% \begin{frame}{The age gradient by race}
+% 
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.65\linewidth]{figures/fig_slide_race_EQWLTH.pdf}
+% \end{figure}
+%     % \caption{\centering Left: GSS support for reducing income differences, white vs Black, ages 18--38 (solid) and 59--79 (dashed), six-year eras. Right: young--old gap (18--38 minus 59--79, SD) among white and Black respondents, Prolific and Chinoy items, 95\% intervals}
+% 
+% \end{frame}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.65\linewidth]{figures/fig_slide_race_EQWLTH.pdf}
-\end{figure}
-    % \caption{\centering Left: GSS support for reducing income differences, white vs Black, ages 18--38 (solid) and 59--79 (dashed), six-year eras. Right: young--old gap (18--38 minus 59--79, SD) among white and Black respondents, Prolific and Chinoy items, 95\% intervals}
 
-\end{frame}
-
-
-
-\begin{frame}{The age gradient by race}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.85\linewidth]{figures/xsec_gap_race.pdf}
-\end{figure}
-
-\end{frame}
+% (slide "The age gradient by race" with xsec_gap_race moved up, before "Age gap across countries")
 
 
 
