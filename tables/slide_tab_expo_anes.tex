@@ -3,26 +3,28 @@
       \tabularnewline \midrule \midrule
       Dependent Variable: & \multicolumn{6}{c}{Redistribution (VCF0809)}\\
       Window: & \multicolumn{3}{c}{Ages 10--19} & \multicolumn{3}{c}{Ages 0--19} \\ 
-      Spec.:                                             & state$+$yr    & $+$race, coh. & $+$urban      & state$+$yr    & $+$race, coh. & $+$urban \\   
-      Model:                                             & (1)           & (2)           & (3)           & (4)           & (5)           & (6)\\  
+      Spec.:                                             & state$+$yr    & $+$race, coh. & $+$urb., ineq. & state$+$yr    & $+$race, coh. & $+$urb., ineq. \\   
+      Model:                                             & (1)           & (2)           & (3)            & (4)           & (5)           & (6)\\  
       \midrule
       \emph{Variables}\\
-      Exposure of whites to non-whites, ages 10--19 (SD) & 0.311$^{***}$ & 0.098$^{***}$ & 0.103$^{***}$ &               &               &   \\   
-                                                         & (0.033)       & (0.025)       & (0.026)       &               &               &   \\   
-      Exposure of whites to non-whites, ages 0--19 (SD)  &               &               &               & 0.349$^{***}$ & 0.109$^{***}$ & 0.117$^{***}$\\   
-                                                         &               &               &               & (0.041)       & (0.029)       & (0.031)\\   
-      Urban share, ages 10--19 (SD)                      &               &               & 0.043         &               &               & 0.050\\   
-                                                         &               &               & (0.039)       &               &               & (0.040)\\   
+      Exposure of whites to non-whites, ages 10--19 (SD) & 0.311$^{***}$ & 0.098$^{***}$ & 0.096$^{***}$  &               &               &   \\   
+                                                         & (0.033)       & (0.025)       & (0.026)        &               &               &   \\   
+      Exposure of whites to non-whites, ages 0--19 (SD)  &               &               &                & 0.349$^{***}$ & 0.109$^{***}$ & 0.109$^{***}$\\   
+                                                         &               &               &                & (0.041)       & (0.029)       & (0.030)\\   
+      Urban share, ages 10--19 (SD)                      &               &               & 0.043          &               &               & 0.050\\   
+                                                         &               &               & (0.038)        &               &               & (0.040)\\   
+      Top-10\% income share, ages 10--19 (SD)            &               &               & 0.009          &               &               & 0.009\\   
+                                                         &               &               & (0.025)        &               &               & (0.025)\\   
       \midrule
       \emph{Fixed-effects}\\
-      State                                              & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
-      Survey year                                        & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
-      Birth year (cohort)                                &               & Yes           & Yes           &               & Yes           & Yes\\  
-      Race/ethnicity                                     &               & Yes           & Yes           &               & Yes           & Yes\\  
+      State                                              & Yes           & Yes           & Yes            & Yes           & Yes           & Yes\\  
+      Survey year                                        & Yes           & Yes           & Yes            & Yes           & Yes           & Yes\\  
+      Birth year (cohort)                                &               & Yes           & Yes            &               & Yes           & Yes\\  
+      Race/ethnicity                                     &               & Yes           & Yes            &               & Yes           & Yes\\  
       \midrule
       \emph{Fit statistics}\\
-      Observations                                       & 32,162        & 32,162        & 32,162        & 32,162        & 32,162        & 32,162\\  
-      R$^2$                                              & 0.03085       & 0.09269       & 0.09273       & 0.03007       & 0.09270       & 0.09276\\  
+      Observations                                       & 32,162        & 32,162        & 32,162         & 32,162        & 32,162        & 32,162\\  
+      R$^2$                                              & 0.03085       & 0.09269       & 0.09274        & 0.03007       & 0.09270       & 0.09276\\  
       \midrule \midrule
       \multicolumn{7}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
       \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
@@ -32,7 +34,7 @@
 \begin{tabular}{lcccccc}
 \multicolumn{1}{l}{\itshape Economic size (significant columns only):} & (1) & (2) & (3) & (4) & (5) & (6)\\
 \midrule
-Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.311$ & $+0.098$ & $+0.103$ & $+0.349$ & $+0.109$ & $+0.117$\\
-\quad as \% of the age gradient (cohort FE cols.) & -- & 23\% & 25\% & -- & 21\% & 23\%\\
-\quad as \% of the young--old gap (cohort FE cols.) & -- & 15\% & 16\% & -- & 13\% & 14\%\\
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.311$ & $+0.098$ & $+0.096$ & $+0.349$ & $+0.109$ & $+0.109$\\
+\quad as \% of the age gradient (cohort FE cols.) & -- & 23\% & 23\% & -- & 21\% & 22\%\\
+\quad as \% of the young--old gap (cohort FE cols.) & -- & 15\% & 15\% & -- & 13\% & 13\%\\
 \end{tabular}}

@@ -3,27 +3,29 @@
       \tabularnewline \midrule \midrule
       Dependent Variable: & \multicolumn{6}{c}{Reduce income differences}\\
       Window: & \multicolumn{3}{c}{Ages 10--19} & \multicolumn{3}{c}{Ages 0--19} \\ 
-      Spec.:                                & home FE       & $+$race, coh. & $+$urb., immig. & home FE       & $+$race, coh. & $+$urb., immig. \\   
-      Model:                                & (1)           & (2)           & (3)             & (4)           & (5)           & (6)\\  
+      Spec.:                                   & home FE       & $+$race, coh. & $+$controls  & home FE       & $+$race, coh. & $+$controls \\   
+      Model:                                   & (1)           & (2)           & (3)          & (4)           & (5)           & (6)\\  
       \midrule
       \emph{Variables}\\
-      Mixed-marriage rate, ages 10--19 (SD) & 0.279$^{***}$ & -0.054        & 0.053           &               &               &   \\   
-                                            & (0.023)       & (0.070)       & (0.128)         &               &               &   \\   
-      Mixed-marriage rate, ages 0--19 (SD)  &               &               &                 & 0.281$^{***}$ & -0.045        & 0.034\\   
-                                            &               &               &                 & (0.025)       & (0.056)       & (0.105)\\   
-      Urban share, ages 10--19 (SD)         &               &               & -0.179$^{*}$    &               &               & -0.175\\   
-                                            &               &               & (0.101)         &               &               & (0.105)\\   
-      Foreign-born share, ages 10--19 (SD)  &               &               & -0.115          &               &               & -0.107\\   
-                                            &               &               & (0.103)         &               &               & (0.105)\\   
+      Mixed-marriage rate, ages 10--19 (SD)    & 0.279$^{***}$ & -0.054        & -0.062       &               &               &   \\   
+                                               & (0.023)       & (0.070)       & (0.071)      &               &               &   \\   
+      Mixed-marriage rate, ages 0--19 (SD)     &               &               &              & 0.281$^{***}$ & -0.045        & -0.066\\   
+                                               &               &               &              & (0.025)       & (0.056)       & (0.056)\\   
+      Urban share, ages 10--19 (SD)            &               &               & -0.197$^{*}$ &               &               & -0.205$^{*}$\\   
+                                               &               &               & (0.102)      &               &               & (0.102)\\   
+      Top-10\% income share, ages 10--19 (SD)  &               &               & 0.026        &               &               & 0.032\\   
+                                               &               &               & (0.049)      &               &               & (0.048)\\   
+      Recession shock, ages 18--25 (0/1)       &               &               & 0.113        &               &               & 0.114\\   
+                                               &               &               & (0.070)      &               &               & (0.070)\\   
       \midrule
       \emph{Fixed-effects}\\
-      Home state                            & Yes           & Yes           & Yes             & Yes           & Yes           & Yes\\  
-      Birth year (cohort)                   &               & Yes           & Yes             &               & Yes           & Yes\\  
-      Race/ethnicity                        &               & Yes           & Yes             &               & Yes           & Yes\\  
+      Home state                               & Yes           & Yes           & Yes          & Yes           & Yes           & Yes\\  
+      Birth year (cohort)                      &               & Yes           & Yes          &               & Yes           & Yes\\  
+      Race/ethnicity                           &               & Yes           & Yes          &               & Yes           & Yes\\  
       \midrule
       \emph{Fit statistics}\\
-      Observations                          & 2,377         & 2,377         & 2,377           & 2,377         & 2,377         & 2,377\\  
-      R$^2$                                 & 0.06096       & 0.10531       & 0.10641         & 0.06182       & 0.10530       & 0.10639\\  
+      Observations                             & 2,377         & 2,377         & 2,360        & 2,377         & 2,377         & 2,360\\  
+      R$^2$                                    & 0.06096       & 0.10531       & 0.10730      & 0.06182       & 0.10530       & 0.10737\\  
       \midrule \midrule
       \multicolumn{7}{l}{\emph{Clustered (Home state) standard-errors in parentheses}}\\
       \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\

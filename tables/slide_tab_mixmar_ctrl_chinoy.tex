@@ -3,28 +3,30 @@
       \tabularnewline \midrule \midrule
       Dependent Variable: & \multicolumn{6}{c}{Govt should reduce differences}\\
       Window: & \multicolumn{3}{c}{Ages 10--19} & \multicolumn{3}{c}{Ages 0--19} \\ 
-      Spec.:                                & state$+$yr    & $+$race, coh. & $+$urb., immig. & state$+$yr    & $+$race, coh. & $+$urb., immig. \\   
-      Model:                                & (1)           & (2)           & (3)             & (4)           & (5)           & (6)\\  
+      Spec.:                                   & state$+$yr    & $+$race, coh. & $+$controls   & state$+$yr    & $+$race, coh. & $+$controls \\   
+      Model:                                   & (1)           & (2)           & (3)           & (4)           & (5)           & (6)\\  
       \midrule
       \emph{Variables}\\
-      Mixed-marriage rate, ages 10--19 (SD) & 0.262$^{***}$ & 0.081$^{***}$ & 0.061           &               &               &   \\   
-                                            & (0.022)       & (0.022)       & (0.056)         &               &               &   \\   
-      Mixed-marriage rate, ages 0--19 (SD)  &               &               &                 & 0.252$^{***}$ & 0.062$^{***}$ & 0.033\\   
-                                            &               &               &                 & (0.026)       & (0.020)       & (0.056)\\   
-      Urban share, ages 10--19 (SD)         &               &               & 0.050           &               &               & 0.053\\   
-                                            &               &               & (0.043)         &               &               & (0.044)\\   
-      Foreign-born share, ages 10--19 (SD)  &               &               & 0.022           &               &               & 0.038\\   
-                                            &               &               & (0.043)         &               &               & (0.049)\\   
+      Mixed-marriage rate, ages 10--19 (SD)    & 0.262$^{***}$ & 0.081$^{***}$ & 0.095$^{***}$ &               &               &   \\   
+                                               & (0.022)       & (0.022)       & (0.027)       &               &               &   \\   
+      Mixed-marriage rate, ages 0--19 (SD)     &               &               &               & 0.252$^{***}$ & 0.062$^{***}$ & 0.078$^{***}$\\   
+                                               &               &               &               & (0.026)       & (0.020)       & (0.026)\\   
+      Urban share, ages 10--19 (SD)            &               &               & 0.046         &               &               & 0.056\\   
+                                               &               &               & (0.043)       &               &               & (0.044)\\   
+      Top-10\% income share, ages 10--19 (SD)  &               &               & -0.036        &               &               & -0.036\\   
+                                               &               &               & (0.027)       &               &               & (0.028)\\   
+      Recession shock, ages 18--25 (0/1)       &               &               & -0.036        &               &               & -0.036\\   
+                                               &               &               & (0.025)       &               &               & (0.026)\\   
       \midrule
       \emph{Fixed-effects}\\
-      Childhood state                       & Yes           & Yes           & Yes             & Yes           & Yes           & Yes\\  
-      Survey year                           & Yes           & Yes           & Yes             & Yes           & Yes           & Yes\\  
-      Birth year (cohort)                   &               & Yes           & Yes             &               & Yes           & Yes\\  
-      Race/ethnicity                        &               & Yes           & Yes             &               & Yes           & Yes\\  
+      Childhood state                          & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+      Survey year                              & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+      Birth year (cohort)                      &               & Yes           & Yes           &               & Yes           & Yes\\  
+      Race/ethnicity                           &               & Yes           & Yes           &               & Yes           & Yes\\  
       \midrule
       \emph{Fit statistics}\\
-      Observations                          & 18,836        & 18,836        & 18,836          & 18,836        & 18,836        & 18,836\\  
-      R$^2$                                 & 0.04692       & 0.07617       & 0.07626         & 0.04590       & 0.07605       & 0.07618\\  
+      Observations                             & 18,836        & 18,836        & 18,836        & 18,836        & 18,836        & 18,836\\  
+      R$^2$                                    & 0.04692       & 0.07617       & 0.07644       & 0.04590       & 0.07605       & 0.07633\\  
       \midrule \midrule
       \multicolumn{7}{l}{\emph{Clustered (Childhood state) standard-errors in parentheses}}\\
       \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
@@ -34,7 +36,7 @@
 \begin{tabular}{lcccccc}
 \multicolumn{1}{l}{\itshape Economic size (significant columns only):} & (1) & (2) & (3) & (4) & (5) & (6)\\
 \midrule
-Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.262$ & $+0.081$ & -- & $+0.252$ & $+0.062$ & --\\
-\quad as \% of the age gradient (cohort FE cols.) & -- & 30\% & -- & -- & 23\% & --\\
-\quad as \% of the young--old gap (cohort FE cols.) & -- & 31\% & -- & -- & 23\% & --\\
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.262$ & $+0.081$ & $+0.095$ & $+0.252$ & $+0.062$ & $+0.078$\\
+\quad as \% of the age gradient (cohort FE cols.) & -- & 30\% & 35\% & -- & 23\% & 29\%\\
+\quad as \% of the young--old gap (cohort FE cols.) & -- & 31\% & 36\% & -- & 23\% & 29\%\\
 \end{tabular}}
