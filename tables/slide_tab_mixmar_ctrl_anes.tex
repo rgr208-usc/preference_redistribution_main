@@ -1,0 +1,40 @@
+      \begin{adjustbox}{max width=\linewidth}
+   \begin{tabular}{lcccccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{6}{c}{Redistribution (VCF0809)}\\
+      Window: & \multicolumn{3}{c}{Ages 10--19} & \multicolumn{3}{c}{Ages 0--19} \\ 
+      Spec.:                                & state$+$yr    & $+$race, coh. & $+$urb., immig. & state$+$yr    & $+$race, coh. & $+$urb., immig. \\   
+      Model:                                & (1)           & (2)           & (3)             & (4)           & (5)           & (6)\\  
+      \midrule
+      \emph{Variables}\\
+      Mixed-marriage rate, ages 10--19 (SD) & 0.167$^{***}$ & 0.070$^{***}$ & 0.070$^{***}$   &               &               &   \\   
+                                            & (0.018)       & (0.013)       & (0.023)         &               &               &   \\   
+      Mixed-marriage rate, ages 0--19 (SD)  &               &               &                 & 0.164$^{***}$ & 0.071$^{***}$ & 0.085$^{***}$\\   
+                                            &               &               &                 & (0.018)       & (0.012)       & (0.022)\\   
+      Urban share, ages 10--19 (SD)         &               &               & 0.013           &               &               & 0.026\\   
+                                            &               &               & (0.035)         &               &               & (0.036)\\   
+      Foreign-born share, ages 10--19 (SD)  &               &               & -0.0005         &               &               & -0.018\\   
+                                            &               &               & (0.021)         &               &               & (0.022)\\   
+      \midrule
+      \emph{Fixed-effects}\\
+      State                                 & Yes           & Yes           & Yes             & Yes           & Yes           & Yes\\  
+      Survey year                           & Yes           & Yes           & Yes             & Yes           & Yes           & Yes\\  
+      Birth year (cohort)                   &               & Yes           & Yes             &               & Yes           & Yes\\  
+      Race/ethnicity                        &               & Yes           & Yes             &               & Yes           & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations                          & 32,162        & 32,162        & 32,162          & 32,162        & 32,162        & 32,162\\  
+      R$^2$                                 & 0.03277       & 0.09292       & 0.09292         & 0.03280       & 0.09302       & 0.09305\\  
+      \midrule \midrule
+      \multicolumn{7}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+      \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+      \end{adjustbox}
+\vspace{3pt}\par\centering{\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccc}
+\multicolumn{1}{l}{\itshape Economic size (significant columns only):} & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.167$ & $+0.070$ & $+0.070$ & $+0.164$ & $+0.071$ & $+0.085$\\
+\quad as \% of the age gradient (cohort FE cols.) & -- & 36\% & 36\% & -- & 36\% & 43\%\\
+\quad as \% of the young--old gap (cohort FE cols.) & -- & 30\% & 30\% & -- & 29\% & 35\%\\
+\end{tabular}}

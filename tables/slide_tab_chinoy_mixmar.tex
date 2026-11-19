@@ -1,0 +1,32 @@
+      \begin{adjustbox}{max width=\linewidth}
+   \begin{tabular}{lcccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{4}{c}{Govt should reduce differences}\\
+      Spec.:                   & state$+$yr    & $+$cohort FE & $+$race FE    & $+$race, cohort \\   
+      Model:                   & (1)           & (2)          & (3)           & (4)\\  
+      \midrule
+      \emph{Variables}\\
+      Mixed-marriage rate (SD) & 0.299$^{***}$ & 0.068$^{**}$ & 0.266$^{***}$ & 0.062$^{**}$\\   
+                               & (0.015)       & (0.029)      & (0.014)       & (0.028)\\   
+      \midrule
+      \emph{Fixed-effects}\\
+      Childhood state          & Yes           & Yes          & Yes           & Yes\\  
+      Survey year              & Yes           & Yes          & Yes           & Yes\\  
+      Birth year (cohort)      &               & Yes          &               & Yes\\  
+      Race/ethnicity           &               &              & Yes           & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations             & 18,795        & 18,795       & 18,795        & 18,795\\  
+      R$^2$                    & 0.04673       & 0.05986      & 0.06217       & 0.07575\\  
+      \midrule \midrule
+      \multicolumn{5}{l}{\emph{Clustered (Childhood state) standard-errors in parentheses}}\\
+      \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+      \end{adjustbox}
+\vspace{3pt}\par\centering{\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\multicolumn{1}{l}{\itshape Economic size (significant columns only):} & (1) & (2) & (3) & (4)\\
+\midrule
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.299$ & $+0.068$ & $+0.266$ & $+0.062$\\
+\quad as \% of the young--old gap & 103\% & 23\% & 92\% & 21\%\\
+\end{tabular}}

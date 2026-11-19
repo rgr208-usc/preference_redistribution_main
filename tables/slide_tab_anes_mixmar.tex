@@ -1,0 +1,32 @@
+      \begin{adjustbox}{max width=\linewidth}
+   \begin{tabular}{lcccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{4}{c}{Redistribution (VCF0809)}\\
+      Spec.:                   & state$+$yr    & $+$cohort FE  & $+$race FE    & $+$race, cohort \\   
+      Model:                   & (1)           & (2)           & (3)           & (4)\\  
+      \midrule
+      \emph{Variables}\\
+      Mixed-marriage rate (SD) & 0.192$^{***}$ & 0.093$^{***}$ & 0.153$^{***}$ & 0.081$^{***}$\\   
+                               & (0.013)       & (0.026)       & (0.012)       & (0.026)\\   
+      \midrule
+      \emph{Fixed-effects}\\
+      State                    & Yes           & Yes           & Yes           & Yes\\  
+      Survey year              & Yes           & Yes           & Yes           & Yes\\  
+      Birth year (cohort)      &               & Yes           &               & Yes\\  
+      Race/ethnicity           &               &               & Yes           & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations             & 37,905        & 37,905        & 37,905        & 37,905\\  
+      R$^2$                    & 0.03115       & 0.03806       & 0.08994       & 0.09590\\  
+      \midrule \midrule
+      \multicolumn{5}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+      \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+      \end{adjustbox}
+\vspace{3pt}\par\centering{\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\multicolumn{1}{l}{\itshape Economic size (significant columns only):} & (1) & (2) & (3) & (4)\\
+\midrule
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.198$ & $+0.096$ & $+0.158$ & $+0.084$\\
+\quad as \% of the young--old gap & 78\% & 38\% & 62\% & 33\%\\
+\end{tabular}}

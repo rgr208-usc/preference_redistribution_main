@@ -95,6 +95,22 @@
 
 
 
+% 2026-11-18 (RR): as the previous slide, for the rate of mixed marriage
+% (analysis_nic/preliminary/demographics/code/37_census_mixmar_by_age.R)
+% dropped for now, RR 2026-11-18 (figure kept: figures/fig_census_mixmar_share.pdf)
+% \begin{frame}{The young are much more likely to be in a mixed marriage}
+%
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.76\linewidth]{figures/fig_census_mixmar_share.pdf}
+% \end{figure}
+% \vspace{-8pt}
+% {\tiny Share of married people (householder and spouse living together) whose spouse is in a different group: Hispanic; non-Hispanic white, Black, Asian, other (incl.\ two or more races). American Community Survey 1-year microdata 2005, 2010, 2015, 2019, 2023, person-weighted. Part of the 2019--2023 rise reflects the Census Bureau's 2020 change in coding race write-ins, which raised the counts of ``two or more races'' and ``some other race''.\par}
+%
+% \end{frame}
+
+
+
 \begin{frame}{Current age gap on income redistribution}
 
 \begin{figure}
@@ -543,18 +559,6 @@ Scales: hard work paid off / will pay off 1 not much--3 a lot; move up 1 much ha
 \end{frame}
 
 
-\begin{frame}{Young and old over time: racial resentment, white vs.\ non-white (ANES)}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.72\linewidth]{figures/fig_rr_young_old_race.pdf}
-\end{figure}
-\vspace{-8pt}
-{\tiny White: white non-Hispanic; non-white: Black, Hispanic and other. Agree/disagree (5 points): Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up; Blacks should do the same without any special favors; if Blacks would only try harder they could be just as well off as whites; generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class (reversed); over the past few years, Blacks have gotten less than they deserve (reversed).\par}
-
-\end{frame}
-
-
 \begin{frame}{Inequality, growth, housing, mobility and the age gap}
 
 \begin{figure}
@@ -819,6 +823,18 @@ Each item: agree strongly, agree somewhat, neither, disagree somewhat, disagree 
 \end{figure}
 \vspace{-8pt}
 {\tiny Agree/disagree (5 points): Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up; Blacks should do the same without any special favors; if Blacks would only try harder they could be just as well off as whites; generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class (reversed); over the past few years, Blacks have gotten less than they deserve (reversed).\par}
+
+\end{frame}
+
+
+\begin{frame}{Young and old over time: racial resentment, white vs.\ non-white (ANES)}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.72\linewidth]{figures/fig_rr_young_old_race.pdf}
+\end{figure}
+\vspace{-8pt}
+{\tiny White: white non-Hispanic; non-white: Black, Hispanic and other. Agree/disagree (5 points): Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up; Blacks should do the same without any special favors; if Blacks would only try harder they could be just as well off as whites; generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class (reversed); over the past few years, Blacks have gotten less than they deserve (reversed).\par}
 
 \end{frame}
 
@@ -1194,6 +1210,7 @@ N (estimation sample) & 32 & 205 & 231 & 264 & 269 \\
 \end{frame}
 
 
+
 % \begin{frame}{Absolute mobility and redistribution (Chinoy et al.)}
 % 
 % \begin{table}
@@ -1349,6 +1366,197 @@ N (estimation sample) & 32 & 205 & 231 & 264 & 269 \\
 \end{table}
 \vspace{-0.6em}
 {\tiny\centering Cold toward rich: 100 minus the feeling thermometer for rich people (VCF9268), 1998--2016, z-scored; $+$ = colder.\par}
+
+\end{frame}
+
+
+
+% 2026-11-18 (RR): as the previous slide (redistribution columns), absolute mobility replaced by the
+% mixed-marriage rate (analysis_nic/preliminary/macro_drivers/code/19m_anes_mixmar.R)
+% 2026-11-18 (RR): previous version (2023 ACS, birth state x birth decade, 19m/19n) commented out below;
+% new: IPUMS USA 1960-2023, rate around the respondent at the survey year and at ages 10-19 (19p_mixmar_survey_year.R)
+% \begin{frame}{Mixed marriage and redistribution (ANES)}
+%
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{ANES: support for redistribution on the own-state mixed-marriage rate}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_anes_mixmar.tex}}
+% \end{table}
+% \vspace{-0.4em}
+% {\tiny Mixed-marriage rate: share of married people born in the state and birth decade whose spouse is in a different group (Hispanic; non-Hispanic white, Black, Asian, other); ACS 2023 PUMS; cells with $<30$ married respondents dropped; z-scored. Current state (VCF0901a) proxies for the state grown up in. ANES 1972--2024, ages 18--79, weighted. Race FE: VCF0105a (7 groups + missing).\par}
+%
+% \end{frame}
+
+\begin{frame}{Mixed marriage and redistribution (ANES)}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \scalebox{0.78}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_mixmar_ctrl_anes.tex}}}
+\end{table}
+\vspace{0.1em}
+{\tiny Mixed-marriage rate: share of married people in the respondent's current state whose spouse is in a different group (Hispanic; NH white, Black, Asian, other), IPUMS USA 1960--2023, mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Controls: urban and foreign-born shares of the state at ages 10--19.\\[1pt]\textit{Method.} With survey-year and birth-year FE (age = year $-$ birth year), the average age gradient is absorbed: cols.\ 2--3 and 5--6 are identified from cross-state differences in cohort profiles (states where mixed marriage rose more across cohorts vs.\ less). The \% rows apply that coefficient to the national age profile: $b\times$ age slope of mixed marriage / age slope of redistribution (within survey year), or the same with the 18--38 vs.\ 59--79 gap.\par}
+
+\end{frame}
+
+
+
+% 2026-11-18 (RR): GSS version, current census region (analysis_nic/preliminary/macro_drivers/code/19n_gss_mixmar.R)
+% 2026-11-18 (RR): previous version (2023 ACS, birth state x birth decade, 19m/19n) commented out below;
+% new: IPUMS USA 1960-2023, rate around the respondent at the survey year and at ages 10-19 (19p_mixmar_survey_year.R)
+% \begin{frame}{Mixed marriage and redistribution (GSS)}
+%
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{GSS: support for redistribution on the census-region mixed-marriage rate}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_gss_mixmar.tex}}
+% \end{table}
+% \vspace{-0.4em}
+% {\tiny Mixed-marriage rate: share of married people born in the census region and birth decade whose spouse is in a different group (Hispanic; non-Hispanic white, Black, Asian, other); ACS 2023 PUMS; z-scored. Current region (no state in the GSS). GSS 1978--2024, ages 18--79, weighted. Race FE: RACE (white, Black, other). SEs clustered by region (4 clusters).\par}
+%
+% \end{frame}
+
+\begin{frame}{Mixed marriage and redistribution (GSS)}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \scalebox{0.85}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_mixmar_ctrl_gss.tex}}}
+\end{table}
+\vspace{-0.6em}
+{\tiny Mixed-marriage rate: share of married people in the respondent's current census region whose spouse is in a different group (Hispanic; NH white, Black, Asian, other), IPUMS USA 1960--2023, mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Controls: urban and foreign-born shares of the region at ages 10--19.\par}
+
+\end{frame}
+
+
+
+% 2026-11-18 (RR): Chinoy et al. version, childhood state (analysis_nic/preliminary/macro_drivers/code/22m_chinoy_mixmar.R)
+% 2026-11-18 (RR): previous version (2023 ACS, birth state x birth decade) commented out below;
+% new: IPUMS USA 1960-2023 rate in the state at ages 10-19 (20v_mixmar_ipums_prolific_chinoy.R)
+% \begin{frame}{Mixed marriage and redistribution (Chinoy et al.)}
+%
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{Chinoy et al.: support for redistribution on the childhood-state mixed-marriage rate}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_chinoy_mixmar.tex}}
+% \end{table}
+% \vspace{-0.4em}
+% {\tiny Mixed-marriage rate: share of married people born in the state and birth decade whose spouse is in a different group (Hispanic; non-Hispanic white, Black, Asian, other); ACS 2023 PUMS; cells with $<30$ married respondents dropped; z-scored. Childhood state: state lived in at or under age 19. Chinoy et al.\ 2020--23 waves, ages 18--79, unweighted. Race FE: 7 self-reported groups (incl.\ Hispanic/Latino) + missing.\par}
+%
+% \end{frame}
+
+\begin{frame}{Mixed marriage and redistribution (Chinoy et al.)}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \scalebox{0.85}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_mixmar_ctrl_chinoy.tex}}}
+\end{table}
+\vspace{-0.6em}
+{\tiny Mixed-marriage rate: share of married people in the respondent's childhood state whose spouse is in a different group (Hispanic; NH white, Black, Asian, other), IPUMS USA 1960--2023, mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Controls: urban and foreign-born shares of the state at ages 10--19.\par}
+
+\end{frame}
+
+
+% 2026-11-18 (RR): as the previous slide, absolute mobility replaced by the mixed-marriage rate
+% (analysis_nic/preliminary/macro_drivers/code/20m_build_mixed_marriage.R, 20n_prolific_mixmar.R)
+% 2026-11-18 (RR): previous version (2023 ACS, birth state x birth decade) commented out below;
+% new: IPUMS USA 1960-2023 rate in the state at ages 10-19 (20v_mixmar_ipums_prolific_chinoy.R)
+% \begin{frame}{Mixed marriage and redistribution (Prolific)}
+%
+% \begin{table}
+%     \centering
+%     \setbeamerfont{caption}{size=\footnotesize}
+%     \caption*{Prolific 2025: support for redistribution on the home-state mixed-marriage rate}
+%     \vspace{-1.1em}
+%     {\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.82}
+%     \input{tables/slide_tab_prolific_micro_mixmar.tex}}
+% \end{table}
+% \vspace{-0.4em}
+% {\tiny Mixed-marriage rate: share of married people born in the respondent's home state and birth decade whose spouse is in a different group (Hispanic; non-Hispanic white, Black, Asian, other); ACS 2023 1-year PUMS, person-weighted; cells with $<30$ married respondents dropped; z-scored. Covers cohorts born 1940s--2000s, so $N$ is larger than for absolute mobility (1940s--1980s only).\par}
+%
+% \end{frame}
+
+\begin{frame}{Mixed marriage and redistribution (Prolific)}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \scalebox{0.85}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_mixmar_ctrl_prolific.tex}}}
+\end{table}
+\vspace{-0.6em}
+{\tiny Mixed-marriage rate: share of married people in the respondent's home state whose spouse is in a different group (Hispanic; NH white, Black, Asian, other), IPUMS USA 1960--2023, mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Controls: urban and foreign-born shares of the state at ages 10--19.\par}
+
+\end{frame}
+
+
+% 2026-11-18 (RR): ANES exposure of whites to non-whites (analysis_nic/preliminary/macro_drivers/code/20s_build_segregation.R, 20t_segregation_regs.R)
+\begin{frame}{Exposure to non-whites and redistribution (ANES)}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \scalebox{0.85}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_expo_anes.tex}}}
+\end{table}
+\vspace{-0.4em}
+{\tiny Exposure of whites to non-whites: non-white share of the average white non-Hispanic's county in the respondent's current state, county data 1960--2024 (Census estimates, NHGIS), mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Control: urban share of the state at ages 10--19. \% rows (cohort-FE columns only): see the method note on the ANES mixed-marriage slide.\par}
+
+\end{frame}
+
+
+% 2026-11-18 (RR): GSS exposure of whites to non-whites (analysis_nic/preliminary/macro_drivers/code/20s_build_segregation.R, 20t_segregation_regs.R)
+\begin{frame}{Exposure to non-whites and redistribution (GSS)}
+
+\begin{table}
+    \centering
+    \setbeamerfont{caption}{size=\footnotesize}
+    \scalebox{0.85}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_expo_gss.tex}}}
+\end{table}
+\vspace{-0.4em}
+{\tiny Exposure of whites to non-whites: non-white share of the average white non-Hispanic's county in the respondent's current census region, county data 1960--2024 (Census estimates, NHGIS), mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Control: urban share of the region at ages 10--19. \% rows: cohort-FE columns only. 4 region clusters.\par}
+
+\end{frame}
+
+
+% 2026-11-18 (RR): Chinoy et al. exposure of whites to non-whites, as the ANES/GSS slides (20t_segregation_regs.R)
+\begin{frame}{Exposure to non-whites and redistribution (Chinoy et al.)}
+
+\begin{table}
+    \centering
+    \scalebox{0.85}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_expo_chinoy.tex}}}
+\end{table}
+\vspace{-0.6em}
+{\tiny Exposure of whites to non-whites: non-white share of the average white non-Hispanic's county in the respondent's childhood state (lived in at or under 19), county data 1960--2024 (Census estimates, NHGIS), mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Control: urban share of the state at ages 10--19. Chinoy et al.\ 2020--23, unweighted. Race FE: 7 groups.\par}
+
+\end{frame}
+
+
+% 2026-11-18 (RR): Prolific exposure of whites to non-whites, as the ANES/GSS slides (20t_segregation_regs.R)
+\begin{frame}{Exposure to non-whites and redistribution (Prolific)}
+
+\begin{table}
+    \centering
+    \scalebox{0.85}{\parbox{\linewidth}{\centering\tiny\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.72}
+    \input{tables/slide_tab_expo_prolific.tex}}}
+\end{table}
+\vspace{-0.6em}
+{\tiny Exposure of whites to non-whites: non-white share of the average white non-Hispanic's county in the respondent's home state (grew up in), county data 1960--2024 (Census estimates, NHGIS), mean over ages 10--19 (cols.\ 1--3) or 0--19 (cols.\ 4--6). Control: urban share of the state at ages 10--19. Prolific 2025, unweighted. Race FE: 5 groups.\par}
 
 \end{frame}
 

@@ -1,0 +1,37 @@
+      \begin{adjustbox}{max width=\linewidth}
+   \begin{tabular}{lcccccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{6}{c}{Reduce income differences}\\
+      Window: & \multicolumn{3}{c}{Ages 10--19} & \multicolumn{3}{c}{Ages 0--19} \\ 
+      Spec.:                                             & home FE       & $+$race, coh. & $+$urban     & home FE       & $+$race, coh. & $+$urban \\   
+      Model:                                             & (1)           & (2)           & (3)          & (4)           & (5)           & (6)\\  
+      \midrule
+      \emph{Variables}\\
+      Exposure of whites to non-whites, ages 10--19 (SD) & 0.413$^{***}$ & -0.069        & -0.079       &               &               &   \\   
+                                                         & (0.045)       & (0.084)       & (0.079)      &               &               &   \\   
+      Exposure of whites to non-whites, ages 0--19 (SD)  &               &               &              & 0.424$^{***}$ & -0.047        & -0.065\\   
+                                                         &               &               &              & (0.049)       & (0.086)       & (0.082)\\   
+      Urban share, ages 10--19 (SD)                      &               &               & -0.198$^{*}$ &               &               & -0.201$^{*}$\\   
+                                                         &               &               & (0.101)      &               &               & (0.101)\\   
+      \midrule
+      \emph{Fixed-effects}\\
+      Home state                                         & Yes           & Yes           & Yes          & Yes           & Yes           & Yes\\  
+      Birth year (cohort)                                &               & Yes           & Yes          &               & Yes           & Yes\\  
+      Race/ethnicity                                     &               & Yes           & Yes          &               & Yes           & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations                                       & 2,377         & 2,377         & 2,377        & 2,377         & 2,377         & 2,377\\  
+      R$^2$                                              & 0.06112       & 0.10535       & 0.10622      & 0.05904       & 0.10527       & 0.10615\\  
+      \midrule \midrule
+      \multicolumn{7}{l}{\emph{Clustered (Home state) standard-errors in parentheses}}\\
+      \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+      \end{adjustbox}
+\vspace{3pt}\par\centering{\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccc}
+\multicolumn{1}{l}{\itshape Economic size (significant columns only):} & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.413$ & -- & -- & $+0.424$ & -- & --\\
+\quad as \% of the age gradient (cohort FE cols.) & -- & -- & -- & -- & -- & --\\
+\quad as \% of the young--old gap (cohort FE cols.) & -- & -- & -- & -- & -- & --\\
+\end{tabular}}
