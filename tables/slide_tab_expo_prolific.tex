@@ -3,27 +3,29 @@
       \tabularnewline \midrule \midrule
       Dependent Variable: & \multicolumn{6}{c}{Reduce income differences}\\
       Window: & \multicolumn{3}{c}{Ages 10--19} & \multicolumn{3}{c}{Ages 0--19} \\ 
-      Spec.:                                             & home FE       & $+$race, coh. & $+$urb., ineq. & home FE       & $+$race, coh. & $+$urb., ineq. \\   
-      Model:                                             & (1)           & (2)           & (3)            & (4)           & (5)           & (6)\\  
+      Spec.:                                             & home FE       & $+$race, coh. & $+$controls  & home FE       & $+$race, coh. & $+$controls \\   
+      Model:                                             & (1)           & (2)           & (3)          & (4)           & (5)           & (6)\\  
       \midrule
       \emph{Variables}\\
-      Exposure of whites to non-whites, ages 10--19 (SD) & 0.413$^{***}$ & -0.069        & -0.114         &               &               &   \\   
-                                                         & (0.045)       & (0.084)       & (0.087)        &               &               &   \\   
-      Exposure of whites to non-whites, ages 0--19 (SD)  &               &               &                & 0.424$^{***}$ & -0.047        & -0.093\\   
-                                                         &               &               &                & (0.049)       & (0.086)       & (0.089)\\   
-      Urban share, ages 10--19 (SD)                      &               &               & -0.198$^{*}$   &               &               & -0.203$^{**}$\\   
-                                                         &               &               & (0.101)        &               &               & (0.100)\\   
-      Top-10\% income share, ages 10--19 (SD)            &               &               & 0.051          &               &               & 0.044\\   
-                                                         &               &               & (0.049)        &               &               & (0.049)\\   
+      Exposure of whites to non-whites, ages 10--19 (SD) & 0.413$^{***}$ & -0.069        & -0.118       &               &               &   \\   
+                                                         & (0.045)       & (0.084)       & (0.086)      &               &               &   \\   
+      Exposure of whites to non-whites, ages 0--19 (SD)  &               &               &              & 0.424$^{***}$ & -0.047        & -0.093\\   
+                                                         &               &               &              & (0.049)       & (0.086)       & (0.089)\\   
+      Urban share, ages 10--19 (SD)                      &               &               & -0.210$^{*}$ &               &               & -0.215$^{**}$\\   
+                                                         &               &               & (0.107)      &               &               & (0.105)\\   
+      Top-10\% income share, ages 10--19 (SD)            &               &               & 0.051        &               &               & 0.042\\   
+                                                         &               &               & (0.050)      &               &               & (0.050)\\   
+      Recession shock, ages 18--25 (0/1)                 &               &               & 0.114        &               &               & 0.111\\   
+                                                         &               &               & (0.070)      &               &               & (0.070)\\   
       \midrule
       \emph{Fixed-effects}\\
-      Home state                                         & Yes           & Yes           & Yes            & Yes           & Yes           & Yes\\  
-      Birth year (cohort)                                &               & Yes           & Yes            &               & Yes           & Yes\\  
-      Race/ethnicity                                     &               & Yes           & Yes            &               & Yes           & Yes\\  
+      Home state                                         & Yes           & Yes           & Yes          & Yes           & Yes           & Yes\\  
+      Birth year (cohort)                                &               & Yes           & Yes          &               & Yes           & Yes\\  
+      Race/ethnicity                                     &               & Yes           & Yes          &               & Yes           & Yes\\  
       \midrule
       \emph{Fit statistics}\\
-      Observations                                       & 2,377         & 2,377         & 2,377          & 2,377         & 2,377         & 2,377\\  
-      R$^2$                                              & 0.06112       & 0.10535       & 0.10634        & 0.05904       & 0.10527       & 0.10624\\  
+      Observations                                       & 2,377         & 2,377         & 2,360        & 2,377         & 2,377         & 2,360\\  
+      R$^2$                                              & 0.06112       & 0.10535       & 0.10752      & 0.05904       & 0.10527       & 0.10739\\  
       \midrule \midrule
       \multicolumn{7}{l}{\emph{Clustered (Home state) standard-errors in parentheses}}\\
       \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\

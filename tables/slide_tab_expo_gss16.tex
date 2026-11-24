@@ -1,0 +1,42 @@
+      \begin{adjustbox}{max width=\linewidth}
+   \begin{tabular}{lcccccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{6}{c}{Redistribution (EQWLTH)}\\
+      Window: & \multicolumn{3}{c}{Ages 10--19} & \multicolumn{3}{c}{Ages 0--19} \\ 
+      Spec.:                                             & region$+$yr   & $+$race, coh. & $+$controls  & region$+$yr   & $+$race, coh. & $+$controls \\   
+      Model:                                             & (1)           & (2)           & (3)          & (4)           & (5)           & (6)\\  
+      \midrule
+      \emph{Variables}\\
+      Exposure of whites to non-whites, ages 10--19 (SD) & 0.263$^{***}$ & 0.150$^{***}$ & 0.165$^{**}$ &               &               &   \\   
+                                                         & (0.027)       & (0.021)       & (0.035)      &               &               &   \\   
+      Exposure of whites to non-whites, ages 0--19 (SD)  &               &               &              & 0.295$^{***}$ & 0.158$^{***}$ & 0.167$^{***}$\\   
+                                                         &               &               &              & (0.034)       & (0.022)       & (0.028)\\   
+      Urban share, ages 10--19 (SD)                      &               &               & -0.014       &               &               & -0.003\\   
+                                                         &               &               & (0.012)      &               &               & (0.014)\\   
+      Top-10\% income share, ages 10--19 (SD)            &               &               & -0.012       &               &               & -0.005\\   
+                                                         &               &               & (0.023)      &               &               & (0.017)\\   
+      Recession shock, ages 18--25 (0/1)                 &               &               & -0.051       &               &               & -0.050\\   
+                                                         &               &               & (0.025)      &               &               & (0.025)\\   
+      \midrule
+      \emph{Fixed-effects}\\
+      Region at 16                                       & Yes           & Yes           & Yes          & Yes           & Yes           & Yes\\  
+      Survey year                                        & Yes           & Yes           & Yes          & Yes           & Yes           & Yes\\  
+      Birth year (cohort)                                &               & Yes           & Yes          &               & Yes           & Yes\\  
+      Race/ethnicity                                     &               & Yes           & Yes          &               & Yes           & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations                                       & 28,725        & 28,725        & 28,725       & 28,725        & 28,725        & 28,725\\  
+      R$^2$                                              & 0.02358       & 0.05280       & 0.05305      & 0.02293       & 0.05280       & 0.05303\\  
+      \midrule \midrule
+      \multicolumn{7}{l}{\emph{Clustered (Region at 16) standard-errors in parentheses}}\\
+      \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+      \end{adjustbox}
+\vspace{3pt}\par\centering{\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccc}
+\multicolumn{1}{l}{\itshape Economic size (significant columns only):} & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Per $+1$\,SD of regressor ($\Delta$ outcome, SD) & $+0.263$ & $+0.150$ & $+0.165$ & $+0.295$ & $+0.158$ & $+0.167$\\
+\quad as \% of the age gradient (cohort FE cols.) & -- & 57\% & 63\% & -- & 52\% & 55\%\\
+\quad as \% of the young--old gap (cohort FE cols.) & -- & 51\% & 56\% & -- & 46\% & 48\%\\
+\end{tabular}}
